@@ -1,11 +1,12 @@
-https://www.tldraw.com/f/whUNNU6-nImAvp08YtyrZ?d=v-240.1735.1525.908.page
-
-feedback:https://forms.gle/dGRxcHjSVquakmqr7s
-
-
 # Day 1: Python Fundamentals, Variables, Data Types, and Operators
 
 Welcome to Day 1! This folder contains all the instructional notes, executable practice scripts, interview preparation material, and tasks designed to build a strong foundation in Python.
+
+## 🔗 Important Class Links
+- **Whiteboard (tldraw)**: [View Class Diagrams](https://www.tldraw.com/f/whUNNU6-nImAvp08YtyrZ?d=v-240.1735.1525.908.page)
+- **Feedback Form**: [Submit Feedback](https://forms.gle/dGRxcHjSVquakmqr7s)
+
+---
 
 ## 📚 Content Directory & Reference Links
 
@@ -28,6 +29,7 @@ Use the links below to navigate through the course materials for Day 1.
 ### 3. Interview Preparation
 - **[100 Interview Questions & Answers](file:///c:/Users/Venkatesh/Desktop/MalliNeni/Day1/100_Interview_Questions_Day1.txt)**: A massive bank of 100 questions covering all Day 1 topics to test your knowledge.
 - **[Core Topics & Key Questions](file:///c:/Users/Venkatesh/Desktop/MalliNeni/Day1/Topics.txt)**: A quick cheat sheet of the most important concepts.
+- **[Original Interview Questions](file:///c:/Users/Venkatesh/Desktop/MalliNeni/Day1/InterviewQuestions.txt)**: Additional set of basic questions.
 
 ---
 
