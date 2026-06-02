@@ -4,7 +4,7 @@ Welcome to Day 1! This folder contains all the instructional notes, executable p
 
 ## 🔗 Important Class Links
 - **Whiteboard (tldraw)**: [View Class Diagrams](https://www.tldraw.com/f/whUNNU6-nImAvp08YtyrZ?d=v-240.1735.1525.908.page)
-- **Feedback Form**: [Submit Feedback](https://forms.gle/7vLVvSvF1epYvtzr9)
+- **Feedback Form**: [Submit Feedback](https://forms.gle/FcysJrduSY2qK25U6)
 
 ---
 
