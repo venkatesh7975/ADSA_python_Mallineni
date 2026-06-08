@@ -2,6 +2,8 @@
 
 #basic problems link:
 https://www.geeksforgeeks.org/c/c-programming-examples/
+
+#FEEDBACK LINK:  https://forms.gle/FFUSiipfSV1wT1897
 # Python for ADSA Course 🚀
 
 Welcome to the Python fundamentals course repository! This folder serves as the central hub for all class materials, notes, scripts, and interview preparation guides. 
