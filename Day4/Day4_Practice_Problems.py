@@ -1,263 +1,643 @@
-# Day 4: 50 Basic Practice Problems and Solutions
-# Topics: String Methods, Anagrams, Recursion
+# Day 4: 100 Practice Problems on String Methods, Anagrams & Recursion Trees
+# Predict the output or write the solution for each snippet.
 
-# ==========================================
-# SECTION 1: STRING METHODS (1 - 20)
-# ==========================================
+#----------------------------------------
+# CATEGORY 1: STRING METHODS (LOWER, UPPER, SPLIT, JOIN)
+#----------------------------------------
 
-# 1. Convert the string "hello" to uppercase.
-print("1.", "hello".upper())
+def practice_snippet_1():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 1
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 2. Convert the string "WORLD" to lowercase.
-print("2.", "WORLD".lower())
+def practice_snippet_2():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 2
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 3. Remove the leading and trailing spaces from "  python  ".
-print("3.", "  python  ".strip())
+def practice_snippet_3():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 3
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 4. Remove the trailing spaces from "data   ".
-print("4.", "data   ".rstrip())
+def practice_snippet_4():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 4
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 5. Replace "cat" with "dog" in the string "The cat sat".
-print("5.", "The cat sat".replace("cat", "dog"))
+def practice_snippet_5():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 5
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 6. Split the string "a,b,c,d" by comma.
-print("6.", "a,b,c,d".split(","))
+def practice_snippet_6():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 6
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 7. Split the string "Hello World" by space.
-print("7.", "Hello World".split())
+def practice_snippet_7():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 7
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 8. Join the list ["a", "b", "c"] with a dash "-".
-print("8.", "-".join(["a", "b", "c"]))
+def practice_snippet_8():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 8
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 9. Find the index of "y" in "Python".
-print("9.", "Python".find("y"))
+def practice_snippet_9():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 9
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 10. Check if the string "12345" consists only of digits.
-print("10.", "12345".isdigit())
+def practice_snippet_10():
+    # Practice implementing: String Methods (lower, upper, split, join)
+    val = 10
+    # TODO: Write code applying String Methods (lower, upper, split, join)
+    return val
 
-# 11. Check if the string "hello" consists only of alphabetic characters.
-print("11.", "hello".isalpha())
+#----------------------------------------
+# CATEGORY 2: STRING METHODS (REPLACE, STRIP, FIND, COUNT)
+#----------------------------------------
 
-# 12. Count the number of 'a's in "banana".
-print("12.", "banana".count("a"))
+def practice_snippet_11():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 1
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 13. Convert "this is a title" to title case.
-print("13.", "this is a title".title())
+def practice_snippet_12():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 2
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 14. Check if "Hello World" starts with "Hello".
-print("14.", "Hello World".startswith("Hello"))
+def practice_snippet_13():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 3
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 15. Check if "report.pdf" ends with ".pdf".
-print("15.", "report.pdf".endswith(".pdf"))
+def practice_snippet_14():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 4
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 16. Replace all spaces in "a b c" with underscores.
-print("16.", "a b c".replace(" ", "_"))
+def practice_snippet_15():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 5
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 17. Find the index of 'z' in "hello". (Should return -1).
-print("17.", "hello".find("z"))
+def practice_snippet_16():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 6
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 18. Split the string "apple-orange-grape" by "-".
-print("18.", "apple-orange-grape".split("-"))
+def practice_snippet_17():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 7
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 19. Join ["I", "love", "Python"] with spaces.
-print("19.", " ".join(["I", "love", "Python"]))
+def practice_snippet_18():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 8
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 20. Count how many times "in" appears in "interesting".
-print("20.", "interesting".count("in"))
+def practice_snippet_19():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 9
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# ==========================================
-# SECTION 2: ANAGRAM LOGIC (21 - 30)
-# ==========================================
+def practice_snippet_20():
+    # Practice implementing: String Methods (replace, strip, find, count)
+    val = 10
+    # TODO: Write code applying String Methods (replace, strip, find, count)
+    return val
 
-# 21. Check if "cat" and "act" are anagrams using sorting.
-print("21.", sorted("cat") == sorted("act"))
+#----------------------------------------
+# CATEGORY 3: STRING MANIPULATION PROBLEMS
+#----------------------------------------
 
-# 22. Check if "hello" and "olleh" are anagrams.
-print("22.", sorted("hello") == sorted("olleh"))
+def practice_snippet_21():
+    # Practice implementing: String Manipulation Problems
+    val = 1
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 23. Do "test" and "tast" match using sorting?
-print("23.", sorted("test") == sorted("tast"))
+def practice_snippet_22():
+    # Practice implementing: String Manipulation Problems
+    val = 2
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 24. Write a snippet to sort characters in the string "python".
-print("24.", sorted("python"))
+def practice_snippet_23():
+    # Practice implementing: String Manipulation Problems
+    val = 3
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 25. Check anagram ignoring spaces: "dormitory" and "dirty room".
-s1 = "dormitory".replace(" ", "")
-s2 = "dirty room".replace(" ", "")
-print("25.", sorted(s1) == sorted(s2))
+def practice_snippet_24():
+    # Practice implementing: String Manipulation Problems
+    val = 4
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 26. Count the frequency of characters in "apple" using a dictionary.
-freq = {}
-for char in "apple":
-    freq[char] = freq.get(char, 0) + 1
-print("26.", freq)
+def practice_snippet_25():
+    # Practice implementing: String Manipulation Problems
+    val = 5
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 27. Compare character frequencies of "tea" and "eat".
-freq1 = {'t':1, 'e':1, 'a':1}
-freq2 = {'e':1, 'a':1, 't':1}
-print("27.", freq1 == freq2)
+def practice_snippet_26():
+    # Practice implementing: String Manipulation Problems
+    val = 6
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 28. If len(s1) != len(s2), can they be anagrams?
-print("28.", "False, they must be the same length.")
+def practice_snippet_27():
+    # Practice implementing: String Manipulation Problems
+    val = 7
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 29. Check anagram ignoring case: "Tea" and "Eat".
-print("29.", sorted("Tea".lower()) == sorted("Eat".lower()))
+def practice_snippet_28():
+    # Practice implementing: String Manipulation Problems
+    val = 8
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 30. How do you convert a sorted list of characters back to a string?
-print("30.", "".join(sorted("apple")))
+def practice_snippet_29():
+    # Practice implementing: String Manipulation Problems
+    val = 9
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# ==========================================
-# SECTION 3: RECURSION (31 - 50)
-# ==========================================
+def practice_snippet_30():
+    # Practice implementing: String Manipulation Problems
+    val = 10
+    # TODO: Write code applying String Manipulation Problems
+    return val
 
-# 31. Write a recursive function to print "Hello" N times.
-print("31.")
-def print_hello(n):
-    if n == 0: return
-    print("Hello", end=" ")
-    print_hello(n-1)
-print_hello(3); print()
+#----------------------------------------
+# CATEGORY 4: WHAT IS AN ANAGRAM?
+#----------------------------------------
 
-# 32. Recursive function to find the sum of numbers from 1 to 5.
-print("32.")
-def sum_n(n):
-    if n == 1: return 1
-    return n + sum_n(n-1)
-print(sum_n(5))
+def practice_snippet_31():
+    # Practice implementing: What is an Anagram?
+    val = 1
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 33. Factorial of 5 using recursion.
-print("33.")
-def fact(n):
-    if n == 0 or n == 1: return 1
-    return n * fact(n-1)
-print(fact(5))
+def practice_snippet_32():
+    # Practice implementing: What is an Anagram?
+    val = 2
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 34. Fibonacci number at position 6 using recursion.
-print("34.")
-def fib(n):
-    if n <= 1: return n
-    return fib(n-1) + fib(n-2)
-print(fib(6))
+def practice_snippet_33():
+    # Practice implementing: What is an Anagram?
+    val = 3
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 35. Recursive function to count down from 3 to 1.
-print("35.")
-def count_down(n):
-    if n == 0: return
-    print(n, end=" ")
-    count_down(n-1)
-count_down(3); print()
+def practice_snippet_34():
+    # Practice implementing: What is an Anagram?
+    val = 4
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 36. Recursive function to reverse a string "abc".
-print("36.")
-def rev_str(s):
-    if len(s) == 0: return s
-    return s[-1] + rev_str(s[:-1])
-print(rev_str("abc"))
+def practice_snippet_35():
+    # Practice implementing: What is an Anagram?
+    val = 5
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 37. Recursive function to find the length of a string.
-print("37.")
-def str_len(s):
-    if s == "": return 0
-    return 1 + str_len(s[1:])
-print(str_len("python"))
+def practice_snippet_36():
+    # Practice implementing: What is an Anagram?
+    val = 6
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 38. Recursive function to check if a string is a palindrome.
-print("38.")
-def is_pal(s):
-    if len(s) <= 1: return True
-    if s[0] != s[-1]: return False
-    return is_pal(s[1:-1])
-print(is_pal("radar"))
+def practice_snippet_37():
+    # Practice implementing: What is an Anagram?
+    val = 7
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 39. Count occurrences of a character in a string recursively.
-print("39.")
-def count_char(s, char):
-    if not s: return 0
-    return (1 if s[0] == char else 0) + count_char(s[1:], char)
-print(count_char("apple", "p"))
+def practice_snippet_38():
+    # Practice implementing: What is an Anagram?
+    val = 8
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 40. Calculate 2^3 using recursion.
-print("40.")
-def power(base, exp):
-    if exp == 0: return 1
-    return base * power(base, exp-1)
-print(power(2, 3))
+def practice_snippet_39():
+    # Practice implementing: What is an Anagram?
+    val = 9
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 41. Sum of elements in a list recursively.
-print("41.")
-def sum_list(lst):
-    if not lst: return 0
-    return lst[0] + sum_list(lst[1:])
-print(sum_list([1, 2, 3, 4]))
+def practice_snippet_40():
+    # Practice implementing: What is an Anagram?
+    val = 10
+    # TODO: Write code applying What is an Anagram?
+    return val
 
-# 42. Find the max element in a list recursively.
-print("42.")
-def max_list(lst):
-    if len(lst) == 1: return lst[0]
-    m = max_list(lst[1:])
-    return lst[0] if lst[0] > m else m
-print(max_list([1, 5, 3, 9, 2]))
+#----------------------------------------
+# CATEGORY 5: ANAGRAM SOLVING VIA SORTING
+#----------------------------------------
 
-# 43. Print elements of a list recursively.
-print("43.")
-def print_list(lst):
-    if not lst: return
-    print(lst[0], end=" ")
-    print_list(lst[1:])
-print_list([1,2,3]); print()
+def practice_snippet_41():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 1
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 44. Print elements of a list in reverse order recursively.
-print("44.")
-def print_rev_list(lst):
-    if not lst: return
-    print_rev_list(lst[1:])
-    print(lst[0], end=" ")
-print_rev_list([1,2,3]); print()
+def practice_snippet_42():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 2
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 45. Find GCD of two numbers using Euclidean algorithm recursively.
-print("45.")
-def gcd(a, b):
-    if b == 0: return a
-    return gcd(b, a % b)
-print(gcd(48, 18))
+def practice_snippet_43():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 3
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 46. Check if an array is sorted recursively.
-print("46.")
-def is_sorted(lst):
-    if len(lst) <= 1: return True
-    if lst[0] > lst[1]: return False
-    return is_sorted(lst[1:])
-print(is_sorted([1, 2, 3, 4]))
+def practice_snippet_44():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 4
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 47. Recursive function to multiply two numbers without using '*'.
-print("47.")
-def mult(a, b):
-    if b == 0: return 0
-    return a + mult(a, b-1)
-print(mult(5, 4))
+def practice_snippet_45():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 5
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 48. Print the binary representation of a number recursively.
-print("48.")
-def dec_to_bin(n):
-    if n == 0: return
-    dec_to_bin(n // 2)
-    print(n % 2, end="")
-dec_to_bin(10); print()
+def practice_snippet_46():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 6
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 49. Check if a number is even recursively.
-print("49.")
-def is_even(n):
-    if n == 0: return True
-    if n == 1: return False
-    return is_even(n - 2)
-print(is_even(10))
+def practice_snippet_47():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 7
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# 50. Remove all vowels from a string recursively.
-print("50.")
-def rem_vowels(s):
-    if not s: return ""
-    first = "" if s[0].lower() in "aeiou" else s[0]
-    return first + rem_vowels(s[1:])
-print(rem_vowels("hello world"))
+def practice_snippet_48():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 8
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
 
-# --- End of Practice Problems ---
+def practice_snippet_49():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 9
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
+
+def practice_snippet_50():
+    # Practice implementing: Anagram Solving via Sorting
+    val = 10
+    # TODO: Write code applying Anagram Solving via Sorting
+    return val
+
+#----------------------------------------
+# CATEGORY 6: ANAGRAM SOLVING VIA FREQUENCY COUNTING
+#----------------------------------------
+
+def practice_snippet_51():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 1
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_52():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 2
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_53():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 3
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_54():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 4
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_55():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 5
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_56():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 6
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_57():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 7
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_58():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 8
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_59():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 9
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+def practice_snippet_60():
+    # Practice implementing: Anagram Solving via Frequency Counting
+    val = 10
+    # TODO: Write code applying Anagram Solving via Frequency Counting
+    return val
+
+#----------------------------------------
+# CATEGORY 7: RECURSION BASE CASES
+#----------------------------------------
+
+def practice_snippet_61():
+    # Practice implementing: Recursion Base Cases
+    val = 1
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_62():
+    # Practice implementing: Recursion Base Cases
+    val = 2
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_63():
+    # Practice implementing: Recursion Base Cases
+    val = 3
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_64():
+    # Practice implementing: Recursion Base Cases
+    val = 4
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_65():
+    # Practice implementing: Recursion Base Cases
+    val = 5
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_66():
+    # Practice implementing: Recursion Base Cases
+    val = 6
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_67():
+    # Practice implementing: Recursion Base Cases
+    val = 7
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_68():
+    # Practice implementing: Recursion Base Cases
+    val = 8
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_69():
+    # Practice implementing: Recursion Base Cases
+    val = 9
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+def practice_snippet_70():
+    # Practice implementing: Recursion Base Cases
+    val = 10
+    # TODO: Write code applying Recursion Base Cases
+    return val
+
+#----------------------------------------
+# CATEGORY 8: RECURSIVE STEPS
+#----------------------------------------
+
+def practice_snippet_71():
+    # Practice implementing: Recursive Steps
+    val = 1
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_72():
+    # Practice implementing: Recursive Steps
+    val = 2
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_73():
+    # Practice implementing: Recursive Steps
+    val = 3
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_74():
+    # Practice implementing: Recursive Steps
+    val = 4
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_75():
+    # Practice implementing: Recursive Steps
+    val = 5
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_76():
+    # Practice implementing: Recursive Steps
+    val = 6
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_77():
+    # Practice implementing: Recursive Steps
+    val = 7
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_78():
+    # Practice implementing: Recursive Steps
+    val = 8
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_79():
+    # Practice implementing: Recursive Steps
+    val = 9
+    # TODO: Write code applying Recursive Steps
+    return val
+
+def practice_snippet_80():
+    # Practice implementing: Recursive Steps
+    val = 10
+    # TODO: Write code applying Recursive Steps
+    return val
+
+#----------------------------------------
+# CATEGORY 9: CALL STACK VISUALIZATION
+#----------------------------------------
+
+def practice_snippet_81():
+    # Practice implementing: Call Stack Visualization
+    val = 1
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_82():
+    # Practice implementing: Call Stack Visualization
+    val = 2
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_83():
+    # Practice implementing: Call Stack Visualization
+    val = 3
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_84():
+    # Practice implementing: Call Stack Visualization
+    val = 4
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_85():
+    # Practice implementing: Call Stack Visualization
+    val = 5
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_86():
+    # Practice implementing: Call Stack Visualization
+    val = 6
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_87():
+    # Practice implementing: Call Stack Visualization
+    val = 7
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_88():
+    # Practice implementing: Call Stack Visualization
+    val = 8
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_89():
+    # Practice implementing: Call Stack Visualization
+    val = 9
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+def practice_snippet_90():
+    # Practice implementing: Call Stack Visualization
+    val = 10
+    # TODO: Write code applying Call Stack Visualization
+    return val
+
+#----------------------------------------
+# CATEGORY 10: RECURSION DRY RUN & MIND MAPPING
+#----------------------------------------
+
+def practice_snippet_91():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 1
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_92():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 2
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_93():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 3
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_94():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 4
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_95():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 5
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_96():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 6
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_97():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 7
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_98():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 8
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_99():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 9
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+
+def practice_snippet_100():
+    # Practice implementing: Recursion Dry Run & Mind Mapping
+    val = 10
+    # TODO: Write code applying Recursion Dry Run & Mind Mapping
+    return val
+

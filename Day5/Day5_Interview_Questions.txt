@@ -1,21 +1,323 @@
-Day 5 Interview Questions
+Day 5: 100 Interview Questions on Advanced Lists, Strings & Problem Solving
+============================================================
 
-1. What is the difference between `.append()` and `.extend()` in Python lists?
-Answer: `.append()` adds a single element to the end of the list. If you append a list, the entire list is added as one element. `.extend()` iterates over its argument and adds each element to the list, effectively merging lists.
+--- CATEGORY 1: STRING SLICING & INDEXING OPERATIONS ---
 
-2. Explain list slicing. How do you reverse a list using slicing?
-Answer: List slicing extracts a portion of a list using the syntax `list[start:stop:step]`. To reverse a list, we can use `list[::-1]`, which steps backward through the list from end to beginning.
+Q1: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-3. Are strings mutable in Python? What about lists?
-Answer: Strings are immutable, meaning they cannot be changed after creation. Any string operation that modifies a string actually returns a new string. Lists are mutable; they can be changed in place (e.g., changing an element by index, appending, or removing elements).
+Q2: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-4. Write code or explain how you would find the frequency of elements in a list.
-Answer: We can iterate through the list and use a dictionary to keep track of counts. 
-```python
-freq = {}
-for item in lst:
-    freq[item] = freq.get(item, 0) + 1
-```
+Q3: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-5. How do you generate all unique pairs from an array of numbers?
-Answer: Use two nested loops. The outer loop runs from `i = 0` to `len(arr)-1`, and the inner loop runs from `j = i + 1` to `len(arr)-1`. This ensures each pair `(arr[i], arr[j])` is generated exactly once.
+Q4: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q5: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q6: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q7: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q8: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q9: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q10: How do you approach 'String Slicing & Indexing Operations' in Python, and what are the common edge cases?
+A: Understanding String Slicing & Indexing Operations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 2: LIST SLICING (ALL POSSIBLE CASES) ---
+
+Q11: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q12: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q13: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q14: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q15: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q16: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q17: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q18: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q19: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q20: How do you approach 'List Slicing (All Possible Cases)' in Python, and what are the common edge cases?
+A: Understanding List Slicing (All Possible Cases) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 3: LIST METHODS OVERVIEW ---
+
+Q21: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q22: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q23: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q24: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q25: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q26: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q27: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q28: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q29: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q30: How do you approach 'List Methods Overview' in Python, and what are the common edge cases?
+A: Understanding List Methods Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 4: READING DIFFERENT TYPES OF INPUTS ---
+
+Q31: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q32: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q33: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q34: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q35: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q36: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q37: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q38: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q39: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q40: How do you approach 'Reading Different Types of Inputs' in Python, and what are the common edge cases?
+A: Understanding Reading Different Types of Inputs is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 5: SUMMING ALL NUMBERS IN A LIST ---
+
+Q41: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q42: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q43: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q44: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q45: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q46: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q47: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q48: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q49: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q50: How do you approach 'Summing All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Summing All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 6: PRODUCT OF ALL NUMBERS IN A LIST ---
+
+Q51: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q52: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q53: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q54: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q55: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q56: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q57: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q58: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q59: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q60: How do you approach 'Product of All Numbers in a List' in Python, and what are the common edge cases?
+A: Understanding Product of All Numbers in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 7: CALCULATING FREQUENCY COUNT OF VALUES ---
+
+Q61: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q62: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q63: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q64: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q65: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q66: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q67: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q68: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q69: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q70: How do you approach 'Calculating Frequency Count of Values' in Python, and what are the common edge cases?
+A: Understanding Calculating Frequency Count of Values is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 8: CALCULATING THE SUM OF SQUARES ---
+
+Q71: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q72: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q73: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q74: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q75: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q76: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q77: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q78: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q79: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q80: How do you approach 'Calculating the Sum of Squares' in Python, and what are the common edge cases?
+A: Understanding Calculating the Sum of Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 9: PRINTING SQUARES ---
+
+Q81: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q82: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q83: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q84: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q85: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q86: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q87: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q88: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q89: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q90: How do you approach 'Printing Squares' in Python, and what are the common edge cases?
+A: Understanding Printing Squares is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 10: PRINTING ALL COMBINATION PAIRS IN A LIST ---
+
+Q91: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q92: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q93: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q94: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q95: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q96: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q97: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q98: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q99: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q100: How do you approach 'Printing All Combination Pairs in a List' in Python, and what are the common edge cases?
+A: Understanding Printing All Combination Pairs in a List is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+

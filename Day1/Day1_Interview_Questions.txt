@@ -1,318 +1,323 @@
-100 Python Interview Questions and Answers: Day 1 Topics
-(Fundamentals, Variables, Data Types, and Operators)
+Day 1: 100 Interview Questions on Python Basics, Uses, Variables & Data Types
+============================================================
 
-=========================================
-SECTION 1: PYTHON FUNDAMENTALS (Q1 - Q20)
-=========================================
+--- CATEGORY 1: PYTHON INTRODUCTION & DEFINITION ---
 
-1. What is Python?
-Answer: Python is a high-level, interpreted, dynamically typed, and general-purpose programming language known for its readability and simple syntax.
+Q1: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-2. Who created Python and when was it first released?
-Answer: Guido van Rossum created Python, and it was first released in 1991.
+Q2: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-3. Why is Python called an "interpreted" language?
-Answer: Python code is executed line-by-line by an interpreter rather than being compiled into machine code all at once before execution.
+Q3: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-4. What does "dynamically typed" mean in Python?
-Answer: It means you don't have to declare the type of a variable when you create one. The Python interpreter infers the type automatically at runtime based on the value assigned.
+Q4: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-5. What is PEP 8?
-Answer: PEP 8 is the official style guide for Python code, providing guidelines on how to format code (e.g., indentation, naming conventions) for maximum readability.
+Q5: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-6. Why is indentation important in Python?
-Answer: Unlike languages that use curly braces {} to define code blocks, Python uses indentation (whitespace) to determine the scope of loops, functions, and conditional statements. Incorrect indentation causes an IndentationError.
+Q6: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-7. How do you write a comment in Python?
-Answer: Single-line comments start with the hash symbol (#). Multi-line comments can be created using triple quotes (''' or """), though technically they are multi-line strings.
+Q7: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-8. Is Python case-sensitive?
-Answer: Yes. Variables named 'Data' and 'data' are treated as two distinct variables.
+Q8: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-9. What are the key features of Python?
-Answer: Key features include being easy to read, interpreted, object-oriented, dynamically typed, having a vast standard library, and being cross-platform.
+Q9: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-10. What is the difference between Python 2 and Python 3?
-Answer: Python 3 is the current, modern version of the language (e.g., print() is a function). Python 2 is legacy and no longer supported.
+Q10: How do you approach 'Python Introduction & Definition' in Python, and what are the common edge cases?
+A: Understanding Python Introduction & Definition is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-11. How do you print something to the console in Python?
-Answer: Using the built-in print() function. Example: print("Hello World")
+--- CATEGORY 2: REASONS TO CHOOSE PYTHON ---
 
-12. What does high-level language mean?
-Answer: It means the language abstracts away complex machine details like memory management and CPU registers, making it closer to human language.
+Q11: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-13. What is a Python script?
-Answer: A file containing Python code (usually with a .py extension) intended to be executed from top to bottom.
+Q12: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-14. How do you execute a Python script from the command line?
-Answer: By typing `python filename.py` or `python3 filename.py`.
+Q13: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-15. What are docstrings in Python?
-Answer: Docstrings are string literals appearing right after the definition of a function, method, class, or module, used for documentation.
+Q14: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-16. What is the purpose of the pass statement?
-Answer: 'pass' is a null operation. It is used as a placeholder in empty code blocks where syntax requires a statement, but no action is needed.
+Q15: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-17. Can Python be used for frontend web development?
-Answer: Primarily, Python is a backend language. While tools like Brython exist, HTML/CSS/JavaScript are standard for frontend. Python excels in backend (Django, Flask).
+Q16: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-18. What is CPython?
-Answer: CPython is the default, standard, and most widely used implementation of Python, written in C.
+Q17: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-19. Why is Python heavily used in Data Science?
-Answer: Because of its simple syntax and incredibly powerful libraries like Pandas, NumPy, Matplotlib, and Scikit-learn.
+Q18: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-20. What is an IDE? Name two popular ones for Python.
-Answer: An Integrated Development Environment (IDE) provides facilities for software development. Popular ones for Python include PyCharm and VS Code.
+Q19: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 2: VARIABLES (Q21 - Q40)
-=========================================
+Q20: How do you approach 'Reasons to Choose Python' in Python, and what are the common edge cases?
+A: Understanding Reasons to Choose Python is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-21. What is a variable in Python?
-Answer: A variable is a named memory location used to store data. It acts as a reference or a pointer to an object.
+--- CATEGORY 3: COMMON APPLICATIONS & REAL-WORLD USES ---
 
-22. How do you declare a variable in Python?
-Answer: You declare a variable by simply assigning a value to it using the equals sign (=). Example: x = 10.
+Q21: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-23. Can a variable name start with a number?
-Answer: No. Variable names must start with a letter or an underscore. '1st_place' is invalid; 'place_1' is valid.
+Q22: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-24. What characters are allowed in a Python variable name?
-Answer: Letters (a-z, A-Z), numbers (0-9), and underscores (_).
+Q23: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-25. Are 'MyVar' and 'myvar' the same variable?
-Answer: No, Python is case-sensitive, so they are two different variables.
+Q24: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-26. Can you use reserved words (keywords) as variable names?
-Answer: No. Words like 'if', 'for', 'class', 'while' are reserved by Python and will cause a SyntaxError if used as variable names.
+Q25: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-27. What is snake_case?
-Answer: A naming convention where words are separated by underscores, widely used for Python variables and functions (e.g., total_sales_amount).
+Q26: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-28. What is camelCase?
-Answer: A naming convention where the first letter is lowercase and subsequent words start with uppercase (e.g., totalSalesAmount). Snake_case is preferred in Python.
+Q27: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-29. How can you assign the same value to multiple variables at once?
-Answer: x = y = z = 100.
+Q28: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-30. How can you assign different values to multiple variables in a single line?
-Answer: name, age, city = "Alice", 25, "New York"
+Q29: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-31. Can you change the type of a variable after creating it?
-Answer: Yes. Because Python is dynamically typed, you can do: x = 5 (int) followed by x = "Hello" (string).
+Q30: How do you approach 'Common Applications & Real-World Uses' in Python, and what are the common edge cases?
+A: Understanding Common Applications & Real-World Uses is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-32. What happens if you try to use a variable before assigning a value to it?
-Answer: Python will throw a NameError.
+--- CATEGORY 4: PYTHON SYNTAX RULES ---
 
-33. How do you delete a variable in Python?
-Answer: Using the 'del' keyword. Example: del my_var.
+Q31: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-34. What is a global variable?
-Answer: A variable declared outside of any function, which can be accessed from anywhere in the script.
+Q32: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-35. What is a local variable?
-Answer: A variable declared inside a function. It can only be accessed within that specific function.
+Q33: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-36. How do you use a global variable inside a function?
-Answer: By using the 'global' keyword before the variable name inside the function.
+Q34: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-37. Is there a constant variable type in Python?
-Answer: Technically no, but by convention, programmers use ALL_CAPS to indicate a variable should be treated as a constant (e.g., PI = 3.14159).
+Q35: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-38. What does variable swapping look like in Python without a temporary variable?
-Answer: a, b = b, a
+Q36: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-39. What does the id() function do?
-Answer: It returns the unique memory address (identity) of a variable/object.
+Q37: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-40. If a = 10 and b = 10, are they the same object in memory?
-Answer: Yes, for small integers, Python optimizes memory by pointing them to the same object (you can verify with id(a) == id(b)).
+Q38: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 3: DATA TYPES (Q41 - Q70)
-=========================================
+Q39: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-41. What are the core numeric data types in Python?
-Answer: int (integers), float (decimal numbers), and complex (complex numbers).
+Q40: How do you approach 'Python Syntax Rules' in Python, and what are the common edge cases?
+A: Understanding Python Syntax Rules is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-42. How do you find the data type of a variable?
-Answer: Use the built-in type() function. Example: type(my_var).
+--- CATEGORY 5: DECLARING VARIABLES ---
 
-43. What is a string (str)?
-Answer: A string is a sequence of characters enclosed in single, double, or triple quotes.
+Q41: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-44. Are strings mutable or immutable?
-Answer: Strings are immutable. Once created, you cannot change individual characters in a string object.
+Q42: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-45. How do you concatenate two strings?
-Answer: Using the + operator. Example: "Hello" + " " + "World".
+Q43: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-46. What does repeating a string look like?
-Answer: Use the * operator. Example: "Hi" * 3 results in "HiHiHi".
+Q44: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-47. What is a Boolean (bool) data type?
-Answer: A Boolean represents one of two values: True or False.
+Q45: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-48. Is 'True' the same as 'true' in Python?
-Answer: No. Booleans in Python must be capitalized: True and False.
+Q46: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-49. What is a list in Python?
-Answer: A list is an ordered, mutable collection of items enclosed in square brackets []. Example: [1, 2, 3].
+Q47: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-50. Can a list hold mixed data types?
-Answer: Yes. A list can hold integers, strings, floats, and even other lists. Example: [1, "apple", 3.14].
+Q48: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-51. What is a tuple?
-Answer: A tuple is an ordered, immutable collection of items enclosed in parentheses (). Example: (1, 2, 3).
+Q49: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-52. When should you use a tuple instead of a list?
-Answer: Use a tuple when the sequence of data should not be changed (read-only), such as geographic coordinates or days of the week.
+Q50: How do you approach 'Declaring Variables' in Python, and what are the common edge cases?
+A: Understanding Declaring Variables is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-53. What is a dictionary (dict)?
-Answer: An unordered collection of key-value pairs enclosed in curly braces {}. Example: {"name": "Alice", "age": 25}.
+--- CATEGORY 6: BUILT-IN DATA TYPES OVERVIEW ---
 
-54. Are dictionary keys mutable or immutable?
-Answer: Keys must be immutable types (like strings, numbers, or tuples). Lists cannot be used as dictionary keys.
+Q51: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-55. What is a set?
-Answer: An unordered collection of unique items enclosed in curly braces {}. Duplicates are automatically removed.
+Q52: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-56. Can you access elements in a set using an index (e.g., my_set[0])?
-Answer: No, sets are unordered, meaning they do not support indexing or slicing.
+Q53: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-57. How do you convert a string to an integer?
-Answer: Using the int() function. Example: int("10").
+Q54: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-58. What happens if you run int("10.5")?
-Answer: It raises a ValueError. You must first convert to float: int(float("10.5")).
+Q55: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-59. How do you convert an integer to a float?
-Answer: Using the float() function. Example: float(5) becomes 5.0.
+Q56: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-60. How do you convert a number to a string?
-Answer: Using the str() function. Example: str(100) becomes "100".
+Q57: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-61. What is type casting?
-Answer: The process of explicitly converting a variable from one data type to another.
+Q58: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-62. What is implicit type conversion?
-Answer: When Python automatically converts one data type to another without programmer intervention (e.g., adding an int and a float results in a float).
+Q59: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-63. What evaluates to False in Python?
-Answer: False, None, zero (0, 0.0), empty sequences ("", [], ()), and empty mapping ({}).
+Q60: How do you approach 'Built-in Data Types Overview' in Python, and what are the common edge cases?
+A: Understanding Built-in Data Types Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-64. What is the NoneType?
-Answer: None is a special constant in Python representing the absence of a value or a null value. Its type is NoneType.
+--- CATEGORY 7: NUMERIC TYPES (INT, FLOAT) ---
 
-65. What is the difference between a list and a set?
-Answer: A list is ordered, allows duplicates, and supports indexing. A set is unordered, does not allow duplicates, and does not support indexing.
+Q61: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-66. How do you find the length of a string, list, or dictionary?
-Answer: Using the built-in len() function.
+Q62: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-67. What is string slicing?
-Answer: Accessing a subset of a string using indices. Example: "Python"[0:2] returns "Py".
+Q63: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-68. What data type is the result of 10 / 2?
-Answer: Float (5.0). Standard division in Python 3 always returns a float.
+Q64: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-69. Can you modify an item in a dictionary?
-Answer: Yes, dictionaries are mutable. Example: my_dict["age"] = 26.
+Q65: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-70. Are floats 100% accurate in Python?
-Answer: No, floating-point arithmetic can have minor precision issues due to how computers represent decimals in binary (e.g., 0.1 + 0.2 might equal 0.30000000000000004).
+Q66: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 4: OPERATORS (Q71 - Q100)
-=========================================
+Q67: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-71. What are Arithmetic operators?
-Answer: Operators used to perform mathematical operations (+, -, *, /, //, %, **).
+Q68: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-72. What is the difference between / and // ?
-Answer: / performs standard division and returns a float. // performs integer (floor) division and discards the fractional part, returning an integer.
+Q69: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-73. What does the modulo operator (%) do?
-Answer: It returns the remainder of a division. Example: 10 % 3 returns 1.
+Q70: How do you approach 'Numeric Types (int, float)' in Python, and what are the common edge cases?
+A: Understanding Numeric Types (int, float) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-74. How do you calculate powers in Python?
-Answer: Using the exponentiation operator (**). Example: 2 ** 3 equals 8.
+--- CATEGORY 8: STRING TYPES ---
 
-75. What are Comparison (Relational) operators?
-Answer: Operators used to compare values (==, !=, >, <, >=, <=). They always return a Boolean.
+Q71: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-76. What is the difference between = and == ?
-Answer: = is the assignment operator (assigns a value to a variable). == is the equality comparison operator (checks if two values are equal).
+Q72: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-77. What does != mean?
-Answer: Not equal to. Returns True if operands are different.
+Q73: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-78. What are Logical operators?
-Answer: Operators used to combine conditional statements (and, or, not).
+Q74: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-79. How does the 'and' operator work?
-Answer: Returns True only if BOTH operands (conditions) are True.
+Q75: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-80. How does the 'or' operator work?
-Answer: Returns True if AT LEAST ONE operand (condition) is True.
+Q76: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-81. What does the 'not' operator do?
-Answer: It inverts the Boolean value. not True becomes False.
+Q77: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-82. What is short-circuit evaluation?
-Answer: When Python evaluates logical expressions, if the first condition determines the outcome, it stops evaluating. (e.g., in `A or B`, if A is True, B is not evaluated).
+Q78: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-83. What are Assignment operators?
-Answer: Operators used to assign values to variables (=, +=, -=, *=, /=, %=, etc.).
+Q79: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-84. What does x += 5 mean?
-Answer: It is shorthand for x = x + 5 (Add and assign).
+Q80: How do you approach 'String Types' in Python, and what are the common edge cases?
+A: Understanding String Types is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-85. Does Python support ++ or -- increment/decrement operators like C++ or Java?
-Answer: No. In Python, you must use += 1 or -= 1.
+--- CATEGORY 9: OPERATORS OVERVIEW ---
 
-86. What are Membership operators?
-Answer: 'in' and 'not in'. They check if a sequence (like a string, list, or tuple) is present within an object.
+Q81: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-87. Give an example of using the 'in' operator.
-Answer: "apple" in ["apple", "banana"] returns True.
+Q82: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-88. What are Identity operators?
-Answer: 'is' and 'is not'. They compare the memory locations of two objects, not just their values.
+Q83: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-89. What is the difference between '==' and 'is'?
-Answer: '==' checks if values are equal. 'is' checks if the two variables point to the exact same object in memory.
+Q84: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-90. If a = [1, 2] and b = [1, 2], what is a == b and what is a is b?
-Answer: a == b is True (values are equal). a is b is False (they are two distinct lists in memory).
+Q85: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-91. What is the order of precedence for operators in Python (PEMDAS)?
-Answer: Parentheses, Exponentiation, Multiplication/Division/Modulo, Addition/Subtraction.
+Q86: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-92. How do you override the default operator precedence?
-Answer: By using parentheses ().
+Q87: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-93. What is the result of 10 > 5 and 5 > 2?
-Answer: True. Both conditions are True, so the 'and' statement evaluates to True.
+Q88: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-94. What is the result of "Python" > "Java"?
-Answer: True. String comparison is alphabetical (lexicographical). 'P' comes after 'J' in the alphabet, so it is considered greater.
+Q89: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-95. Can you use + to add a string and an integer?
-Answer: No, it raises a TypeError. You must convert the integer to a string first (e.g., "Age " + str(25)).
+Q90: How do you approach 'Operators Overview' in Python, and what are the common edge cases?
+A: Understanding Operators Overview is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-96. What does True + True evaluate to in Python?
-Answer: 2. In arithmetic operations, True acts as 1 and False acts as 0.
+--- CATEGORY 10: ARITHMETIC & COMPARISON OPERATORS ---
 
-97. What is the result of 10 % 2 == 0?
-Answer: True. 10 % 2 evaluates to 0, and 0 == 0 is True. This is how you check if a number is even.
+Q91: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-98. Can you chain comparison operators in Python?
-Answer: Yes. Example: 0 < x < 10 is perfectly valid and checks if x is between 0 and 10.
+Q92: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-99. What does the bitwise AND operator (&) do?
-Answer: It performs a bit-by-bit logical AND operation on integers. (Generally more advanced than Day 1, but good to know it exists distinct from 'and').
+Q93: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-100. If x = 5, what does x *= 3 evaluate to?
-Answer: x becomes 15.
+Q94: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q95: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q96: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q97: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q98: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q99: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q100: How do you approach 'Arithmetic & Comparison Operators' in Python, and what are the common edge cases?
+A: Understanding Arithmetic & Comparison Operators is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+

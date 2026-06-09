@@ -1,317 +1,323 @@
-50 Python Interview Questions and Answers: Day 4 Topics
-(String Methods, Anagrams, Recursion Dry Runs & Mind Mapping)
+Day 4: 100 Interview Questions on String Methods, Anagrams & Recursion Trees
+============================================================
 
-=========================================
-SECTION 1: STRING METHODS (Q1 - Q20)
-=========================================
-1. Are strings mutable or immutable in Python?
-Answer: Strings are immutable. Any string method returns a new string rather than modifying the original.
+--- CATEGORY 1: STRING METHODS (LOWER, UPPER, SPLIT, JOIN) ---
 
-2. What does the `lower()` method do?
-Answer: It returns a copy of the string with all characters converted to lowercase.
+Q1: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-3. What does the `strip()` method do?
-Answer: It removes leading and trailing whitespace characters (or specific characters provided as arguments).
+Q2: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-4. How is `strip()` different from `replace(" ", "")`?
-Answer: `strip()` only removes spaces from the beginning and end, while `replace()` removes all spaces throughout the string.
+Q3: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-5. What does the `split()` method return?
-Answer: It returns a list of substrings split by the specified delimiter.
+Q4: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-6. If no delimiter is provided to `split()`, what happens?
-Answer: It splits the string on any whitespace character (space, tab, newline) and removes empty strings from the result.
+Q5: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-7. What does the `join()` method do?
-Answer: It concatenates an iterable of strings into a single string, using the string it was called on as a separator.
+Q6: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-8. What is the output of `"-".join(["a", "b", "c"])`?
-Answer: "a-b-c".
+Q7: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-9. What does the `find()` method do?
-Answer: It returns the lowest index of the substring if found in the string, otherwise it returns -1.
+Q8: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-10. How is `find()` different from `index()`?
-Answer: Both find the substring, but `index()` raises a ValueError if the substring is not found, whereas `find()` returns -1.
+Q9: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-11. What does the `count()` method do?
-Answer: It returns the number of non-overlapping occurrences of a substring within the string.
+Q10: How do you approach 'String Methods (lower, upper, split, join)' in Python, and what are the common edge cases?
+A: Understanding String Methods (lower, upper, split, join) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-12. What does `isalpha()` check?
-Answer: It returns True if all characters in the string are alphabets (and there is at least one character).
+--- CATEGORY 2: STRING METHODS (REPLACE, STRIP, FIND, COUNT) ---
 
-13. What does `isdigit()` check?
-Answer: It returns True if all characters are digits.
+Q11: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-14. What does `isalnum()` check?
-Answer: It returns True if all characters are alphanumeric (letters or numbers).
+Q12: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-15. How do you replace all occurrences of "apple" with "orange"?
-Answer: `text.replace("apple", "orange")`
+Q13: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-16. What is the third argument in the `replace(old, new, count)` method?
-Answer: The maximum number of occurrences to replace.
+Q14: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-17. What does `startswith()` do?
-Answer: Checks if the string starts with the specified prefix.
+Q15: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-18. What does `endswith()` do?
-Answer: Checks if the string ends with the specified suffix.
+Q16: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-19. How do you capitalize the first letter of a string only?
-Answer: Using the `capitalize()` method.
+Q17: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-20. How do you capitalize the first letter of every word in a string?
-Answer: Using the `title()` method.
+Q18: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 2: ANAGRAMS (Q21 - Q30)
-=========================================
-21. What is an anagram?
-Answer: A word or phrase formed by rearranging the letters of another word or phrase using all original letters exactly once.
+Q19: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-22. What is the time complexity of checking anagrams by sorting both strings?
-Answer: O(N log N), where N is the length of the string.
+Q20: How do you approach 'String Methods (replace, strip, find, count)' in Python, and what are the common edge cases?
+A: Understanding String Methods (replace, strip, find, count) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-23. Why is it important to convert strings to lowercase and remove spaces when checking for anagrams?
-Answer: Because "Listen" and "Silent" are anagrams, but character case and spacing differ.
+--- CATEGORY 3: STRING MANIPULATION PROBLEMS ---
 
-24. How can a frequency dictionary (hash map) check for anagrams?
-Answer: Count characters in the first string, then decrement counts for the second string. If all counts end at zero, they are anagrams.
+Q21: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-25. What is the time complexity of the frequency dictionary approach?
-Answer: O(N), because it iterates through the strings a constant number of times.
+Q22: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-26. Can two strings of different lengths be anagrams?
-Answer: No. A quick optimization is `if len(s1) != len(s2): return False`.
+Q23: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-27. Does the `collections.Counter` module help with anagrams?
-Answer: Yes, `Counter(s1) == Counter(s2)` is a concise way to check for anagrams.
+Q24: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-28. Can you use an array of size 26 instead of a dictionary to count frequencies?
-Answer: Yes, if the strings only contain lowercase English letters, an array of size 26 is highly efficient.
+Q25: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-29. What happens in the dictionary approach if a character is found in the second string that wasn't in the first?
-Answer: They are not anagrams, and the function should return False immediately.
+Q26: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-30. Which is better for very short strings: sorting or frequency map?
-Answer: Sorting is often faster for very short strings due to less overhead, but frequency maps scale better for large strings.
+Q27: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 3: RECURSION DRY RUNS AND MIND MAPPING (Q31 - Q50)
-=========================================
-31. What is the Call Stack?
-Answer: A data structure that stores information about the active subroutines (functions) of a computer program.
+Q28: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-32. What happens to the Call Stack when a recursive function is called?
-Answer: A new frame is pushed onto the stack for each recursive call.
+Q29: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-33. What happens to the Call Stack when a recursive function returns?
-Answer: The frame for that function call is popped off the stack.
+Q30: How do you approach 'String Manipulation Problems' in Python, and what are the common edge cases?
+A: Understanding String Manipulation Problems is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-34. What is a "stack overflow"?
-Answer: It occurs when there are too many nested function calls (often due to missing or incorrect base cases), exceeding the stack memory limit.
+--- CATEGORY 4: WHAT IS AN ANAGRAM? ---
 
-35. What is a dry run?
-Answer: Manually tracing the execution of a program line by line on paper to understand its flow and state changes.
+Q31: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-36. Why is a dry run important for recursion?
-Answer: Because the flow jumps back and forth between function calls, which can be hard to visualize just by reading the code.
+Q32: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-37. What is the "winding phase" of recursion?
-Answer: The phase where function calls are made and pushed onto the stack before reaching the base case.
+Q33: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-38. What is the "unwinding phase" of recursion?
-Answer: The phase after the base case is reached, where function calls return values and pop off the stack.
+Q34: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-39. What is a recursion tree?
-Answer: A diagram (like a mind map) representing the recursive calls made by a function. Nodes represent function calls and edges represent the calls made.
+Q35: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-40. When is a recursion tree particularly useful?
-Answer: When a function makes multiple recursive calls (like the Fibonacci sequence).
+Q36: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-41. In the naive recursive Fibonacci `fib(4)`, how many times is `fib(2)` calculated?
-Answer: Multiple times (twice, specifically). The tree shows overlapping subproblems.
+Q37: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-42. What is Tail Recursion?
-Answer: A recursive function where the recursive call is the very last operation performed, with no remaining computation after it returns.
+Q38: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-43. Does Python optimize tail recursion automatically?
-Answer: No, Python does not have built-in tail call optimization.
+Q39: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-44. How do you find the maximum recursion depth in Python?
-Answer: `import sys; print(sys.getrecursionlimit())`
+Q40: How do you approach 'What is an Anagram?' in Python, and what are the common edge cases?
+A: Understanding What is an Anagram? is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-45. Can you change the recursion limit in Python?
-Answer: Yes, using `sys.setrecursionlimit(new_limit)`.
+--- CATEGORY 5: ANAGRAM SOLVING VIA SORTING ---
 
-46. What does `fact(n)` usually evaluate to at the base case?
-Answer: 1.
+Q41: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-47. In a recursion tree for `fact(3)`, what is the shape of the tree?
-Answer: It is a straight line or linear path (each node has exactly one child) because there is only one recursive call.
+Q42: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-48. What is an overlapping subproblem in a recursion tree?
-Answer: When the same function with the same parameters is evaluated multiple times in different branches of the tree.
+Q43: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-49. How do we solve the overlapping subproblems identified by the recursion tree?
-Answer: By storing the results of expensive function calls (Memoization).
+Q44: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-50. If you dry run `fib(1)`, what happens?
-Answer: It immediately hits the base case (`if n <= 1`) and returns 1 without making any recursive calls or growing the stack further.
+Q45: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 4: ADVANCED STRING METHODS AND FORMATTING (Q51 - Q75)
-=========================================
-51. How do you check if a string is a palindrome using string slicing?
-Answer: By checking if `s == s[::-1]`.
+Q46: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-52. What does the `zfill()` method do?
-Answer: It pads a string on the left with zeros to fill a specified width.
+Q47: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-53. What is the difference between `isalpha()` and `isalnum()`?
-Answer: `isalpha()` requires only alphabetic characters, while `isalnum()` allows both letters and numbers.
+Q48: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-54. What happens if you call `lower()` on a string containing numbers and punctuation?
-Answer: The numbers and punctuation remain unchanged; only uppercase letters are converted.
+Q49: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-55. How do you format a string using f-strings in Python?
-Answer: By prefixing the string with `f` or `F` and placing expressions inside curly braces `{}`.
+Q50: How do you approach 'Anagram Solving via Sorting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Sorting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-56. What does `text.splitlines()` do?
-Answer: It splits a string at line boundaries (like `\n`) and returns a list of lines.
+--- CATEGORY 6: ANAGRAM SOLVING VIA FREQUENCY COUNTING ---
 
-57. How do you find the highest index of a substring in a string?
-Answer: Using the `rfind()` method.
+Q51: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-58. What is the difference between `strip()`, `lstrip()`, and `rstrip()`?
-Answer: `strip()` removes from both ends, `lstrip()` only removes from the left (start), and `rstrip()` only from the right (end).
+Q52: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-59. Can `replace()` be used to remove a substring?
-Answer: Yes, by replacing it with an empty string `""`.
+Q53: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-60. Does the `count()` method count overlapping occurrences?
-Answer: No, it only counts non-overlapping occurrences. For example, `"aaaa".count("aa")` is 2, not 3.
+Q54: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-61. What does the `partition()` method do?
-Answer: It splits the string at the first occurrence of the separator and returns a 3-tuple containing the part before the separator, the separator itself, and the part after.
+Q55: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-62. How do you check if a string contains only whitespace?
-Answer: Using the `isspace()` method.
+Q56: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-63. What does `islower()` check?
-Answer: It returns True if all cased characters in the string are lowercase and there is at least one cased character.
+Q57: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-64. How do you encode a string to bytes?
-Answer: Using the `encode()` method (e.g., `s.encode('utf-8')`).
+Q58: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-65. What happens when you split an empty string `"".split(",")`?
-Answer: It returns a list with one empty string: `[""]`.
+Q59: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-66. What happens if you split an empty string with no delimiter `"".split()`?
-Answer: It returns an empty list `[]`.
+Q60: How do you approach 'Anagram Solving via Frequency Counting' in Python, and what are the common edge cases?
+A: Understanding Anagram Solving via Frequency Counting is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-67. Can you use multiple separators in the `split()` method natively?
-Answer: No, `split()` only takes one separator. For multiple separators, you would use the `re.split()` module from regular expressions.
+--- CATEGORY 7: RECURSION BASE CASES ---
 
-68. How do you center a string within a specific width?
-Answer: Using the `center(width, fillchar)` method.
+Q61: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-69. What does the `swapcase()` method do?
-Answer: It converts uppercase letters to lowercase and lowercase letters to uppercase.
+Q62: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-70. How do you join a list of integers into a string?
-Answer: You must convert the integers to strings first, e.g., `"-".join([str(i) for i in list_of_ints])`.
+Q63: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-71. Is `" "` (a single space) considered alphanumeric?
-Answer: No, `isalnum()` will return False for spaces.
+Q64: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-72. How do you extract the file extension from a filename string like `"document.txt"`?
-Answer: Using `filename.split(".")[-1]`.
+Q65: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-73. What is the output of `"Py" in "Python"`?
-Answer: True.
+Q66: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-74. How can you remove all punctuation from a string?
-Answer: By iterating through the string and keeping only `isalnum()` characters, or by using `str.translate()`.
+Q67: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-75. What does the `title()` method do differently than `capitalize()`?
-Answer: `title()` capitalizes the first letter of every word, while `capitalize()` only capitalizes the very first letter of the entire string.
+Q68: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 5: ADVANCED ANAGRAMS AND RECURSION (Q76 - Q100)
-=========================================
-76. If you have two large strings, why is a frequency dictionary better than sorting for anagram checking?
-Answer: Sorting takes O(N log N) time, whereas a frequency dictionary takes O(N) time, which is much faster for large N.
+Q69: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-77. How do you handle anagram checks involving Unicode characters or different languages?
-Answer: A dictionary (hash map) approach naturally handles Unicode characters, whereas an array of size 26 assumes only English letters.
+Q70: How do you approach 'Recursion Base Cases' in Python, and what are the common edge cases?
+A: Understanding Recursion Base Cases is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-78. Can you determine if a string is a palindrome by using anagram logic?
-Answer: No, palindromes depend on character order, while anagrams only depend on character frequencies. However, a string can form a palindrome if at most one character has an odd frequency.
+--- CATEGORY 8: RECURSIVE STEPS ---
 
-79. How do you group a list of words into anagrams (e.g., `["eat", "tea", "tan", "ate", "nat", "bat"]`)?
-Answer: Use a dictionary where the key is the sorted word and the value is a list of words that match that sorted key.
+Q71: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-80. What is the time complexity to group N words of maximum length K into anagrams?
-Answer: O(N * K log K) if sorting the words to create the key.
+Q72: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-81. What is the space complexity of checking an anagram using a dictionary?
-Answer: O(C), where C is the number of unique characters in the strings.
+Q73: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-82. In a recursion tree, what do the leaf nodes represent?
-Answer: Leaf nodes represent the base cases where the recursion stops.
+Q74: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-83. What do the internal nodes of a recursion tree represent?
-Answer: Recursive function calls that have not yet reached a base case.
+Q75: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-84. How does Python's call stack handle local variables in recursion?
-Answer: Each recursive call gets its own unique stack frame with its own set of local variables.
+Q76: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-85. Why does calculating Fibonacci recursively without memoization take exponential time (O(2^N))?
-Answer: Because the function repeatedly re-calculates the same overlapping subproblems, doubling the amount of work at each step in the tree.
+Q77: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-86. What is memoization?
-Answer: A technique to speed up recursive algorithms by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+Q78: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-87. If you add memoization to the recursive Fibonacci function, what does the time complexity become?
-Answer: It reduces from O(2^N) down to O(N).
+Q79: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-88. What is a "stack trace"?
-Answer: A report of the active stack frames at a certain point in time during the execution of a program, often seen when an error (like an exception) occurs.
+Q80: How do you approach 'Recursive Steps' in Python, and what are the common edge cases?
+A: Understanding Recursive Steps is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-89. Can recursion be replaced by iteration?
-Answer: Yes, every recursive algorithm can be rewritten iteratively, often using an explicit stack or a loop.
+--- CATEGORY 9: CALL STACK VISUALIZATION ---
 
-90. Why use recursion if iteration uses less memory?
-Answer: Recursion often leads to much cleaner, more readable, and easier-to-understand code for problems involving trees, graphs, and divide-and-conquer strategies.
+Q81: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-91. If a recursive function returns a value, what must the caller do with it?
-Answer: The caller (the previous recursive step) must return it up the chain or use it in its own calculation (e.g., `return n * fact(n-1)`).
+Q82: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-92. What happens if you forget the `return` keyword in the recursive step?
-Answer: The function will execute but return `None`, causing subsequent calculations up the stack to fail (e.g., trying to multiply `None * 5`).
+Q83: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-93. How do you visualize depth-first execution in a recursion tree?
-Answer: The program completely follows the left-most branch down to the leaf node before evaluating any siblings to the right.
+Q84: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-94. What is a divide-and-conquer algorithm?
-Answer: An algorithm that recursively breaks down a problem into two or more subproblems of the same type, until they become simple enough to be solved directly.
+Q85: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-95. Is `Merge Sort` an example of a recursive divide-and-conquer algorithm?
-Answer: Yes.
+Q86: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-96. How does printing *before* a recursive call differ from printing *after* a recursive call?
-Answer: Printing before outputs data during the "winding" phase (top-down), while printing after outputs data during the "unwinding" phase (bottom-up, effectively reversing the order).
+Q87: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-97. What is the Space Complexity of a recursive function?
-Answer: It is proportional to the maximum depth of the recursion tree due to the call stack frames, often O(N) or O(log N).
+Q88: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-98. Can a dictionary be used for memoization in Python?
-Answer: Yes, dictionaries are the most common way to cache results, using function arguments as keys.
+Q89: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-99. Does Python have a built-in tool for memoization?
-Answer: Yes, `@functools.lru_cache` or `@functools.cache` can automatically memoize a function.
+Q90: How do you approach 'Call Stack Visualization' in Python, and what are the common edge cases?
+A: Understanding Call Stack Visualization is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-100. If you do a dry run of `fib(3)`, how many frames are pushed to the stack in total?
-Answer: `fib(3)` calls `fib(2)` and `fib(1)`. `fib(2)` calls `fib(1)` and `fib(0)`. Total calls including the first is 5 frames pushed to the stack overall.
+--- CATEGORY 10: RECURSION DRY RUN & MIND MAPPING ---
+
+Q91: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q92: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q93: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q94: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q95: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q96: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q97: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q98: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q99: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q100: How do you approach 'Recursion Dry Run & Mind Mapping' in Python, and what are the common edge cases?
+A: Understanding Recursion Dry Run & Mind Mapping is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+

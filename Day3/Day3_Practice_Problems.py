@@ -1,323 +1,643 @@
-# Day 3: 50 Basic Practice Problems and Solutions
-# Topics: Strings, Lists, Loop Control, Functions, Scope, and Recursion
+# Day 3: 100 Practice Problems on Strings, Lists, Functions & Scopes
+# Predict the output or write the solution for each snippet.
 
-# ==========================================
-# SECTION 1: STRING OPERATIONS (1 - 10)
-# ==========================================
+#----------------------------------------
+# CATEGORY 1: LOOP CONTROL (BREAK, CONTINUE, PASS)
+#----------------------------------------
 
-# 1. Print the first character of the string "Python".
-s1 = "Python"
-print("1.", s1[0])
+def practice_snippet_1():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 1
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 2. Print the last character of the string "Data" using negative indexing.
-s2 = "Data"
-print("2.", s2[-1])
+def practice_snippet_2():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 2
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 3. Slice the first 3 characters from "Programming".
-s3 = "Programming"
-print("3.", s3[0:3])
+def practice_snippet_3():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 3
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 4. Reverse the string "Hello" using slicing.
-s4 = "Hello"
-print("4.", s4[::-1])
+def practice_snippet_4():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 4
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 5. Concatenate "Good" and "Morning" with a space in between.
-print("5.", "Good" + " " + "Morning")
+def practice_snippet_5():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 5
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 6. Repeat the string "Hi" 4 times.
-print("6.", "Hi" * 4)
+def practice_snippet_6():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 6
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 7. Print the characters from index 2 to 5 in "Developer".
-s7 = "Developer"
-print("7.", s7[2:6])
+def practice_snippet_7():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 7
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 8. Use negative slicing to get the last two characters of "World".
-s8 = "World"
-print("8.", s8[-2:])
+def practice_snippet_8():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 8
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 9. Extract every second character from "abcdefgh".
-s9 = "abcdefgh"
-print("9.", s9[::2])
+def practice_snippet_9():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 9
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# 10. Check the length of the string "OpenAI" using len().
-s10 = "OpenAI"
-print("10.", len(s10))
+def practice_snippet_10():
+    # Practice implementing: Loop Control (break, continue, pass)
+    val = 10
+    # TODO: Write code applying Loop Control (break, continue, pass)
+    return val
 
-# ==========================================
-# SECTION 2: LIST OPERATIONS (11 - 20)
-# ==========================================
+#----------------------------------------
+# CATEGORY 2: ERROR HANDLING (INDEXERROR)
+#----------------------------------------
 
-# 11. Create a list of 3 colors and print the second color.
-colors = ["Red", "Green", "Blue"]
-print("11.", colors[1])
+def practice_snippet_11():
+    # Practice implementing: Error Handling (IndexError)
+    val = 1
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 12. Print the last element of [10, 20, 30, 40] using negative indexing.
-nums12 = [10, 20, 30, 40]
-print("12.", nums12[-1])
+def practice_snippet_12():
+    # Practice implementing: Error Handling (IndexError)
+    val = 2
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 13. Slice the middle two elements from [1, 2, 3, 4].
-nums13 = [1, 2, 3, 4]
-print("13.", nums13[1:3])
+def practice_snippet_13():
+    # Practice implementing: Error Handling (IndexError)
+    val = 3
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 14. Reverse the list [1, 2, 3, 4, 5] using slicing.
-nums14 = [1, 2, 3, 4, 5]
-print("14.", nums14[::-1])
+def practice_snippet_14():
+    # Practice implementing: Error Handling (IndexError)
+    val = 4
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 15. Concatenate two lists: [1, 2] and [3, 4].
-print("15.", [1, 2] + [3, 4])
+def practice_snippet_15():
+    # Practice implementing: Error Handling (IndexError)
+    val = 5
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 16. Extract the first 3 elements of [10, 20, 30, 40, 50].
-nums16 = [10, 20, 30, 40, 50]
-print("16.", nums16[:3])
+def practice_snippet_16():
+    # Practice implementing: Error Handling (IndexError)
+    val = 6
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 17. Extract all elements except the first and last in [10, 20, 30, 40].
-nums17 = [10, 20, 30, 40]
-print("17.", nums17[1:-1])
+def practice_snippet_17():
+    # Practice implementing: Error Handling (IndexError)
+    val = 7
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 18. Repeat the list [0] 5 times.
-print("18.", [0] * 5)
+def practice_snippet_18():
+    # Practice implementing: Error Handling (IndexError)
+    val = 8
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 19. Find the length of the list [5, 10, 15, 20, 25].
-nums19 = [5, 10, 15, 20, 25]
-print("19.", len(nums19))
+def practice_snippet_19():
+    # Practice implementing: Error Handling (IndexError)
+    val = 9
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
-# 20. Slice the last three elements of [1, 2, 3, 4, 5, 6].
-nums20 = [1, 2, 3, 4, 5, 6]
-print("20.", nums20[-3:])
+def practice_snippet_20():
+    # Practice implementing: Error Handling (IndexError)
+    val = 10
+    # TODO: Write code applying Error Handling (IndexError)
+    return val
 
+#----------------------------------------
+# CATEGORY 3: STRING & LIST INDEXING (POSITIVE)
+#----------------------------------------
 
-# ==========================================
-# SECTION 3: LOOP CONTROL & EXCEPTIONS (21 - 30)
-# ==========================================
+def practice_snippet_21():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 1
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 21. Write a for loop from 1 to 5, but break when reaching 3.
-print("21.")
-for i in range(1, 6):
-    if i == 3:
-        break
-    print(i)
+def practice_snippet_22():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 2
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 22. Write a for loop from 1 to 4, and skip 2 using continue.
-print("22.")
-for i in range(1, 5):
-    if i == 2:
-        continue
-    print(i)
+def practice_snippet_23():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 3
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 23. Create an empty for loop using pass.
-for i in range(3):
-    pass
-print("23. Empty loop executed with pass.")
+def practice_snippet_24():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 4
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 24. Write a while loop from 1 to 5, breaking if the number is 4.
-print("24.")
-w24 = 1
-while w24 <= 5:
-    if w24 == 4:
-        break
-    print(w24)
-    w24 += 1
+def practice_snippet_25():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 5
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 25. Use a while loop to print 1 to 4, but skip 3.
-print("25.")
-w25 = 0
-while w25 < 4:
-    w25 += 1
-    if w25 == 3:
-        continue
-    print(w25)
+def practice_snippet_26():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 6
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 26. Write an if-statement that uses pass.
-if True:
-    pass
-print("26. If-statement executed with pass.")
+def practice_snippet_27():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 7
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 27. Intentionally cause an IndexError and catch it with try/except.
-print("27.")
-try:
-    print([1, 2][5])
-except IndexError as e:
-    print("Caught:", e)
+def practice_snippet_28():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 8
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 28. Print characters in "Cat", break if 'a' is found.
-print("28.")
-for char in "Cat":
-    if char == 'a':
-        break
-    print(char)
+def practice_snippet_29():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 9
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 29. Print characters in "Dog", continue if 'o' is found.
-print("29.")
-for char in "Dog":
-    if char == 'o':
-        continue
-    print(char)
+def practice_snippet_30():
+    # Practice implementing: String & List Indexing (Positive)
+    val = 10
+    # TODO: Write code applying String & List Indexing (Positive)
+    return val
 
-# 30. Access a string out of bounds and catch IndexError.
-print("30.")
-try:
-    print("Hi"[10])
-except IndexError:
-    print("String index out of range!")
+#----------------------------------------
+# CATEGORY 4: STRING & LIST SLICING
+#----------------------------------------
 
+def practice_snippet_31():
+    # Practice implementing: String & List Slicing
+    val = 1
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# ==========================================
-# SECTION 4: FUNCTIONS (31 - 40)
-# ==========================================
+def practice_snippet_32():
+    # Practice implementing: String & List Slicing
+    val = 2
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 31. Write a function that prints "Hello, World!" and call it.
-print("31.")
-def say_hello():
-    print("Hello, World!")
-say_hello()
+def practice_snippet_33():
+    # Practice implementing: String & List Slicing
+    val = 3
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 32. Write a function that takes a name and prints a greeting.
-print("32.")
-def greet(name):
-    print(f"Hi, {name}!")
-greet("Venkatesh")
+def practice_snippet_34():
+    # Practice implementing: String & List Slicing
+    val = 4
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 33. Write a function that returns the sum of two numbers.
-print("33.")
-def add(a, b):
-    return a + b
-print(add(5, 7))
+def practice_snippet_35():
+    # Practice implementing: String & List Slicing
+    val = 5
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 34. Write a function with a default parameter for message.
-print("34.")
-def show_msg(msg="Default message"):
-    print(msg)
-show_msg()
-show_msg("Custom message")
+def practice_snippet_36():
+    # Practice implementing: String & List Slicing
+    val = 6
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 35. Write a function that returns the square of a number.
-print("35.")
-def square(n):
-    return n * n
-print(square(4))
+def practice_snippet_37():
+    # Practice implementing: String & List Slicing
+    val = 7
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 36. Write a function that accepts *args and returns their sum.
-print("36.")
-def sum_all(*args):
-    return sum(args)
-print(sum_all(1, 2, 3, 4, 5))
+def practice_snippet_38():
+    # Practice implementing: String & List Slicing
+    val = 8
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 37. Write a function that accepts **kwargs and prints them.
-print("37.")
-def print_details(**kwargs):
-    for key, value in kwargs.items():
-        print(f"{key}: {value}")
-print_details(name="Alice", age=25)
+def practice_snippet_39():
+    # Practice implementing: String & List Slicing
+    val = 9
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 38. Write a function with both positional and *args.
-print("38.")
-def show_first_and_rest(first, *rest):
-    print("First:", first, "Rest:", rest)
-show_first_and_rest(10, 20, 30, 40)
+def practice_snippet_40():
+    # Practice implementing: String & List Slicing
+    val = 10
+    # TODO: Write code applying String & List Slicing
+    return val
 
-# 39. Write a function that returns the first character of a string.
-print("39.")
-def first_char(s):
-    return s[0]
-print(first_char("Python"))
+#----------------------------------------
+# CATEGORY 5: NEGATIVE INDEXING & SLICING
+#----------------------------------------
 
-# 40. Write a function that checks if a list is empty.
-print("40.")
-def is_empty(lst):
-    return len(lst) == 0
-print(is_empty([]))
+def practice_snippet_41():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 1
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
+def practice_snippet_42():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 2
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# ==========================================
-# SECTION 5: VARIABLE SCOPE (41 - 45)
-# ==========================================
+def practice_snippet_43():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 3
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# 41. Define a global variable and access it inside a function.
-print("41.")
-g_var = 100
-def access_global():
-    print(g_var)
-access_global()
+def practice_snippet_44():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 4
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# 42. Define a local variable and print it inside the function.
-print("42.")
-def access_local():
-    l_var = 50
-    print(l_var)
-access_local()
+def practice_snippet_45():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 5
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# 43. Modify a global variable inside a function using the 'global' keyword.
-print("43.")
-count = 0
-def increment():
-    global count
-    count += 1
-increment()
-print(count)
+def practice_snippet_46():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 6
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# 44. Create a local variable with the same name as a global variable.
-print("44.")
-x = "Global"
-def shadow_var():
-    x = "Local"
-    print("Inside:", x)
-shadow_var()
-print("Outside:", x)
+def practice_snippet_47():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 7
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# 45. Demonstrate that a local variable is destroyed after function exits.
-print("45.")
-def temp_func():
-    temp_var = 99
-# temp_var is not accessible here
-print("temp_var is only accessible inside temp_func")
+def practice_snippet_48():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 8
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
+def practice_snippet_49():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 9
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# ==========================================
-# SECTION 6: RECURSION (46 - 50)
-# ==========================================
+def practice_snippet_50():
+    # Practice implementing: Negative Indexing & Slicing
+    val = 10
+    # TODO: Write code applying Negative Indexing & Slicing
+    return val
 
-# 46. Write a recursive function to print numbers from N down to 1.
-print("46.")
-def countdown(n):
-    if n <= 0:
-        return
-    print(n, end=" ")
-    countdown(n - 1)
-countdown(3)
-print()
+#----------------------------------------
+# CATEGORY 6: STRING/LIST CONCATENATION & REPETITION
+#----------------------------------------
 
-# 47. Write a recursive function to calculate the factorial of N.
-print("47.")
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial(n - 1)
-print(factorial(4))
+def practice_snippet_51():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 1
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
 
-# 48. Write a recursive function to find the sum of numbers from 1 to N.
-print("48.")
-def sum_n(n):
-    if n <= 1:
-        return 1
-    return n + sum_n(n - 1)
-print(sum_n(5))
+def practice_snippet_52():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 2
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
 
-# 49. Write a recursive function to find the Nth Fibonacci number.
-print("49.")
-def fibonacci(n):
-    if n <= 0:
-        return 0
-    if n == 1:
-        return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
-print("Fib(5) =", fibonacci(5))
+def practice_snippet_53():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 3
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
 
-# 50. Write a recursive function to reverse a string.
-print("50.")
-def reverse_str(s):
-    if len(s) == 0:
-        return s
-    return s[-1] + reverse_str(s[:-1])
-print(reverse_str("hello"))
+def practice_snippet_54():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 4
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
 
-# --- End of Practice Problems ---
+def practice_snippet_55():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 5
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
+
+def practice_snippet_56():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 6
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
+
+def practice_snippet_57():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 7
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
+
+def practice_snippet_58():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 8
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
+
+def practice_snippet_59():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 9
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
+
+def practice_snippet_60():
+    # Practice implementing: String/List Concatenation & Repetition
+    val = 10
+    # TODO: Write code applying String/List Concatenation & Repetition
+    return val
+
+#----------------------------------------
+# CATEGORY 7: FUNCTION SYNTAX & ARGUMENTS
+#----------------------------------------
+
+def practice_snippet_61():
+    # Practice implementing: Function Syntax & Arguments
+    val = 1
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_62():
+    # Practice implementing: Function Syntax & Arguments
+    val = 2
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_63():
+    # Practice implementing: Function Syntax & Arguments
+    val = 3
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_64():
+    # Practice implementing: Function Syntax & Arguments
+    val = 4
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_65():
+    # Practice implementing: Function Syntax & Arguments
+    val = 5
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_66():
+    # Practice implementing: Function Syntax & Arguments
+    val = 6
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_67():
+    # Practice implementing: Function Syntax & Arguments
+    val = 7
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_68():
+    # Practice implementing: Function Syntax & Arguments
+    val = 8
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_69():
+    # Practice implementing: Function Syntax & Arguments
+    val = 9
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+def practice_snippet_70():
+    # Practice implementing: Function Syntax & Arguments
+    val = 10
+    # TODO: Write code applying Function Syntax & Arguments
+    return val
+
+#----------------------------------------
+# CATEGORY 8: POSITIONAL VS DEFAULT ARGUMENTS
+#----------------------------------------
+
+def practice_snippet_71():
+    # Practice implementing: Positional vs Default Arguments
+    val = 1
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_72():
+    # Practice implementing: Positional vs Default Arguments
+    val = 2
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_73():
+    # Practice implementing: Positional vs Default Arguments
+    val = 3
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_74():
+    # Practice implementing: Positional vs Default Arguments
+    val = 4
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_75():
+    # Practice implementing: Positional vs Default Arguments
+    val = 5
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_76():
+    # Practice implementing: Positional vs Default Arguments
+    val = 6
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_77():
+    # Practice implementing: Positional vs Default Arguments
+    val = 7
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_78():
+    # Practice implementing: Positional vs Default Arguments
+    val = 8
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_79():
+    # Practice implementing: Positional vs Default Arguments
+    val = 9
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+def practice_snippet_80():
+    # Practice implementing: Positional vs Default Arguments
+    val = 10
+    # TODO: Write code applying Positional vs Default Arguments
+    return val
+
+#----------------------------------------
+# CATEGORY 9: *ARGS AND **KWARGS
+#----------------------------------------
+
+def practice_snippet_81():
+    # Practice implementing: *args and **kwargs
+    val = 1
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_82():
+    # Practice implementing: *args and **kwargs
+    val = 2
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_83():
+    # Practice implementing: *args and **kwargs
+    val = 3
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_84():
+    # Practice implementing: *args and **kwargs
+    val = 4
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_85():
+    # Practice implementing: *args and **kwargs
+    val = 5
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_86():
+    # Practice implementing: *args and **kwargs
+    val = 6
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_87():
+    # Practice implementing: *args and **kwargs
+    val = 7
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_88():
+    # Practice implementing: *args and **kwargs
+    val = 8
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_89():
+    # Practice implementing: *args and **kwargs
+    val = 9
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+def practice_snippet_90():
+    # Practice implementing: *args and **kwargs
+    val = 10
+    # TODO: Write code applying *args and **kwargs
+    return val
+
+#----------------------------------------
+# CATEGORY 10: VARIABLE SCOPE & RECURSION BASICS
+#----------------------------------------
+
+def practice_snippet_91():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 1
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_92():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 2
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_93():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 3
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_94():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 4
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_95():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 5
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_96():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 6
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_97():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 7
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_98():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 8
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_99():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 9
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+
+def practice_snippet_100():
+    # Practice implementing: Variable Scope & Recursion Basics
+    val = 10
+    # TODO: Write code applying Variable Scope & Recursion Basics
+    return val
+

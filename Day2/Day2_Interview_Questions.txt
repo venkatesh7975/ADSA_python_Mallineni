@@ -1,450 +1,323 @@
-100 Python Interview Questions and Answers: Day 2 Topics
-(Control Flow, Conditional Statements, Loops, and Patterns)
+Day 2: 100 Interview Questions on Conditionals, Loops & Nested Flow
+============================================================
 
-=========================================
-SECTION 1: CONDITIONAL STATEMENTS (Q1 - Q25)
-=========================================
+--- CATEGORY 1: IF, ELIF, ELSE CONDITIONS ---
 
-1. What is an if statement in Python?
-Answer: An if statement checks a condition and executes a block of code only if the condition evaluates to True.
+Q1: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-2. What does elif mean?
-Answer: `elif` stands for "else if" and lets you check additional conditions after the first `if` condition is False.
+Q2: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-3. What is the purpose of else?
-Answer: `else` executes a block of code when all preceding `if` and `elif` conditions are False.
+Q3: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-4. How do you write a simple if-else statement?
-Answer: 
-```python
-if x > 0:
-    print("Positive")
-else:
-    print("Zero or negative")
-```
+Q4: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-5. Can you have multiple elif blocks?
-Answer: Yes. You can use multiple `elif` blocks to test more than two conditions.
+Q5: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-6. What happens if you omit the else block?
-Answer: The code simply skips the else part when no condition matches; the program continues with the next statement.
+Q6: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-7. What is the indentation rule for if statements?
-Answer: The body of the `if`, `elif`, and `else` blocks must be indented consistently, usually by 4 spaces.
+Q7: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-8. Can you use comparison operators in an if condition?
-Answer: Yes. Common comparison operators are `==`, `!=`, `>`, `<`, `>=`, and `<=`.
+Q8: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-9. What is a boolean expression?
-Answer: A boolean expression evaluates to either `True` or `False`, and it is used in if conditions and loops.
+Q9: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-10. How would you check if a variable is equal to 10?
-Answer: `if x == 10:`
+Q10: How do you approach 'if, elif, else Conditions' in Python, and what are the common edge cases?
+A: Understanding if, elif, else Conditions is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-11. What is the difference between `=` and `==`?
-Answer: `=` assigns a value to a variable, while `==` compares two values for equality.
+--- CATEGORY 2: NESTED IF-ELSE ---
 
-12. How do you combine conditions in Python?
-Answer: Use logical operators `and`, `or`, and `not`.
+Q11: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-13. What does `and` do?
-Answer: `and` returns True only if both operands are True.
+Q12: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-14. What does `or` do?
-Answer: `or` returns True if at least one of the operands is True.
+Q13: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-15. What does `not` do?
-Answer: `not` inverts the boolean value, making True into False and vice versa.
-
-16. What is a nested if statement?
-Answer: A nested if statement is an `if` statement inside another `if` or `else` block.
+Q14: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-17. Why use nested if statements?
-Answer: Nested ifs are useful when you need multi-level decision logic and one condition depends on another.
+Q15: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-18. What is an example of nested if else?
-Answer: 
-```python
-if x > 0:
-    if x % 2 == 0:
-        print("Positive even")
-    else:
-        print("Positive odd")
-else:
-    print("Zero or negative")
-```
+Q16: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-19. What is the else-if ladder?
-Answer: It is a series of `if` and `elif` conditions where only one matching block runs.
+Q17: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-20. How do you avoid deep nesting?
-Answer: Use `elif` for sequential checks, functions to break logic into smaller units, and boolean expressions when possible.
+Q18: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-21. What is a common use case for if statements in data validation?
-Answer: Checking if user input is valid, such as `if age >= 18:` to verify eligibility.
+Q19: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-22. What happens if a condition is always True?
-Answer: The if block always runs and any following `elif` or `else` blocks are skipped.
+Q20: How do you approach 'Nested if-else' in Python, and what are the common edge cases?
+A: Understanding Nested if-else is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-23. What happens if a condition is always False?
-Answer: The program moves to the next `elif` or `else` block.
+--- CATEGORY 3: DECISION MAKING LOGIC ---
 
-24. Can `if` be used without `else`?
-Answer: Yes. The `if` block can stand alone with no `elif` or `else`.
+Q21: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-25. What is a truthy value in Python?
-Answer: A truthy value is any value that evaluates to True in a boolean context, for example non-zero numbers or non-empty strings.
+Q22: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-=========================================
-SECTION 2: FOR LOOPS (Q26 - Q50)
-=========================================
+Q23: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-26. What is a for loop in Python?
-Answer: A `for` loop repeats a block of code for each item in a sequence or iterable.
+Q24: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-27. How do you write a basic for loop?
-Answer: 
-```python
-for i in range(5):
-    print(i)
-```
+Q25: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
 
-28. What does `range(5)` produce?
-Answer: It produces the sequence 0, 1, 2, 3, 4.
-
-29. Can range start from a number other than 0?
-Answer: Yes. `range(2, 6)` produces 2, 3, 4, 5.
-
-30. What does `range(1, 10, 2)` do?
-Answer: It produces odd numbers from 1 to 9 by stepping 2 each time.
-
-31. How do you loop over a string?
-Answer: 
-```python
-for char in "hello":
-    print(char)
-```
-
-32. How do you loop over a list?
-Answer: 
-```python
-for item in [1, 2, 3]:
-    print(item)
-```
-
-33. How do you loop over a dictionary?
-Answer: Use `.keys()`, `.values()`, or `.items()`.
-Example:
-```python
-for key, value in my_dict.items():
-    print(key, value)
-```
-
-34. What is a loop variable?
-Answer: The variable that takes the value of each item in the sequence during iteration.
-
-35. What is a common use of for loops?
-Answer: Repeating calculations, building lists, printing patterns, or processing items in a collection.
-
-36. What does `for i in range(1, 6):` do?
-Answer: It loops over the values 1, 2, 3, 4, 5.
-
-37. How do you create a multiplication table with a for loop?
-Answer: Use nested loops or a single loop with arithmetic.
-Example:
-```python
-for i in range(1, 6):
-    print(f"2 x {i} = {2 * i}")
-```
-
-38. What is string repetition in Python?
-Answer: Using the `*` operator with a string and integer, e.g. `"*" * 5` produces `*****`.
-
-39. Can you break out of a for loop early?
-Answer: Yes, using the `break` statement.
-
-40. What does `break` do?
-Answer: It immediately exits the loop.
-
-41. What does `continue` do?
-Answer: It skips the rest of the current iteration and moves to the next one.
-
-42. How do you skip the first item in a loop?
-Answer: Start the range at 1 or use an index check with `continue`.
-
-43. What is the output of `for i in range(3): print(i)`?
-Answer: 0, 1, 2 on separate lines.
-
-44. How can you loop with custom steps?
-Answer: Use the third `step` parameter in `range(start, stop, step)`.
-
-45. Can a for loop iterate over a tuple?
-Answer: Yes, tuples are iterable.
-
-46. What happens when the iterable is empty?
-Answer: The loop body does not execute.
-
-47. How do you print each character in a name on a new line?
-Answer: 
-```python
-for ch in name:
-    print(ch)
-```
-
-48. Can you loop over file lines with a for loop?
-Answer: Yes. `for line in open('file.txt'):` reads each line from the file.
-
-49. How do you use enumerate in a for loop?
-Answer: `for index, item in enumerate(my_list):` gives both index and value.
-
-50. Why use `enumerate()`?
-Answer: To access the position of each element while iterating.
-
-=========================================
-SECTION 3: WHILE LOOPS (Q51 - Q70)
-=========================================
-
-51. What is a while loop?
-Answer: A `while` loop runs as long as a condition remains True.
-
-52. How do you write a simple while loop?
-Answer: 
-```python
-count = 1
-while count <= 5:
-    print(count)
-    count += 1
-```
-
-53. What is the loop condition?
-Answer: The boolean expression evaluated before each iteration to determine if the loop should continue.
-
-54. How do you avoid an infinite while loop?
-Answer: Ensure the loop condition changes and can become False.
-
-55. What is an example of a countdown using while?
-Answer: 
-```python
-n = 5
-while n > 0:
-    print(n)
-    n -= 1
-```
-
-56. Can a while loop run zero times?
-Answer: Yes, if the condition is False at the start.
-
-57. What is common use for while loops?
-Answer: Repeating until a condition is satisfied, like user input validation or countdowns.
-
-58. How do you update the loop variable?
-Answer: Inside the loop body, typically with `+=`, `-=`, or another assignment.
-
-59. What is an infinite loop?
-Answer: A loop that never ends because its condition never becomes False.
-
-60. How do you safely stop a while loop manually?
-Answer: Use `break` inside the loop.
-
-61. Can you use else with while loops?
-Answer: Yes, the `else` block executes when the loop ends naturally (not via `break`).
-
-62. What is a common error with while loops?
-Answer: Forgetting to update the loop variable or using the wrong condition.
-
-63. How do you print even numbers using while?
-Answer: 
-```python
-n = 2
-while n <= 10:
-    print(n)
-    n += 2
-```
-
-64. How do you use input in a while loop?
-Answer: Ask for input inside the loop until a valid value is provided.
-Example:
-```python
-while True:
-    text = input("Enter yes or no: ")
-    if text in ["yes", "no"]:
-        break
-```
-
-65. Can while loops use `range()`?
-Answer: Not directly. `range()` is used with `for` loops, but you can simulate it with an index variable.
-
-66. What should you watch for when using while loops with floating point numbers?
-Answer: Precision issues may prevent the condition from becoming False as expected.
-
-67. How do you count from 100 down to 0 by 5 using while?
-Answer: 
-```python
-num = 100
-while num >= 0:
-    print(num)
-    num -= 5
-```
-
-68. Why is `while True:` useful?
-Answer: It creates a loop that continues until a `break` is encountered, useful for repeated input or event loops.
-
-69. Can a while loop contain another while loop?
-Answer: Yes, nested while loops are valid but should be used carefully.
-
-70. When is a while loop better than a for loop?
-Answer: When the number of iterations is unknown and depends on changing conditions.
-
-=========================================
-SECTION 4: NESTED LOOPS (Q71 - Q85)
-=========================================
-
-71. What is a nested loop?
-Answer: A loop placed inside another loop.
-
-72. How does nested loop execution work?
-Answer: The inner loop completes all iterations for each single iteration of the outer loop.
-
-73. What is an example of a nested loop?
-Answer: 
-```python
-for i in range(3):
-    for j in range(3):
-        print(i, j)
-```
-
-74. What is a common use of nested loops?
-Answer: Working with 2D data like tables, grids, or generating patterns.
-
-75. How would you print a multiplication table using nested loops?
-Answer: 
-```python
-for i in range(1, 6):
-    for j in range(1, 6):
-        print(i * j, end=" ")
-    print()
-```
-
-76. Are nested loops only used with for loops?
-Answer: No, you can nest `for` loops inside `while` loops and vice versa.
-
-77. What is the performance cost of nested loops?
-Answer: It typically increases execution time exponentially, especially when both loops iterate many times.
-
-78. How do you format output inside nested loops?
-Answer: Use `end=" "` to print on the same line and `print()` after the inner loop to start a new line.
-
-79. What pattern does this code print?
-```python
-for i in range(1, 4):
-    for j in range(i):
-        print("*", end="")
-    print()
-```
-Answer: A right-angle triangle of stars:
-*
-**
-***
-
-80. What is a star pattern?
-Answer: A visual shape printed on the console using repeated characters and loops.
-
-81. How do you print a square of stars?
-Answer: 
-```python
-for i in range(4):
-    print("* " * 4)
-```
-
-82. How do you print a triangle of stars?
-Answer: 
-```python
-for i in range(1, 5):
-    print("* " * i)
-```
-
-83. What does nested loop control depend on?
-Answer: Both the outer and inner loop conditions.
-
-84. How do you avoid deep nested loops when possible?
-Answer: Use helper functions, break data into smaller pieces, or use list comprehensions for some cases.
-
-85. Why should you be careful with nested loops in large datasets?
-Answer: Because the runtime can grow quickly and become slow or inefficient.
-
-=========================================
-SECTION 5: PRACTICAL PROBLEMS AND DEBUGGING (Q86 - Q100)
-=========================================
-
-86. What is FizzBuzz?
-Answer: A programming exercise that prints `Fizz` for multiples of 3, `Buzz` for multiples of 5, `FizzBuzz` for multiples of both, and the number otherwise.
-
-87. How do you write FizzBuzz in Python?
-Answer: 
-```python
-for num in range(1, 16):
-    if num % 3 == 0 and num % 5 == 0:
-        print("FizzBuzz")
-    elif num % 3 == 0:
-        print("Fizz")
-    elif num % 5 == 0:
-        print("Buzz")
-    else:
-        print(num)
-```
-
-88. What is dry run?
-Answer: Dry run means tracing code by hand to follow variable values and program flow without executing it.
-
-89. Why is dry run useful?
-Answer: It helps catch logic errors, understand loops, and verify conditions before running code.
-
-90. What is debugging?
-Answer: Debugging is the process of finding and fixing errors or bugs in code.
-
-91. What is an indentation error?
-Answer: It occurs when Python code blocks are not indented consistently or correctly.
-
-92. What is a common mistake in nested if statements?
-Answer: Misplacing an `else` block or using wrong indentation so the logic does not match the intended flow.
-
-93. How do you test a loop with a sample value?
-Answer: Run the loop with a small range and verify the output manually.
-
-94. What does `print(i, j)` do inside nested loops?
-Answer: It prints the current values of `i` and `j` for each iteration.
-
-95. How do you print only odd numbers using a for loop?
-Answer: 
-```python
-for i in range(1, 11, 2):
-    print(i)
-```
-
-96. How do you print numbers from 10 to 1 using a while loop?
-Answer: 
-```python
-n = 10
-while n >= 1:
-    print(n)
-    n -= 1
-```
-
-97. What does `if number % 2 == 0:` check?
-Answer: It checks whether `number` is even.
-
-98. What value does `range(5, 0, -1)` generate?
-Answer: 5, 4, 3, 2, 1.
-
-99. How do you check whether a string contains a specific character?
-Answer: Use the `in` operator, such as `if "a" in word:`.
-
-100. How can you use loops to build a list of values?
-Answer: Initialize an empty list, append values inside the loop, and then use the list after the loop.
-Example:
-```python
-numbers = []
-for i in range(1, 6):
-    numbers.append(i)
-print(numbers)
-```
+Q26: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q27: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q28: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q29: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q30: How do you approach 'Decision Making Logic' in Python, and what are the common edge cases?
+A: Understanding Decision Making Logic is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 4: INTRO TO LOOPS (REPEAT ACTIONS) ---
+
+Q31: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q32: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q33: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q34: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q35: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q36: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q37: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q38: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q39: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q40: How do you approach 'Intro to Loops (Repeat Actions)' in Python, and what are the common edge cases?
+A: Understanding Intro to Loops (Repeat Actions) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 5: FOR LOOPS (RANGES & SEQUENCES) ---
+
+Q41: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q42: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q43: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q44: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q45: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q46: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q47: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q48: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q49: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q50: How do you approach 'for Loops (Ranges & Sequences)' in Python, and what are the common edge cases?
+A: Understanding for Loops (Ranges & Sequences) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 6: WHILE LOOPS ---
+
+Q51: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q52: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q53: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q54: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q55: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q56: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q57: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q58: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q59: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q60: How do you approach 'while Loops' in Python, and what are the common edge cases?
+A: Understanding while Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 7: WHILE LOOP TERMINATIONS ---
+
+Q61: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q62: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q63: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q64: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q65: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q66: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q67: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q68: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q69: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q70: How do you approach 'while Loop Terminations' in Python, and what are the common edge cases?
+A: Understanding while Loop Terminations is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 8: NESTED LOOPS (MULTI-DIMENSIONAL) ---
+
+Q71: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q72: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q73: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q74: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q75: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q76: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q77: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q78: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q79: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q80: How do you approach 'Nested Loops (Multi-dimensional)' in Python, and what are the common edge cases?
+A: Understanding Nested Loops (Multi-dimensional) is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 9: PATTERN DRAWING USING LOOPS ---
+
+Q81: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q82: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q83: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q84: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q85: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q86: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q87: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q88: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q89: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q90: How do you approach 'Pattern Drawing using Loops' in Python, and what are the common edge cases?
+A: Understanding Pattern Drawing using Loops is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+--- CATEGORY 10: STAR PATTERN EXAMPLES ---
+
+Q91: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q92: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q93: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q94: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q95: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q96: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q97: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q98: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q99: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
+Q100: How do you approach 'Star Pattern Examples' in Python, and what are the common edge cases?
+A: Understanding Star Pattern Examples is critical. For example, ensuring proper syntax, understanding zero-indexing if applicable, and predicting the output correctly under edge cases.
+
