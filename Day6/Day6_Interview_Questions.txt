@@ -1,245 +1,245 @@
-Day 6: 100 Interview Questions on Big O Notation
+Day 6: 100 High-Quality Interview Questions on Big O Notation
 ============================================================
 
-Q1: What is the time complexity of a standard `for` loop?
-A: O(N)
+Q1: What does Big O notation mathematically represent?
+A: It represents the asymptotic upper bound (worst-case scenario) of an algorithm's complexity.
 
-Q2: What is the time complexity of two separate (non-nested) `for` loops?
-A: O(N) + O(N) = O(2N) -> simplifies to O(N)
+Q2: What is the time complexity of appending an element to the end of a Python list?
+A: O(1) amortized, because Python lists are dynamic arrays that allocate extra space in advance.
 
-Q3: What is the time complexity of a nested loop (loop inside a loop)?
-A: O(N) * O(N) = O(N^2)
+Q3: What is the time complexity of inserting an element at the BEGINNING of a Python list?
+A: O(N), because every existing element must be shifted one position to the right in memory.
 
-Q4: What is the time complexity of popping the last element from a Python list?
-A: O(1)
+Q4: What is the time complexity of looking up a key in a Python dictionary?
+A: O(1) on average, because dictionaries are implemented as Hash Maps.
 
-Q5: What is the time complexity of inserting an element at the beginning of a Python list?
-A: O(N), because all subsequent elements must be shifted over in memory.
+Q5: What does Big O notation measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q6: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q6: What does Big O notation measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q7: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q7: What does Big O notation measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q8: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q8: What does Big O notation measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q9: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q9: What does Big O notation measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q10: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q10: What does Big O notation measure?
+A: It measures how the runtime or space requirements of an algorithm grow as the input size (N) grows towards infinity.
 
-Q11: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q11: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q12: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q12: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q13: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q13: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q14: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q14: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q15: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q15: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q16: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q16: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q17: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q17: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q18: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q18: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q19: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q19: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q20: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q20: Give an example of an O(1) operation.
+A: Accessing an array element by its index, e.g., `arr[5]`, is O(1) because it takes a constant number of steps regardless of array size.
 
-Q21: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q21: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q22: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q22: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q23: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q23: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q24: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q24: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q25: What does Big O notation mathematically represent?
-A: It represents the upper bound (worst-case scenario) of an algorithm's time or space complexity relative to input size N.
+Q25: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q26: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q26: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q27: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q27: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q28: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q28: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q29: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q29: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q30: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q30: If you loop through an array and then loop through it again (not nested), what is the time complexity?
+A: O(N) + O(N) = O(2N). Dropping the constant gives us O(N).
 
-Q31: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q31: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q32: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q32: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q33: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q33: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q34: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q34: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q35: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q35: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q36: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q36: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q37: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q37: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q38: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q38: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q39: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q39: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q40: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q40: What is the time complexity of a nested loop where both loops run N times?
+A: O(N * N) = O(N^2). This is typical in algorithms like Bubble Sort.
 
-Q41: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q41: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q42: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q42: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q43: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q43: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q44: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q44: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q45: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q45: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q46: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q46: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q47: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q47: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q48: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q48: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q49: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q49: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q50: Why is accessing an array element by index O(1)?
-A: Because memory addresses can be calculated instantly using the base address and index offset, regardless of array size.
+Q50: How does O(log N) scale compared to O(N)?
+A: O(log N) is vastly superior for large datasets. It implies the search space is halved at each step (e.g., Binary Search).
 
-Q51: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q51: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q52: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q52: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q53: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q53: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q54: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q54: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q55: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q55: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q56: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q56: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q57: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q57: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q58: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q58: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q59: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q59: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q60: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q60: What common algorithms run in O(N log N) time?
+A: Efficient sorting algorithms like Merge Sort, Quick Sort, and Heap Sort. It usually occurs when you do an O(log N) operation N times.
 
-Q61: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q61: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q62: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q62: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q63: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q63: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q64: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q64: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q65: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q65: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q66: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q66: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q67: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q67: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q68: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q68: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q69: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q69: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q70: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q70: When would you encounter an O(N^3) time complexity?
+A: It typically occurs with three nested loops, often seen in naive matrix multiplication or finding triplets that sum to a value.
 
-Q71: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q71: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q72: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q72: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q73: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q73: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q74: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q74: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q75: What does O(N^2 + 5N + 100) simplify to?
-A: O(N^2), because we drop constants and non-dominant terms.
+Q75: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q76: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
+Q76: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q77: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
+Q77: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q78: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
+Q78: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q79: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
+Q79: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
-Q80: If an algorithm creates a copy of the input array, what is its space complexity?
-A: O(N), because the extra memory required grows directly in proportion to the input size.
+Q80: Why is O(2^N) considered extremely inefficient?
+A: Because adding just one more element to the input doubles the amount of work. It is common in naive recursive algorithms like Fibonacci without memoization.
 
 Q81: If an algorithm creates a copy of the input array, what is its space complexity?
 A: O(N), because the extra memory required grows directly in proportion to the input size.
