@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Lists, Strings & Functions | Python Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="day-badge">Day 3</div>
+            <h1>Lists, Strings & Functions</h1>
+            <p class="subtitle">Organize your data and package your logic into reusable blocks.</p>
+        </header>
+
+        <section class="glass-card">
+            <h2>Today's Topics</h2>
+            <ul>
+                <li>Advanced Loop Control (`break`, `continue`, `pass`)</li>
+                <li>String Slicing and Immutability</li>
+                <li>List Operations and Methods</li>
+                <li>Function Definition & Arguments</li>
+                <li>Variable Scope (Local vs Global)</li>
+                <li>Introduction to Recursion</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h2>Key Concepts</h2>
+            
+            <h3>1. Lists & Slicing</h3>
+            <p>Lists are mutable sequences. You can extract subsets using slicing syntax `[start:stop:step]`.</p>
+            <pre><code>fruits = ["apple", "banana", "cherry", "date"]
+subset = fruits[1:3]  # ["banana", "cherry"]
+reversed = fruits[::-1]</code></pre>
+
+            <h3>2. Functions</h3>
+            <p>Functions let you encapsulate code for reuse. They can take parameters and return values.</p>
+            <pre><code>def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+    
+print(greet("Alice"))       # Hello, Alice!
+print(greet("Bob", "Hi"))   # Hi, Bob!</code></pre>
+        </section>
+
+        <section class="glass-card">
+            <h2>Detailed Quiz (20 MCQs)</h2>
+            <p>Test your knowledge on Lists, Strings & Functions!</p>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                
+                <div>
+                    <h4>1. How do you create an empty list in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) list = {}</li><li>B) list = ()</li><li>C) list = []</li><li>D) list = ""</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (Square brackets are used to define lists)</p></details>
+                </div>
+
+                <div>
+                    <h4>2. What is the index of the first element in a list?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 1</li><li>B) 0</li><li>C) -1</li><li>D) None</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Python lists are zero-indexed)</p></details>
+                </div>
+
+                <div>
+                    <h4>3. How do you access the last element of a list `lst`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) lst[last]</li><li>B) lst[-1]</li><li>C) lst[0]</li><li>D) lst.last()</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Negative indexing starts from the end of the sequence)</p></details>
+                </div>
+
+                <div>
+                    <h4>4. What does the slice `lst[1:4]` return?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Elements at indices 1, 2, 3, 4</li><li>B) Elements at indices 1, 2, 3</li><li>C) Elements at indices 0, 1, 2, 3</li><li>D) Only element 4</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Slicing goes up to, but does not include, the stop index)</p></details>
+                </div>
+
+                <div>
+                    <h4>5. What is the difference between `.append()` and `.extend()`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) They are identical</li><li>B) `.append()` adds one element, `.extend()` merges another iterable</li><li>C) `.extend()` adds one element, `.append()` merges another iterable</li><li>D) `.append()` works on strings, `.extend()` works on lists</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`.append([1,2])` adds the list as a single element, while `.extend([1,2])` adds 1 and 2 as separate elements)</p></details>
+                </div>
+
+                <div>
+                    <h4>6. How do you insert "apple" at index 1 in `fruits`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) fruits[1] = "apple"</li><li>B) fruits.add(1, "apple")</li><li>C) fruits.insert(1, "apple")</li><li>D) fruits.append("apple", 1)</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (The `.insert(index, value)` method shifts elements to the right)</p></details>
+                </div>
+
+                <div>
+                    <h4>7. How does `.remove("apple")` work?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Removes all occurrences of "apple"</li><li>B) Removes the first occurrence of "apple"</li><li>C) Removes the element at index "apple"</li><li>D) Throws an error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`.remove()` deletes the first matching value, not all of them)</p></details>
+                </div>
+
+                <div>
+                    <h4>8. What does `.pop()` do if no index is provided?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Removes the first element</li><li>B) Removes the last element</li><li>C) Clears the list</li><li>D) Throws an error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`.pop()` defaults to removing and returning the last element)</p></details>
+                </div>
+
+                <div>
+                    <h4>9. Which function returns the number of elements in a list?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) size()</li><li>B) count()</li><li>C) length()</li><li>D) len()</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: D</b> (`len(lst)` returns the total number of items)</p></details>
+                </div>
+
+                <div>
+                    <h4>10. What is the primary difference between a Tuple and a List?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Tuples are mutable, Lists are immutable</li><li>B) Lists are mutable, Tuples are immutable</li><li>C) Tuples can only store numbers</li><li>D) There is no difference</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Once a tuple is created, its elements cannot be changed)</p></details>
+                </div>
+
+                <div>
+                    <h4>11. Which keyword is used to define a function?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) func</li><li>B) define</li><li>C) def</li><li>D) function</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`def` is the keyword used to declare a function)</p></details>
+                </div>
+
+                <div>
+                    <h4>12. What happens if a function does not have a `return` statement?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) It returns 0</li><li>B) It returns False</li><li>C) It throws an error</li><li>D) It returns None</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: D</b> (Python implicitly returns `None` if no `return` is reached)</p></details>
+                </div>
+
+                <div>
+                    <h4>13. What is a default argument?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) An argument that cannot be changed</li><li>B) An argument that assumes a specified value if not provided</li><li>C) An argument without a name</li><li>D) An argument that causes an error if omitted</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (e.g., `def greet(name="User"):`)</p></details>
+                </div>
+
+                <div>
+                    <h4>14. In `def func(a, b=2):`, which is a positional argument?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) a</li><li>B) b</li><li>C) Both</li><li>D) Neither</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (`a` is a required positional argument, while `b` has a default value)</p></details>
+                </div>
+
+                <div>
+                    <h4>15. What does `*args` allow a function to do?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Accept unlimited keyword arguments</li><li>B) Accept unlimited positional arguments</li><li>C) Return multiple values</li><li>D) Force type checking</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`*args` packs extra positional arguments into a tuple)</p></details>
+                </div>
+
+                <div>
+                    <h4>16. What does `**kwargs` pack arguments into?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) A list</li><li>B) A tuple</li><li>C) A dictionary</li><li>D) A string</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`**kwargs` captures keyword arguments as key-value pairs in a dictionary)</p></details>
+                </div>
+
+                <div>
+                    <h4>17. If you define a variable inside a function, can you use it outside?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Yes</li><li>B) No, it has local scope</li><li>C) Yes, if it is a list</li><li>D) Only in a while loop</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Local variables are destroyed when the function exits)</p></details>
+                </div>
+
+                <div>
+                    <h4>18. How do you modify a global variable inside a function?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) You can't</li><li>B) Just assign a new value to it</li><li>C) Use the `global` keyword</li><li>D) Pass it as an argument</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (e.g., `global x` before assigning `x = 5`)</p></details>
+                </div>
+
+                <div>
+                    <h4>19. What does the string method `.replace("a", "b")` do?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Modifies the original string</li><li>B) Returns a new string with all "a"s replaced by "b"s</li><li>C) Replaces only the first "a"</li><li>D) Throws an error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Strings are immutable, so it returns a modified copy)</p></details>
+                </div>
+
+                <div>
+                    <h4>20. Are strings mutable in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Yes</li><li>B) No</li><li>C) Only if they are inside a list</li><li>D) Only if defined with triple quotes</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (You cannot change a character in a string via indexing. You must create a new string)</p></details>
+                </div>
+
+            </div>
+
+        <section class="glass-card">
+            <h2>50 Practice Problems & Solutions</h2>
+            <p>Master the daily topics with these 50 quick exercises!</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q1: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 13 and 26.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(13, 26))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q2: Append the number 8 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(8)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q3: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q4: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q5: Create a list with numbers 13, 35, and 48. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [13, 35, 48]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q6: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 19 and 29.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(19, 29))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q7: Append the number 11 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(11)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q8: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q9: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q10: Create a list with numbers 1, 38, and 39. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 38, 39]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q11: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 2 and 31.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(2, 31))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q12: Append the number 10 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(10)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q13: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q14: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q15: Create a list with numbers 18, 35, and 53. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [18, 35, 53]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q16: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 17 and 38.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(17, 38))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q17: Append the number 18 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(18)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q18: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q19: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q20: Create a list with numbers 5, 28, and 33. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [5, 28, 33]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q21: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 19 and 32.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(19, 32))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q22: Append the number 3 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(3)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q23: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q24: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q25: Create a list with numbers 6, 24, and 30. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [6, 24, 30]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q26: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 17 and 27.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(17, 27))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q27: Append the number 12 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(12)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q28: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q29: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q30: Create a list with numbers 8, 26, and 34. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [8, 26, 34]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q31: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 18 and 40.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(18, 40))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q32: Append the number 19 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(19)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q33: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q34: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q35: Create a list with numbers 5, 40, and 45. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [5, 40, 45]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q36: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 7 and 32.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(7, 32))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q37: Append the number 8 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(8)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q38: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q39: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q40: Create a list with numbers 10, 25, and 35. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 25, 35]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q41: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 4 and 32.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(4, 32))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q42: Append the number 20 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(20)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q43: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q44: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q45: Create a list with numbers 19, 33, and 52. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [19, 33, 52]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q46: Write a function `multiply(a, b)` that returns the product of a and b. Call it with 5 and 31.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def multiply(a, b):
+    return a * b
+
+print(multiply(5, 31))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q47: Append the number 9 to the list `[1, 2, 3]` and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [1, 2, 3]
+lst.append(9)
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q48: Write a function that takes `*args` and returns the sum of all arguments.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q49: Extract the first two elements from the list `[10, 20, 30, 40]` using slicing.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [10, 20, 30, 40]
+print(lst[:2])</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q50: Create a list with numbers 12, 27, and 39. Print the list.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">lst = [12, 27, 39]
+print(lst)</code></pre>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Resources & Practice</h2>
+
+            <p>Ready to test your knowledge? Jump into the practice files or take the daily quiz!</p>
+            <a href="Day3Examples.py" class="btn btn-primary">View Examples</a>
+            <a href="Day3_Test_Driven_Practice.py" class="btn">Test-Driven Practice</a>
+            <a href="Day3_Interview_Questions.txt" class="btn">Interview Prep</a>
+        </section>
+
+        <nav>
+            <a href="../Day2/blog.html" class="btn">← Previous Day</a>
+            <a href="../README.md" class="btn">Course Home</a>
+            <a href="../Day4/blog.html" class="btn">Next Day: Recursion & Anagrams →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
+        </footer>
+    </div>
+</body>
+</html>

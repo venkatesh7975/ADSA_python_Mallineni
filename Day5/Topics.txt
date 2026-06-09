@@ -1,0 +1,19 @@
+Day 5 Topics:
+- String Basics
+  - String slicing
+  - String indexing and its types (positive and negative)
+  - String operations
+- List Basics
+  - List slicing (all possible cases)
+  - List indexing
+  - List operations
+- List Methods
+  - Common list methods
+- Problem Solving and Dry Runs
+  - Reading different types of inputs
+  - Summing all numbers in a list
+  - Product of all numbers
+  - Calculating frequency count of values
+  - Calculating the sum of squares
+  - Printing squares
+  - Printing all combination pairs in a given list input

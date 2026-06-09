@@ -1,0 +1,1456 @@
+MASTER INTERVIEW QUESTIONS COLLECTION
+======================================
+
+
+==================================================
+--- Day1 Interview Questions ---
+==================================================
+
+100 Python Interview Questions and Answers: Day 1 Topics
+(Fundamentals, Variables, Data Types, and Operators)
+
+=========================================
+SECTION 1: PYTHON FUNDAMENTALS (Q1 - Q20)
+=========================================
+
+1. What is Python?
+Answer: Python is a high-level, interpreted, dynamically typed, and general-purpose programming language known for its readability and simple syntax.
+
+2. Who created Python and when was it first released?
+Answer: Guido van Rossum created Python, and it was first released in 1991.
+
+3. Why is Python called an "interpreted" language?
+Answer: Python code is executed line-by-line by an interpreter rather than being compiled into machine code all at once before execution.
+
+4. What does "dynamically typed" mean in Python?
+Answer: It means you don't have to declare the type of a variable when you create one. The Python interpreter infers the type automatically at runtime based on the value assigned.
+
+5. What is PEP 8?
+Answer: PEP 8 is the official style guide for Python code, providing guidelines on how to format code (e.g., indentation, naming conventions) for maximum readability.
+
+6. Why is indentation important in Python?
+Answer: Unlike languages that use curly braces {} to define code blocks, Python uses indentation (whitespace) to determine the scope of loops, functions, and conditional statements. Incorrect indentation causes an IndentationError.
+
+7. How do you write a comment in Python?
+Answer: Single-line comments start with the hash symbol (#). Multi-line comments can be created using triple quotes (''' or """), though technically they are multi-line strings.
+
+8. Is Python case-sensitive?
+Answer: Yes. Variables named 'Data' and 'data' are treated as two distinct variables.
+
+9. What are the key features of Python?
+Answer: Key features include being easy to read, interpreted, object-oriented, dynamically typed, having a vast standard library, and being cross-platform.
+
+10. What is the difference between Python 2 and Python 3?
+Answer: Python 3 is the current, modern version of the language (e.g., print() is a function). Python 2 is legacy and no longer supported.
+
+11. How do you print something to the console in Python?
+Answer: Using the built-in print() function. Example: print("Hello World")
+
+12. What does high-level language mean?
+Answer: It means the language abstracts away complex machine details like memory management and CPU registers, making it closer to human language.
+
+13. What is a Python script?
+Answer: A file containing Python code (usually with a .py extension) intended to be executed from top to bottom.
+
+14. How do you execute a Python script from the command line?
+Answer: By typing `python filename.py` or `python3 filename.py`.
+
+15. What are docstrings in Python?
+Answer: Docstrings are string literals appearing right after the definition of a function, method, class, or module, used for documentation.
+
+16. What is the purpose of the pass statement?
+Answer: 'pass' is a null operation. It is used as a placeholder in empty code blocks where syntax requires a statement, but no action is needed.
+
+17. Can Python be used for frontend web development?
+Answer: Primarily, Python is a backend language. While tools like Brython exist, HTML/CSS/JavaScript are standard for frontend. Python excels in backend (Django, Flask).
+
+18. What is CPython?
+Answer: CPython is the default, standard, and most widely used implementation of Python, written in C.
+
+19. Why is Python heavily used in Data Science?
+Answer: Because of its simple syntax and incredibly powerful libraries like Pandas, NumPy, Matplotlib, and Scikit-learn.
+
+20. What is an IDE? Name two popular ones for Python.
+Answer: An Integrated Development Environment (IDE) provides facilities for software development. Popular ones for Python include PyCharm and VS Code.
+
+=========================================
+SECTION 2: VARIABLES (Q21 - Q40)
+=========================================
+
+21. What is a variable in Python?
+Answer: A variable is a named memory location used to store data. It acts as a reference or a pointer to an object.
+
+22. How do you declare a variable in Python?
+Answer: You declare a variable by simply assigning a value to it using the equals sign (=). Example: x = 10.
+
+23. Can a variable name start with a number?
+Answer: No. Variable names must start with a letter or an underscore. '1st_place' is invalid; 'place_1' is valid.
+
+24. What characters are allowed in a Python variable name?
+Answer: Letters (a-z, A-Z), numbers (0-9), and underscores (_).
+
+25. Are 'MyVar' and 'myvar' the same variable?
+Answer: No, Python is case-sensitive, so they are two different variables.
+
+26. Can you use reserved words (keywords) as variable names?
+Answer: No. Words like 'if', 'for', 'class', 'while' are reserved by Python and will cause a SyntaxError if used as variable names.
+
+27. What is snake_case?
+Answer: A naming convention where words are separated by underscores, widely used for Python variables and functions (e.g., total_sales_amount).
+
+28. What is camelCase?
+Answer: A naming convention where the first letter is lowercase and subsequent words start with uppercase (e.g., totalSalesAmount). Snake_case is preferred in Python.
+
+29. How can you assign the same value to multiple variables at once?
+Answer: x = y = z = 100.
+
+30. How can you assign different values to multiple variables in a single line?
+Answer: name, age, city = "Alice", 25, "New York"
+
+31. Can you change the type of a variable after creating it?
+Answer: Yes. Because Python is dynamically typed, you can do: x = 5 (int) followed by x = "Hello" (string).
+
+32. What happens if you try to use a variable before assigning a value to it?
+Answer: Python will throw a NameError.
+
+33. How do you delete a variable in Python?
+Answer: Using the 'del' keyword. Example: del my_var.
+
+34. What is a global variable?
+Answer: A variable declared outside of any function, which can be accessed from anywhere in the script.
+
+35. What is a local variable?
+Answer: A variable declared inside a function. It can only be accessed within that specific function.
+
+36. How do you use a global variable inside a function?
+Answer: By using the 'global' keyword before the variable name inside the function.
+
+37. Is there a constant variable type in Python?
+Answer: Technically no, but by convention, programmers use ALL_CAPS to indicate a variable should be treated as a constant (e.g., PI = 3.14159).
+
+38. What does variable swapping look like in Python without a temporary variable?
+Answer: a, b = b, a
+
+39. What does the id() function do?
+Answer: It returns the unique memory address (identity) of a variable/object.
+
+40. If a = 10 and b = 10, are they the same object in memory?
+Answer: Yes, for small integers, Python optimizes memory by pointing them to the same object (you can verify with id(a) == id(b)).
+
+=========================================
+SECTION 3: DATA TYPES (Q41 - Q70)
+=========================================
+
+41. What are the core numeric data types in Python?
+Answer: int (integers), float (decimal numbers), and complex (complex numbers).
+
+42. How do you find the data type of a variable?
+Answer: Use the built-in type() function. Example: type(my_var).
+
+43. What is a string (str)?
+Answer: A string is a sequence of characters enclosed in single, double, or triple quotes.
+
+44. Are strings mutable or immutable?
+Answer: Strings are immutable. Once created, you cannot change individual characters in a string object.
+
+45. How do you concatenate two strings?
+Answer: Using the + operator. Example: "Hello" + " " + "World".
+
+46. What does repeating a string look like?
+Answer: Use the * operator. Example: "Hi" * 3 results in "HiHiHi".
+
+47. What is a Boolean (bool) data type?
+Answer: A Boolean represents one of two values: True or False.
+
+48. Is 'True' the same as 'true' in Python?
+Answer: No. Booleans in Python must be capitalized: True and False.
+
+49. What is a list in Python?
+Answer: A list is an ordered, mutable collection of items enclosed in square brackets []. Example: [1, 2, 3].
+
+50. Can a list hold mixed data types?
+Answer: Yes. A list can hold integers, strings, floats, and even other lists. Example: [1, "apple", 3.14].
+
+51. What is a tuple?
+Answer: A tuple is an ordered, immutable collection of items enclosed in parentheses (). Example: (1, 2, 3).
+
+52. When should you use a tuple instead of a list?
+Answer: Use a tuple when the sequence of data should not be changed (read-only), such as geographic coordinates or days of the week.
+
+53. What is a dictionary (dict)?
+Answer: An unordered collection of key-value pairs enclosed in curly braces {}. Example: {"name": "Alice", "age": 25}.
+
+54. Are dictionary keys mutable or immutable?
+Answer: Keys must be immutable types (like strings, numbers, or tuples). Lists cannot be used as dictionary keys.
+
+55. What is a set?
+Answer: An unordered collection of unique items enclosed in curly braces {}. Duplicates are automatically removed.
+
+56. Can you access elements in a set using an index (e.g., my_set[0])?
+Answer: No, sets are unordered, meaning they do not support indexing or slicing.
+
+57. How do you convert a string to an integer?
+Answer: Using the int() function. Example: int("10").
+
+58. What happens if you run int("10.5")?
+Answer: It raises a ValueError. You must first convert to float: int(float("10.5")).
+
+59. How do you convert an integer to a float?
+Answer: Using the float() function. Example: float(5) becomes 5.0.
+
+60. How do you convert a number to a string?
+Answer: Using the str() function. Example: str(100) becomes "100".
+
+61. What is type casting?
+Answer: The process of explicitly converting a variable from one data type to another.
+
+62. What is implicit type conversion?
+Answer: When Python automatically converts one data type to another without programmer intervention (e.g., adding an int and a float results in a float).
+
+63. What evaluates to False in Python?
+Answer: False, None, zero (0, 0.0), empty sequences ("", [], ()), and empty mapping ({}).
+
+64. What is the NoneType?
+Answer: None is a special constant in Python representing the absence of a value or a null value. Its type is NoneType.
+
+65. What is the difference between a list and a set?
+Answer: A list is ordered, allows duplicates, and supports indexing. A set is unordered, does not allow duplicates, and does not support indexing.
+
+66. How do you find the length of a string, list, or dictionary?
+Answer: Using the built-in len() function.
+
+67. What is string slicing?
+Answer: Accessing a subset of a string using indices. Example: "Python"[0:2] returns "Py".
+
+68. What data type is the result of 10 / 2?
+Answer: Float (5.0). Standard division in Python 3 always returns a float.
+
+69. Can you modify an item in a dictionary?
+Answer: Yes, dictionaries are mutable. Example: my_dict["age"] = 26.
+
+70. Are floats 100% accurate in Python?
+Answer: No, floating-point arithmetic can have minor precision issues due to how computers represent decimals in binary (e.g., 0.1 + 0.2 might equal 0.30000000000000004).
+
+=========================================
+SECTION 4: OPERATORS (Q71 - Q100)
+=========================================
+
+71. What are Arithmetic operators?
+Answer: Operators used to perform mathematical operations (+, -, *, /, //, %, **).
+
+72. What is the difference between / and // ?
+Answer: / performs standard division and returns a float. // performs integer (floor) division and discards the fractional part, returning an integer.
+
+73. What does the modulo operator (%) do?
+Answer: It returns the remainder of a division. Example: 10 % 3 returns 1.
+
+74. How do you calculate powers in Python?
+Answer: Using the exponentiation operator (**). Example: 2 ** 3 equals 8.
+
+75. What are Comparison (Relational) operators?
+Answer: Operators used to compare values (==, !=, >, <, >=, <=). They always return a Boolean.
+
+76. What is the difference between = and == ?
+Answer: = is the assignment operator (assigns a value to a variable). == is the equality comparison operator (checks if two values are equal).
+
+77. What does != mean?
+Answer: Not equal to. Returns True if operands are different.
+
+78. What are Logical operators?
+Answer: Operators used to combine conditional statements (and, or, not).
+
+79. How does the 'and' operator work?
+Answer: Returns True only if BOTH operands (conditions) are True.
+
+80. How does the 'or' operator work?
+Answer: Returns True if AT LEAST ONE operand (condition) is True.
+
+81. What does the 'not' operator do?
+Answer: It inverts the Boolean value. not True becomes False.
+
+82. What is short-circuit evaluation?
+Answer: When Python evaluates logical expressions, if the first condition determines the outcome, it stops evaluating. (e.g., in `A or B`, if A is True, B is not evaluated).
+
+83. What are Assignment operators?
+Answer: Operators used to assign values to variables (=, +=, -=, *=, /=, %=, etc.).
+
+84. What does x += 5 mean?
+Answer: It is shorthand for x = x + 5 (Add and assign).
+
+85. Does Python support ++ or -- increment/decrement operators like C++ or Java?
+Answer: No. In Python, you must use += 1 or -= 1.
+
+86. What are Membership operators?
+Answer: 'in' and 'not in'. They check if a sequence (like a string, list, or tuple) is present within an object.
+
+87. Give an example of using the 'in' operator.
+Answer: "apple" in ["apple", "banana"] returns True.
+
+88. What are Identity operators?
+Answer: 'is' and 'is not'. They compare the memory locations of two objects, not just their values.
+
+89. What is the difference between '==' and 'is'?
+Answer: '==' checks if values are equal. 'is' checks if the two variables point to the exact same object in memory.
+
+90. If a = [1, 2] and b = [1, 2], what is a == b and what is a is b?
+Answer: a == b is True (values are equal). a is b is False (they are two distinct lists in memory).
+
+91. What is the order of precedence for operators in Python (PEMDAS)?
+Answer: Parentheses, Exponentiation, Multiplication/Division/Modulo, Addition/Subtraction.
+
+92. How do you override the default operator precedence?
+Answer: By using parentheses ().
+
+93. What is the result of 10 > 5 and 5 > 2?
+Answer: True. Both conditions are True, so the 'and' statement evaluates to True.
+
+94. What is the result of "Python" > "Java"?
+Answer: True. String comparison is alphabetical (lexicographical). 'P' comes after 'J' in the alphabet, so it is considered greater.
+
+95. Can you use + to add a string and an integer?
+Answer: No, it raises a TypeError. You must convert the integer to a string first (e.g., "Age " + str(25)).
+
+96. What does True + True evaluate to in Python?
+Answer: 2. In arithmetic operations, True acts as 1 and False acts as 0.
+
+97. What is the result of 10 % 2 == 0?
+Answer: True. 10 % 2 evaluates to 0, and 0 == 0 is True. This is how you check if a number is even.
+
+98. Can you chain comparison operators in Python?
+Answer: Yes. Example: 0 < x < 10 is perfectly valid and checks if x is between 0 and 10.
+
+99. What does the bitwise AND operator (&) do?
+Answer: It performs a bit-by-bit logical AND operation on integers. (Generally more advanced than Day 1, but good to know it exists distinct from 'and').
+
+100. If x = 5, what does x *= 3 evaluate to?
+Answer: x becomes 15.
+
+
+==================================================
+--- Day2 Interview Questions ---
+==================================================
+
+100 Python Interview Questions and Answers: Day 2 Topics
+(Control Flow, Conditional Statements, Loops, and Patterns)
+
+=========================================
+SECTION 1: CONDITIONAL STATEMENTS (Q1 - Q25)
+=========================================
+
+1. What is an if statement in Python?
+Answer: An if statement checks a condition and executes a block of code only if the condition evaluates to True.
+
+2. What does elif mean?
+Answer: `elif` stands for "else if" and lets you check additional conditions after the first `if` condition is False.
+
+3. What is the purpose of else?
+Answer: `else` executes a block of code when all preceding `if` and `elif` conditions are False.
+
+4. How do you write a simple if-else statement?
+Answer: 
+```python
+if x > 0:
+    print("Positive")
+else:
+    print("Zero or negative")
+```
+
+5. Can you have multiple elif blocks?
+Answer: Yes. You can use multiple `elif` blocks to test more than two conditions.
+
+6. What happens if you omit the else block?
+Answer: The code simply skips the else part when no condition matches; the program continues with the next statement.
+
+7. What is the indentation rule for if statements?
+Answer: The body of the `if`, `elif`, and `else` blocks must be indented consistently, usually by 4 spaces.
+
+8. Can you use comparison operators in an if condition?
+Answer: Yes. Common comparison operators are `==`, `!=`, `>`, `<`, `>=`, and `<=`.
+
+9. What is a boolean expression?
+Answer: A boolean expression evaluates to either `True` or `False`, and it is used in if conditions and loops.
+
+10. How would you check if a variable is equal to 10?
+Answer: `if x == 10:`
+
+11. What is the difference between `=` and `==`?
+Answer: `=` assigns a value to a variable, while `==` compares two values for equality.
+
+12. How do you combine conditions in Python?
+Answer: Use logical operators `and`, `or`, and `not`.
+
+13. What does `and` do?
+Answer: `and` returns True only if both operands are True.
+
+14. What does `or` do?
+Answer: `or` returns True if at least one of the operands is True.
+
+15. What does `not` do?
+Answer: `not` inverts the boolean value, making True into False and vice versa.
+
+16. What is a nested if statement?
+Answer: A nested if statement is an `if` statement inside another `if` or `else` block.
+
+17. Why use nested if statements?
+Answer: Nested ifs are useful when you need multi-level decision logic and one condition depends on another.
+
+18. What is an example of nested if else?
+Answer: 
+```python
+if x > 0:
+    if x % 2 == 0:
+        print("Positive even")
+    else:
+        print("Positive odd")
+else:
+    print("Zero or negative")
+```
+
+19. What is the else-if ladder?
+Answer: It is a series of `if` and `elif` conditions where only one matching block runs.
+
+20. How do you avoid deep nesting?
+Answer: Use `elif` for sequential checks, functions to break logic into smaller units, and boolean expressions when possible.
+
+21. What is a common use case for if statements in data validation?
+Answer: Checking if user input is valid, such as `if age >= 18:` to verify eligibility.
+
+22. What happens if a condition is always True?
+Answer: The if block always runs and any following `elif` or `else` blocks are skipped.
+
+23. What happens if a condition is always False?
+Answer: The program moves to the next `elif` or `else` block.
+
+24. Can `if` be used without `else`?
+Answer: Yes. The `if` block can stand alone with no `elif` or `else`.
+
+25. What is a truthy value in Python?
+Answer: A truthy value is any value that evaluates to True in a boolean context, for example non-zero numbers or non-empty strings.
+
+=========================================
+SECTION 2: FOR LOOPS (Q26 - Q50)
+=========================================
+
+26. What is a for loop in Python?
+Answer: A `for` loop repeats a block of code for each item in a sequence or iterable.
+
+27. How do you write a basic for loop?
+Answer: 
+```python
+for i in range(5):
+    print(i)
+```
+
+28. What does `range(5)` produce?
+Answer: It produces the sequence 0, 1, 2, 3, 4.
+
+29. Can range start from a number other than 0?
+Answer: Yes. `range(2, 6)` produces 2, 3, 4, 5.
+
+30. What does `range(1, 10, 2)` do?
+Answer: It produces odd numbers from 1 to 9 by stepping 2 each time.
+
+31. How do you loop over a string?
+Answer: 
+```python
+for char in "hello":
+    print(char)
+```
+
+32. How do you loop over a list?
+Answer: 
+```python
+for item in [1, 2, 3]:
+    print(item)
+```
+
+33. How do you loop over a dictionary?
+Answer: Use `.keys()`, `.values()`, or `.items()`.
+Example:
+```python
+for key, value in my_dict.items():
+    print(key, value)
+```
+
+34. What is a loop variable?
+Answer: The variable that takes the value of each item in the sequence during iteration.
+
+35. What is a common use of for loops?
+Answer: Repeating calculations, building lists, printing patterns, or processing items in a collection.
+
+36. What does `for i in range(1, 6):` do?
+Answer: It loops over the values 1, 2, 3, 4, 5.
+
+37. How do you create a multiplication table with a for loop?
+Answer: Use nested loops or a single loop with arithmetic.
+Example:
+```python
+for i in range(1, 6):
+    print(f"2 x {i} = {2 * i}")
+```
+
+38. What is string repetition in Python?
+Answer: Using the `*` operator with a string and integer, e.g. `"*" * 5` produces `*****`.
+
+39. Can you break out of a for loop early?
+Answer: Yes, using the `break` statement.
+
+40. What does `break` do?
+Answer: It immediately exits the loop.
+
+41. What does `continue` do?
+Answer: It skips the rest of the current iteration and moves to the next one.
+
+42. How do you skip the first item in a loop?
+Answer: Start the range at 1 or use an index check with `continue`.
+
+43. What is the output of `for i in range(3): print(i)`?
+Answer: 0, 1, 2 on separate lines.
+
+44. How can you loop with custom steps?
+Answer: Use the third `step` parameter in `range(start, stop, step)`.
+
+45. Can a for loop iterate over a tuple?
+Answer: Yes, tuples are iterable.
+
+46. What happens when the iterable is empty?
+Answer: The loop body does not execute.
+
+47. How do you print each character in a name on a new line?
+Answer: 
+```python
+for ch in name:
+    print(ch)
+```
+
+48. Can you loop over file lines with a for loop?
+Answer: Yes. `for line in open('file.txt'):` reads each line from the file.
+
+49. How do you use enumerate in a for loop?
+Answer: `for index, item in enumerate(my_list):` gives both index and value.
+
+50. Why use `enumerate()`?
+Answer: To access the position of each element while iterating.
+
+=========================================
+SECTION 3: WHILE LOOPS (Q51 - Q70)
+=========================================
+
+51. What is a while loop?
+Answer: A `while` loop runs as long as a condition remains True.
+
+52. How do you write a simple while loop?
+Answer: 
+```python
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+```
+
+53. What is the loop condition?
+Answer: The boolean expression evaluated before each iteration to determine if the loop should continue.
+
+54. How do you avoid an infinite while loop?
+Answer: Ensure the loop condition changes and can become False.
+
+55. What is an example of a countdown using while?
+Answer: 
+```python
+n = 5
+while n > 0:
+    print(n)
+    n -= 1
+```
+
+56. Can a while loop run zero times?
+Answer: Yes, if the condition is False at the start.
+
+57. What is common use for while loops?
+Answer: Repeating until a condition is satisfied, like user input validation or countdowns.
+
+58. How do you update the loop variable?
+Answer: Inside the loop body, typically with `+=`, `-=`, or another assignment.
+
+59. What is an infinite loop?
+Answer: A loop that never ends because its condition never becomes False.
+
+60. How do you safely stop a while loop manually?
+Answer: Use `break` inside the loop.
+
+61. Can you use else with while loops?
+Answer: Yes, the `else` block executes when the loop ends naturally (not via `break`).
+
+62. What is a common error with while loops?
+Answer: Forgetting to update the loop variable or using the wrong condition.
+
+63. How do you print even numbers using while?
+Answer: 
+```python
+n = 2
+while n <= 10:
+    print(n)
+    n += 2
+```
+
+64. How do you use input in a while loop?
+Answer: Ask for input inside the loop until a valid value is provided.
+Example:
+```python
+while True:
+    text = input("Enter yes or no: ")
+    if text in ["yes", "no"]:
+        break
+```
+
+65. Can while loops use `range()`?
+Answer: Not directly. `range()` is used with `for` loops, but you can simulate it with an index variable.
+
+66. What should you watch for when using while loops with floating point numbers?
+Answer: Precision issues may prevent the condition from becoming False as expected.
+
+67. How do you count from 100 down to 0 by 5 using while?
+Answer: 
+```python
+num = 100
+while num >= 0:
+    print(num)
+    num -= 5
+```
+
+68. Why is `while True:` useful?
+Answer: It creates a loop that continues until a `break` is encountered, useful for repeated input or event loops.
+
+69. Can a while loop contain another while loop?
+Answer: Yes, nested while loops are valid but should be used carefully.
+
+70. When is a while loop better than a for loop?
+Answer: When the number of iterations is unknown and depends on changing conditions.
+
+=========================================
+SECTION 4: NESTED LOOPS (Q71 - Q85)
+=========================================
+
+71. What is a nested loop?
+Answer: A loop placed inside another loop.
+
+72. How does nested loop execution work?
+Answer: The inner loop completes all iterations for each single iteration of the outer loop.
+
+73. What is an example of a nested loop?
+Answer: 
+```python
+for i in range(3):
+    for j in range(3):
+        print(i, j)
+```
+
+74. What is a common use of nested loops?
+Answer: Working with 2D data like tables, grids, or generating patterns.
+
+75. How would you print a multiplication table using nested loops?
+Answer: 
+```python
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(i * j, end=" ")
+    print()
+```
+
+76. Are nested loops only used with for loops?
+Answer: No, you can nest `for` loops inside `while` loops and vice versa.
+
+77. What is the performance cost of nested loops?
+Answer: It typically increases execution time exponentially, especially when both loops iterate many times.
+
+78. How do you format output inside nested loops?
+Answer: Use `end=" "` to print on the same line and `print()` after the inner loop to start a new line.
+
+79. What pattern does this code print?
+```python
+for i in range(1, 4):
+    for j in range(i):
+        print("*", end="")
+    print()
+```
+Answer: A right-angle triangle of stars:
+*
+**
+***
+
+80. What is a star pattern?
+Answer: A visual shape printed on the console using repeated characters and loops.
+
+81. How do you print a square of stars?
+Answer: 
+```python
+for i in range(4):
+    print("* " * 4)
+```
+
+82. How do you print a triangle of stars?
+Answer: 
+```python
+for i in range(1, 5):
+    print("* " * i)
+```
+
+83. What does nested loop control depend on?
+Answer: Both the outer and inner loop conditions.
+
+84. How do you avoid deep nested loops when possible?
+Answer: Use helper functions, break data into smaller pieces, or use list comprehensions for some cases.
+
+85. Why should you be careful with nested loops in large datasets?
+Answer: Because the runtime can grow quickly and become slow or inefficient.
+
+=========================================
+SECTION 5: PRACTICAL PROBLEMS AND DEBUGGING (Q86 - Q100)
+=========================================
+
+86. What is FizzBuzz?
+Answer: A programming exercise that prints `Fizz` for multiples of 3, `Buzz` for multiples of 5, `FizzBuzz` for multiples of both, and the number otherwise.
+
+87. How do you write FizzBuzz in Python?
+Answer: 
+```python
+for num in range(1, 16):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
+```
+
+88. What is dry run?
+Answer: Dry run means tracing code by hand to follow variable values and program flow without executing it.
+
+89. Why is dry run useful?
+Answer: It helps catch logic errors, understand loops, and verify conditions before running code.
+
+90. What is debugging?
+Answer: Debugging is the process of finding and fixing errors or bugs in code.
+
+91. What is an indentation error?
+Answer: It occurs when Python code blocks are not indented consistently or correctly.
+
+92. What is a common mistake in nested if statements?
+Answer: Misplacing an `else` block or using wrong indentation so the logic does not match the intended flow.
+
+93. How do you test a loop with a sample value?
+Answer: Run the loop with a small range and verify the output manually.
+
+94. What does `print(i, j)` do inside nested loops?
+Answer: It prints the current values of `i` and `j` for each iteration.
+
+95. How do you print only odd numbers using a for loop?
+Answer: 
+```python
+for i in range(1, 11, 2):
+    print(i)
+```
+
+96. How do you print numbers from 10 to 1 using a while loop?
+Answer: 
+```python
+n = 10
+while n >= 1:
+    print(n)
+    n -= 1
+```
+
+97. What does `if number % 2 == 0:` check?
+Answer: It checks whether `number` is even.
+
+98. What value does `range(5, 0, -1)` generate?
+Answer: 5, 4, 3, 2, 1.
+
+99. How do you check whether a string contains a specific character?
+Answer: Use the `in` operator, such as `if "a" in word:`.
+
+100. How can you use loops to build a list of values?
+Answer: Initialize an empty list, append values inside the loop, and then use the list after the loop.
+Example:
+```python
+numbers = []
+for i in range(1, 6):
+    numbers.append(i)
+print(numbers)
+```
+
+
+==================================================
+--- Day3 Interview Questions ---
+==================================================
+
+50 Python Interview Questions and Answers: Day 3 Topics
+(Loop Control, Strings, Lists, Functions, Scope, Recursion)
+
+=========================================
+SECTION 1: LOOP CONTROL (Q1 - Q10)
+=========================================
+1. What does the `break` statement do?
+Answer: `break` completely terminates the loop it is inside, skipping any remaining iterations.
+
+2. What does the `continue` statement do?
+Answer: `continue` skips the rest of the code in the current iteration and jumps to the next iteration of the loop.
+
+3. What does the `pass` statement do?
+Answer: `pass` is a null operation; it does nothing. It's used as a placeholder when a statement is required syntactically.
+
+4. Can `break` be used outside a loop?
+Answer: No, using `break` outside a loop raises a SyntaxError.
+
+5. What happens to the `else` block of a loop if the loop is terminated by `break`?
+Answer: The `else` block of the loop is skipped.
+
+6. Is `pass` ignored by the interpreter?
+Answer: No, it is executed, but it results in no operation.
+
+7. How do `continue` and `break` differ?
+Answer: `break` exits the loop entirely, while `continue` just skips the current iteration and continues the loop.
+
+8. Can `continue` be used in both `for` and `while` loops?
+Answer: Yes.
+
+9. What is a common use case for `pass`?
+Answer: Writing empty functions, classes, or loops that you plan to implement later.
+
+10. What happens if you use `continue` in a while loop but forget to update the condition variable before it?
+Answer: It can cause an infinite loop because the condition variable is never updated.
+
+=========================================
+SECTION 2: INDEX ERROR AND SEQUENCE OPERATIONS (Q11 - Q30)
+=========================================
+11. What is an IndexError?
+Answer: An exception raised when attempting to access an index that is out of the sequence's valid range.
+
+12. How are strings indexed in Python?
+Answer: Strings are zero-indexed, meaning the first character is at index 0.
+
+13. What is negative indexing?
+Answer: Negative indexing allows accessing elements from the end of the sequence, with -1 being the last element.
+
+14. How do you access the last character of a string `s` without knowing its length?
+Answer: Using `s[-1]`.
+
+15. What is string slicing?
+Answer: Extracting a part of a string using the syntax `[start:stop:step]`.
+
+16. What happens if you omit the `start` parameter in a slice?
+Answer: It defaults to the beginning of the sequence (index 0).
+
+17. What happens if you omit the `stop` parameter in a slice?
+Answer: It defaults to the end of the sequence.
+
+18. How do you reverse a string `s` using slicing?
+Answer: `s[::-1]`
+
+19. Are strings mutable in Python?
+Answer: No, strings are immutable. You cannot change a character by assignment (e.g., `s[0] = 'a'` throws an error).
+
+20. What does string concatenation mean?
+Answer: Joining two or more strings together, typically using the `+` operator.
+
+21. What does string repetition mean?
+Answer: Repeating a string multiple times using the `*` operator.
+
+22. Can you concatenate a string and an integer?
+Answer: No, you must cast the integer to a string first using `str()`.
+
+23. What are lists in Python?
+Answer: Lists are ordered, mutable collections of items.
+
+24. How do you slice the first 3 elements of a list `lst`?
+Answer: `lst[:3]`
+
+25. What is the difference between list indexing and list slicing?
+Answer: Indexing returns a single element, while slicing returns a new list containing a subset of elements.
+
+26. Can you use negative slicing on a list?
+Answer: Yes, e.g., `lst[-3:]` gets the last three elements.
+
+27. Does slicing a list create a new list in memory?
+Answer: Yes, it creates a shallow copy of the sliced portion.
+
+28. How do you concatenate two lists?
+Answer: Using the `+` operator (e.g., `list1 + list2`).
+
+29. What happens if you slice out of bounds (e.g., `lst[0:100]` on a 5-element list)?
+Answer: Python handles it gracefully and returns elements up to the end of the list without throwing an IndexError.
+
+30. Are lists mutable?
+Answer: Yes, you can change, add, or remove elements in a list.
+
+=========================================
+SECTION 3: FUNCTIONS, SCOPE, AND RECURSION (Q31 - Q50)
+=========================================
+31. What is a function?
+Answer: A block of reusable code that performs a specific task and runs when called.
+
+32. How do you define a function in Python?
+Answer: Using the `def` keyword, followed by the function name and parentheses.
+
+33. What is the difference between parameters and arguments?
+Answer: Parameters are the variables in the function definition; arguments are the actual values passed during the function call.
+
+34. What are positional arguments?
+Answer: Arguments passed to a function in the exact order they are defined.
+
+35. What are default arguments?
+Answer: Parameters that assume a default value if a value is not provided in the function call.
+
+36. Can non-default arguments follow default arguments?
+Answer: No, default arguments must come after all non-default arguments.
+
+37. What does `*args` do?
+Answer: It allows a function to accept any number of positional arguments as a tuple.
+
+38. What does `**kwargs` do?
+Answer: It allows a function to accept any number of keyword arguments as a dictionary.
+
+39. What is variable scope?
+Answer: The region of the code where a variable is accessible (Local vs Global).
+
+40. What is a local variable?
+Answer: A variable declared inside a function. It cannot be accessed outside that function.
+
+41. What is a global variable?
+Answer: A variable declared outside of all functions. It can be accessed globally.
+
+42. How do you modify a global variable inside a function?
+Answer: Use the `global` keyword before the variable name inside the function.
+
+43. What happens if a local and global variable have the same name?
+Answer: The local variable shadows the global variable inside the function.
+
+44. What is recursion?
+Answer: When a function calls itself directly or indirectly.
+
+45. What is a base case in recursion?
+Answer: The condition that stops the recursive function from calling itself infinitely.
+
+46. What happens if there is no base case?
+Answer: Infinite recursion occurs, leading to a `RecursionError` (Stack Overflow).
+
+47. When is recursion better than iteration?
+Answer: For problems that naturally divide into smaller subproblems, like tree traversals and certain mathematical sequences.
+
+48. What is the syntax to return a value from a function?
+Answer: Use the `return` statement.
+
+49. What does a function return if there is no `return` statement?
+Answer: It returns `None`.
+
+50. Can a function return multiple values?
+Answer: Yes, by separating them with commas. Python automatically packs them into a tuple.
+
+=========================================
+SECTION 4: ADVANCED LIST AND STRING OPERATIONS (Q51 - Q75)
+=========================================
+51. How do you remove the first element of a list?
+Answer: Using `lst.pop(0)` or `del lst[0]`.
+
+52. What is the difference between `append()` and `extend()`?
+Answer: `append()` adds its argument as a single element to the end of a list. `extend()` iterates over its argument and adds each element to the list.
+
+53. Can you concatenate a string and a list?
+Answer: No, trying to do so results in a TypeError.
+
+54. How do you check if a specific element exists in a list?
+Answer: Using the `in` operator (e.g., `if element in lst:`).
+
+55. How do you check if a specific substring exists in a string?
+Answer: Also using the `in` operator (e.g., `if "sub" in string:`).
+
+56. What happens when you multiply a list by an integer (e.g., `[1, 2] * 3`)?
+Answer: It repeats the list elements (e.g., `[1, 2, 1, 2, 1, 2]`).
+
+57. Can you multiply a list by a float?
+Answer: No, you can only multiply a sequence by an integer.
+
+58. How do you find the minimum and maximum values in a list of numbers?
+Answer: Using the built-in functions `min(lst)` and `max(lst)`.
+
+59. How do you sum all elements in a list of numbers?
+Answer: Using the built-in function `sum(lst)`.
+
+60. What is a shallow copy of a list?
+Answer: A new list object populated with references to the child objects found in the original. It can be created using `lst[:]` or `lst.copy()`.
+
+61. If you modify a nested list inside a shallow copy, does it affect the original list?
+Answer: Yes, because the references to the nested objects are the same.
+
+62. How do you convert a string to a list of characters?
+Answer: By passing the string to the `list()` constructor (e.g., `list("hello")`).
+
+63. Can strings contain numbers?
+Answer: Yes, strings can contain numeric characters (e.g., `"123"`), but they are treated as text.
+
+64. How do you convert a numeric string to an integer?
+Answer: Using the `int()` function.
+
+65. What happens if you try to cast `"hello"` to an int?
+Answer: It raises a ValueError.
+
+66. How do you find the length of a string or list?
+Answer: Using the `len()` function.
+
+67. What is an iterable in Python?
+Answer: Any object capable of returning its members one at a time, such as strings, lists, and tuples.
+
+68. Is it possible to change a character in a string using its index?
+Answer: No, strings are immutable. You must create a new string with the desired change.
+
+69. How do you remove an element from a list by its value?
+Answer: Using `lst.remove(value)`. It removes the first occurrence of the value.
+
+70. What happens if you use `remove()` on a value that is not in the list?
+Answer: It raises a ValueError.
+
+71. How do you insert an element at a specific index in a list?
+Answer: Using `lst.insert(index, value)`.
+
+72. What happens if the index provided to `insert()` is greater than the list length?
+Answer: The value is appended to the end of the list without raising an error.
+
+73. How do you count the occurrences of a specific item in a list?
+Answer: Using the `lst.count(value)` method.
+
+74. How do you reverse a list in-place?
+Answer: Using the `lst.reverse()` method.
+
+75. How does `lst.reverse()` differ from `lst[::-1]`?
+Answer: `reverse()` modifies the original list and returns None. `lst[::-1]` creates and returns a new reversed list, leaving the original unchanged.
+
+=========================================
+SECTION 5: ADVANCED FUNCTIONS AND SCOPE (Q76 - Q100)
+=========================================
+76. Can a function call another function?
+Answer: Yes, a function can call any other function that is defined in the same or outer scope.
+
+77. Can a function return another function?
+Answer: Yes, in Python, functions are first-class objects and can be returned from other functions.
+
+78. What happens if you define a variable inside an `if` block? Is it local to the `if` block?
+Answer: No, Python does not have block-level scope. Variables defined in an `if` block are accessible within the entire function (or global scope if defined outside a function).
+
+79. What is the `nonlocal` keyword used for?
+Answer: It is used in nested functions to declare that a variable refers to a previously bound variable in the closest enclosing scope, excluding globals.
+
+80. What is a lambda function?
+Answer: A small anonymous function defined using the `lambda` keyword, typically for a single, short expression.
+
+81. Can `*args` and `**kwargs` be used together in the same function definition?
+Answer: Yes, but `*args` must appear before `**kwargs`.
+
+82. What does `def my_func(a, b, *args, **kwargs):` mean?
+Answer: It takes two required positional arguments, any number of additional positional arguments as a tuple, and any number of keyword arguments as a dictionary.
+
+83. If a default parameter is a mutable object (like an empty list), what is the danger?
+Answer: The default object is created only once when the function is defined. If you modify it inside the function, the changes persist across subsequent calls.
+
+84. How do you safely use an empty list as a default parameter?
+Answer: Use `None` as the default value, and inside the function, check `if param is None: param = []`.
+
+85. What does the `type()` function do?
+Answer: It returns the type of an object (e.g., `<class 'int'>`, `<class 'str'>`).
+
+86. Can a function have multiple `return` statements?
+Answer: Yes. The function execution ends as soon as it hits any `return` statement.
+
+87. What is the output of a function that returns multiple comma-separated values?
+Answer: A single tuple containing all the values.
+
+88. How do you unpack multiple returned values?
+Answer: Assign them to a comma-separated list of variables (e.g., `x, y = my_func()`).
+
+89. Can you pass a list to a function expecting `*args`?
+Answer: Yes, by unpacking the list in the function call using the `*` operator (e.g., `my_func(*my_list)`).
+
+90. Can you pass a dictionary to a function expecting `**kwargs`?
+Answer: Yes, by unpacking it using `**` (e.g., `my_func(**my_dict)`).
+
+91. What is the call stack limit in Python by default?
+Answer: Typically around 1000, though it can vary by environment.
+
+92. How does a recursive function know when to stop?
+Answer: It stops when it reaches a conditional statement known as the base case.
+
+93. Is it possible for a recursive function to have multiple base cases?
+Answer: Yes, depending on the problem logic (e.g., Fibonacci has base cases for `n=0` and `n=1`).
+
+94. What is a common real-world use case for recursion?
+Answer: Traversing hierarchical data structures like file systems (folders within folders) or HTML/XML documents.
+
+95. How does Python evaluate default arguments?
+Answer: They are evaluated from left to right when the function is defined, not when it is called.
+
+96. Why might you use `pass` inside a function body?
+Answer: To create a stub function that you plan to implement later, avoiding a SyntaxError for an empty block.
+
+97. What happens if you define two functions with the same name in the same file?
+Answer: The second definition overwrites the first one. Python does not support function overloading by signature.
+
+98. Can parameters be passed by name when calling a function?
+Answer: Yes, these are called keyword arguments, e.g., `func(age=25, name="Bob")`.
+
+99. When using keyword arguments, does the order matter?
+Answer: No, as long as all required arguments are provided and they appear after any positional arguments.
+
+100. What is a docstring?
+Answer: A multi-line string placed immediately after a function, class, or module definition to describe its purpose. It can be accessed via the `__doc__` attribute.
+
+
+==================================================
+--- Day4 Interview Questions ---
+==================================================
+
+50 Python Interview Questions and Answers: Day 4 Topics
+(String Methods, Anagrams, Recursion Dry Runs & Mind Mapping)
+
+=========================================
+SECTION 1: STRING METHODS (Q1 - Q20)
+=========================================
+1. Are strings mutable or immutable in Python?
+Answer: Strings are immutable. Any string method returns a new string rather than modifying the original.
+
+2. What does the `lower()` method do?
+Answer: It returns a copy of the string with all characters converted to lowercase.
+
+3. What does the `strip()` method do?
+Answer: It removes leading and trailing whitespace characters (or specific characters provided as arguments).
+
+4. How is `strip()` different from `replace(" ", "")`?
+Answer: `strip()` only removes spaces from the beginning and end, while `replace()` removes all spaces throughout the string.
+
+5. What does the `split()` method return?
+Answer: It returns a list of substrings split by the specified delimiter.
+
+6. If no delimiter is provided to `split()`, what happens?
+Answer: It splits the string on any whitespace character (space, tab, newline) and removes empty strings from the result.
+
+7. What does the `join()` method do?
+Answer: It concatenates an iterable of strings into a single string, using the string it was called on as a separator.
+
+8. What is the output of `"-".join(["a", "b", "c"])`?
+Answer: "a-b-c".
+
+9. What does the `find()` method do?
+Answer: It returns the lowest index of the substring if found in the string, otherwise it returns -1.
+
+10. How is `find()` different from `index()`?
+Answer: Both find the substring, but `index()` raises a ValueError if the substring is not found, whereas `find()` returns -1.
+
+11. What does the `count()` method do?
+Answer: It returns the number of non-overlapping occurrences of a substring within the string.
+
+12. What does `isalpha()` check?
+Answer: It returns True if all characters in the string are alphabets (and there is at least one character).
+
+13. What does `isdigit()` check?
+Answer: It returns True if all characters are digits.
+
+14. What does `isalnum()` check?
+Answer: It returns True if all characters are alphanumeric (letters or numbers).
+
+15. How do you replace all occurrences of "apple" with "orange"?
+Answer: `text.replace("apple", "orange")`
+
+16. What is the third argument in the `replace(old, new, count)` method?
+Answer: The maximum number of occurrences to replace.
+
+17. What does `startswith()` do?
+Answer: Checks if the string starts with the specified prefix.
+
+18. What does `endswith()` do?
+Answer: Checks if the string ends with the specified suffix.
+
+19. How do you capitalize the first letter of a string only?
+Answer: Using the `capitalize()` method.
+
+20. How do you capitalize the first letter of every word in a string?
+Answer: Using the `title()` method.
+
+=========================================
+SECTION 2: ANAGRAMS (Q21 - Q30)
+=========================================
+21. What is an anagram?
+Answer: A word or phrase formed by rearranging the letters of another word or phrase using all original letters exactly once.
+
+22. What is the time complexity of checking anagrams by sorting both strings?
+Answer: O(N log N), where N is the length of the string.
+
+23. Why is it important to convert strings to lowercase and remove spaces when checking for anagrams?
+Answer: Because "Listen" and "Silent" are anagrams, but character case and spacing differ.
+
+24. How can a frequency dictionary (hash map) check for anagrams?
+Answer: Count characters in the first string, then decrement counts for the second string. If all counts end at zero, they are anagrams.
+
+25. What is the time complexity of the frequency dictionary approach?
+Answer: O(N), because it iterates through the strings a constant number of times.
+
+26. Can two strings of different lengths be anagrams?
+Answer: No. A quick optimization is `if len(s1) != len(s2): return False`.
+
+27. Does the `collections.Counter` module help with anagrams?
+Answer: Yes, `Counter(s1) == Counter(s2)` is a concise way to check for anagrams.
+
+28. Can you use an array of size 26 instead of a dictionary to count frequencies?
+Answer: Yes, if the strings only contain lowercase English letters, an array of size 26 is highly efficient.
+
+29. What happens in the dictionary approach if a character is found in the second string that wasn't in the first?
+Answer: They are not anagrams, and the function should return False immediately.
+
+30. Which is better for very short strings: sorting or frequency map?
+Answer: Sorting is often faster for very short strings due to less overhead, but frequency maps scale better for large strings.
+
+=========================================
+SECTION 3: RECURSION DRY RUNS AND MIND MAPPING (Q31 - Q50)
+=========================================
+31. What is the Call Stack?
+Answer: A data structure that stores information about the active subroutines (functions) of a computer program.
+
+32. What happens to the Call Stack when a recursive function is called?
+Answer: A new frame is pushed onto the stack for each recursive call.
+
+33. What happens to the Call Stack when a recursive function returns?
+Answer: The frame for that function call is popped off the stack.
+
+34. What is a "stack overflow"?
+Answer: It occurs when there are too many nested function calls (often due to missing or incorrect base cases), exceeding the stack memory limit.
+
+35. What is a dry run?
+Answer: Manually tracing the execution of a program line by line on paper to understand its flow and state changes.
+
+36. Why is a dry run important for recursion?
+Answer: Because the flow jumps back and forth between function calls, which can be hard to visualize just by reading the code.
+
+37. What is the "winding phase" of recursion?
+Answer: The phase where function calls are made and pushed onto the stack before reaching the base case.
+
+38. What is the "unwinding phase" of recursion?
+Answer: The phase after the base case is reached, where function calls return values and pop off the stack.
+
+39. What is a recursion tree?
+Answer: A diagram (like a mind map) representing the recursive calls made by a function. Nodes represent function calls and edges represent the calls made.
+
+40. When is a recursion tree particularly useful?
+Answer: When a function makes multiple recursive calls (like the Fibonacci sequence).
+
+41. In the naive recursive Fibonacci `fib(4)`, how many times is `fib(2)` calculated?
+Answer: Multiple times (twice, specifically). The tree shows overlapping subproblems.
+
+42. What is Tail Recursion?
+Answer: A recursive function where the recursive call is the very last operation performed, with no remaining computation after it returns.
+
+43. Does Python optimize tail recursion automatically?
+Answer: No, Python does not have built-in tail call optimization.
+
+44. How do you find the maximum recursion depth in Python?
+Answer: `import sys; print(sys.getrecursionlimit())`
+
+45. Can you change the recursion limit in Python?
+Answer: Yes, using `sys.setrecursionlimit(new_limit)`.
+
+46. What does `fact(n)` usually evaluate to at the base case?
+Answer: 1.
+
+47. In a recursion tree for `fact(3)`, what is the shape of the tree?
+Answer: It is a straight line or linear path (each node has exactly one child) because there is only one recursive call.
+
+48. What is an overlapping subproblem in a recursion tree?
+Answer: When the same function with the same parameters is evaluated multiple times in different branches of the tree.
+
+49. How do we solve the overlapping subproblems identified by the recursion tree?
+Answer: By storing the results of expensive function calls (Memoization).
+
+50. If you dry run `fib(1)`, what happens?
+Answer: It immediately hits the base case (`if n <= 1`) and returns 1 without making any recursive calls or growing the stack further.
+
+=========================================
+SECTION 4: ADVANCED STRING METHODS AND FORMATTING (Q51 - Q75)
+=========================================
+51. How do you check if a string is a palindrome using string slicing?
+Answer: By checking if `s == s[::-1]`.
+
+52. What does the `zfill()` method do?
+Answer: It pads a string on the left with zeros to fill a specified width.
+
+53. What is the difference between `isalpha()` and `isalnum()`?
+Answer: `isalpha()` requires only alphabetic characters, while `isalnum()` allows both letters and numbers.
+
+54. What happens if you call `lower()` on a string containing numbers and punctuation?
+Answer: The numbers and punctuation remain unchanged; only uppercase letters are converted.
+
+55. How do you format a string using f-strings in Python?
+Answer: By prefixing the string with `f` or `F` and placing expressions inside curly braces `{}`.
+
+56. What does `text.splitlines()` do?
+Answer: It splits a string at line boundaries (like `\n`) and returns a list of lines.
+
+57. How do you find the highest index of a substring in a string?
+Answer: Using the `rfind()` method.
+
+58. What is the difference between `strip()`, `lstrip()`, and `rstrip()`?
+Answer: `strip()` removes from both ends, `lstrip()` only removes from the left (start), and `rstrip()` only from the right (end).
+
+59. Can `replace()` be used to remove a substring?
+Answer: Yes, by replacing it with an empty string `""`.
+
+60. Does the `count()` method count overlapping occurrences?
+Answer: No, it only counts non-overlapping occurrences. For example, `"aaaa".count("aa")` is 2, not 3.
+
+61. What does the `partition()` method do?
+Answer: It splits the string at the first occurrence of the separator and returns a 3-tuple containing the part before the separator, the separator itself, and the part after.
+
+62. How do you check if a string contains only whitespace?
+Answer: Using the `isspace()` method.
+
+63. What does `islower()` check?
+Answer: It returns True if all cased characters in the string are lowercase and there is at least one cased character.
+
+64. How do you encode a string to bytes?
+Answer: Using the `encode()` method (e.g., `s.encode('utf-8')`).
+
+65. What happens when you split an empty string `"".split(",")`?
+Answer: It returns a list with one empty string: `[""]`.
+
+66. What happens if you split an empty string with no delimiter `"".split()`?
+Answer: It returns an empty list `[]`.
+
+67. Can you use multiple separators in the `split()` method natively?
+Answer: No, `split()` only takes one separator. For multiple separators, you would use the `re.split()` module from regular expressions.
+
+68. How do you center a string within a specific width?
+Answer: Using the `center(width, fillchar)` method.
+
+69. What does the `swapcase()` method do?
+Answer: It converts uppercase letters to lowercase and lowercase letters to uppercase.
+
+70. How do you join a list of integers into a string?
+Answer: You must convert the integers to strings first, e.g., `"-".join([str(i) for i in list_of_ints])`.
+
+71. Is `" "` (a single space) considered alphanumeric?
+Answer: No, `isalnum()` will return False for spaces.
+
+72. How do you extract the file extension from a filename string like `"document.txt"`?
+Answer: Using `filename.split(".")[-1]`.
+
+73. What is the output of `"Py" in "Python"`?
+Answer: True.
+
+74. How can you remove all punctuation from a string?
+Answer: By iterating through the string and keeping only `isalnum()` characters, or by using `str.translate()`.
+
+75. What does the `title()` method do differently than `capitalize()`?
+Answer: `title()` capitalizes the first letter of every word, while `capitalize()` only capitalizes the very first letter of the entire string.
+
+=========================================
+SECTION 5: ADVANCED ANAGRAMS AND RECURSION (Q76 - Q100)
+=========================================
+76. If you have two large strings, why is a frequency dictionary better than sorting for anagram checking?
+Answer: Sorting takes O(N log N) time, whereas a frequency dictionary takes O(N) time, which is much faster for large N.
+
+77. How do you handle anagram checks involving Unicode characters or different languages?
+Answer: A dictionary (hash map) approach naturally handles Unicode characters, whereas an array of size 26 assumes only English letters.
+
+78. Can you determine if a string is a palindrome by using anagram logic?
+Answer: No, palindromes depend on character order, while anagrams only depend on character frequencies. However, a string can form a palindrome if at most one character has an odd frequency.
+
+79. How do you group a list of words into anagrams (e.g., `["eat", "tea", "tan", "ate", "nat", "bat"]`)?
+Answer: Use a dictionary where the key is the sorted word and the value is a list of words that match that sorted key.
+
+80. What is the time complexity to group N words of maximum length K into anagrams?
+Answer: O(N * K log K) if sorting the words to create the key.
+
+81. What is the space complexity of checking an anagram using a dictionary?
+Answer: O(C), where C is the number of unique characters in the strings.
+
+82. In a recursion tree, what do the leaf nodes represent?
+Answer: Leaf nodes represent the base cases where the recursion stops.
+
+83. What do the internal nodes of a recursion tree represent?
+Answer: Recursive function calls that have not yet reached a base case.
+
+84. How does Python's call stack handle local variables in recursion?
+Answer: Each recursive call gets its own unique stack frame with its own set of local variables.
+
+85. Why does calculating Fibonacci recursively without memoization take exponential time (O(2^N))?
+Answer: Because the function repeatedly re-calculates the same overlapping subproblems, doubling the amount of work at each step in the tree.
+
+86. What is memoization?
+Answer: A technique to speed up recursive algorithms by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+
+87. If you add memoization to the recursive Fibonacci function, what does the time complexity become?
+Answer: It reduces from O(2^N) down to O(N).
+
+88. What is a "stack trace"?
+Answer: A report of the active stack frames at a certain point in time during the execution of a program, often seen when an error (like an exception) occurs.
+
+89. Can recursion be replaced by iteration?
+Answer: Yes, every recursive algorithm can be rewritten iteratively, often using an explicit stack or a loop.
+
+90. Why use recursion if iteration uses less memory?
+Answer: Recursion often leads to much cleaner, more readable, and easier-to-understand code for problems involving trees, graphs, and divide-and-conquer strategies.
+
+91. If a recursive function returns a value, what must the caller do with it?
+Answer: The caller (the previous recursive step) must return it up the chain or use it in its own calculation (e.g., `return n * fact(n-1)`).
+
+92. What happens if you forget the `return` keyword in the recursive step?
+Answer: The function will execute but return `None`, causing subsequent calculations up the stack to fail (e.g., trying to multiply `None * 5`).
+
+93. How do you visualize depth-first execution in a recursion tree?
+Answer: The program completely follows the left-most branch down to the leaf node before evaluating any siblings to the right.
+
+94. What is a divide-and-conquer algorithm?
+Answer: An algorithm that recursively breaks down a problem into two or more subproblems of the same type, until they become simple enough to be solved directly.
+
+95. Is `Merge Sort` an example of a recursive divide-and-conquer algorithm?
+Answer: Yes.
+
+96. How does printing *before* a recursive call differ from printing *after* a recursive call?
+Answer: Printing before outputs data during the "winding" phase (top-down), while printing after outputs data during the "unwinding" phase (bottom-up, effectively reversing the order).
+
+97. What is the Space Complexity of a recursive function?
+Answer: It is proportional to the maximum depth of the recursion tree due to the call stack frames, often O(N) or O(log N).
+
+98. Can a dictionary be used for memoization in Python?
+Answer: Yes, dictionaries are the most common way to cache results, using function arguments as keys.
+
+99. Does Python have a built-in tool for memoization?
+Answer: Yes, `@functools.lru_cache` or `@functools.cache` can automatically memoize a function.
+
+100. If you do a dry run of `fib(3)`, how many frames are pushed to the stack in total?
+Answer: `fib(3)` calls `fib(2)` and `fib(1)`. `fib(2)` calls `fib(1)` and `fib(0)`. Total calls including the first is 5 frames pushed to the stack overall.
+
+
+==================================================
+--- Day5 Interview Questions ---
+==================================================
+
+Day 5 Interview Questions
+
+1. What is the difference between `.append()` and `.extend()` in Python lists?
+Answer: `.append()` adds a single element to the end of the list. If you append a list, the entire list is added as one element. `.extend()` iterates over its argument and adds each element to the list, effectively merging lists.
+
+2. Explain list slicing. How do you reverse a list using slicing?
+Answer: List slicing extracts a portion of a list using the syntax `list[start:stop:step]`. To reverse a list, we can use `list[::-1]`, which steps backward through the list from end to beginning.
+
+3. Are strings mutable in Python? What about lists?
+Answer: Strings are immutable, meaning they cannot be changed after creation. Any string operation that modifies a string actually returns a new string. Lists are mutable; they can be changed in place (e.g., changing an element by index, appending, or removing elements).
+
+4. Write code or explain how you would find the frequency of elements in a list.
+Answer: We can iterate through the list and use a dictionary to keep track of counts. 
+```python
+freq = {}
+for item in lst:
+    freq[item] = freq.get(item, 0) + 1
+```
+
+5. How do you generate all unique pairs from an array of numbers?
+Answer: Use two nested loops. The outer loop runs from `i = 0` to `len(arr)-1`, and the inner loop runs from `j = i + 1` to `len(arr)-1`. This ensures each pair `(arr[i], arr[j])` is generated exactly once.
+

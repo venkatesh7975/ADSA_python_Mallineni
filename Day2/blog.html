@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2: Control Flow & Loops | Python Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="day-badge">Day 2</div>
+            <h1>Control Flow & Loops</h1>
+            <p class="subtitle">Make your code think! Learn how to make decisions and repeat actions.</p>
+        </header>
+
+        <section class="glass-card">
+            <h2>Today's Topics</h2>
+            <ul>
+                <li>If, Elif, and Else Statements</li>
+                <li>Nested Conditionals</li>
+                <li>While Loops</li>
+                <li>For Loops & The `range()` Function</li>
+                <li>Logic Building with Star Patterns</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h2>Key Concepts</h2>
+            
+            <h3>1. Conditionals</h3>
+            <p>Use `if/elif/else` to execute different blocks of code based on conditions.</p>
+            <pre><code>age = 18
+if age >= 18:
+    print("You can vote!")
+else:
+    print("Too young to vote.")</code></pre>
+
+            <h3>2. Loops</h3>
+            <p>Loops allow you to repeat a block of code multiple times. `for` loops are great for counting, while `while` loops run until a condition is met.</p>
+            <pre><code># For Loop
+for i in range(5):
+    print("Iteration:", i)
+
+# While Loop
+count = 3
+while count > 0:
+    print(count)
+    count -= 1</code></pre>
+        </section>
+
+        <section class="glass-card">
+            <h2>Detailed Quiz (20 MCQs)</h2>
+            <p>Test your knowledge on Control Flow and Loops!</p>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                
+                <div>
+                    <h4>1. Which keyword is used to start a conditional statement?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) switch</li><li>B) when</li><li>C) if</li><li>D) check</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`if` is the starting keyword for conditionals)</p></details>
+                </div>
+
+                <div>
+                    <h4>2. What does `elif` stand for?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Else If</li><li>B) End If</li><li>C) Evaluate If</li><li>D) Error If</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (`elif` is Python's shorthand for "else if")</p></details>
+                </div>
+
+                <div>
+                    <h4>3. How does Python define code blocks (e.g., inside an `if` statement)?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Curly braces {}</li><li>B) Indentation (spaces/tabs)</li><li>C) BEGIN and END keywords</li><li>D) Parentheses ()</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Python relies strictly on indentation to define scope)</p></details>
+                </div>
+
+                <div>
+                    <h4>4. What does a `while` loop do?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Loops exactly 10 times</li><li>B) Loops over a list</li><li>C) Executes a block of code as long as a condition is True</li><li>D) Executes code after a delay</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (A `while` loop continues until its condition evaluates to False)</p></details>
+                </div>
+
+                <div>
+                    <h4>5. Which keyword is used to exit a loop prematurely?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) stop</li><li>B) exit</li><li>C) break</li><li>D) return</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`break` terminates the loop entirely)</p></details>
+                </div>
+
+                <div>
+                    <h4>6. Which keyword skips the rest of the current loop iteration and moves to the next one?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) skip</li><li>B) continue</li><li>C) next</li><li>D) pass</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`continue` skips to the next iteration of the loop)</p></details>
+                </div>
+
+                <div>
+                    <h4>7. How do you loop 5 times using a `for` loop?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) for i in 5:</li><li>B) for i = 1 to 5:</li><li>C) for i in range(5):</li><li>D) loop 5:</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`range(5)` generates numbers 0 through 4)</p></details>
+                </div>
+
+                <div>
+                    <h4>8. What numbers does `range(1, 4)` generate?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 1, 2, 3, 4</li><li>B) 1, 2, 3</li><li>C) 0, 1, 2, 3</li><li>D) 2, 3, 4</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`range(start, stop)` generates up to, but not including, the stop value)</p></details>
+                </div>
+
+                <div>
+                    <h4>9. What does the third argument in `range(1, 10, 2)` do?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) It specifies the step size (increments by 2)</li><li>B) It specifies how many times to repeat</li><li>C) It specifies the default value</li><li>D) It causes an error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (It generates 1, 3, 5, 7, 9)</p></details>
+                </div>
+
+                <div>
+                    <h4>10. What usually causes an infinite `while` loop?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Using a `break` statement</li><li>B) Forgetting to update the loop condition variable</li><li>C) Using too much memory</li><li>D) Using `elif` inside the loop</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (If the condition never becomes False, the loop runs forever)</p></details>
+                </div>
+
+                <div>
+                    <h4>11. Can you place an `if` statement inside another `if` statement?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Yes, this is called nested conditionals</li><li>B) No, it throws a SyntaxError</li><li>C) Only if they share the same variables</li><li>D) Only inside loops</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (Nested conditionals are completely valid)</p></details>
+                </div>
+
+                <div>
+                    <h4>12. What is the `pass` statement used for?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) To end a program</li><li>B) As a placeholder for future code (it does nothing)</li><li>C) To skip an iteration</li><li>D) To pass variables to a function</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`pass` avoids SyntaxErrors for empty blocks)</p></details>
+                </div>
+
+                <div>
+                    <h4>13. Will `if 5 > 2 and 10 < 20:` evaluate to True?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Yes</li><li>B) No</li><li>C) Throws an error</li><li>D) None</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (Both conditions are True)</p></details>
+                </div>
+
+                <div>
+                    <h4>14. Will `if 5 > 10 or 10 < 20:` evaluate to True?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Yes</li><li>B) No</li><li>C) Throws an error</li><li>D) None</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (Using `or` means only one side needs to be True)</p></details>
+                </div>
+
+                <div>
+                    <h4>15. Can a `for` loop have an `else` block in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) No, only `if` statements have `else`</li><li>B) Yes, and it executes if the loop finishes without hitting a `break`</li><li>C) Yes, but it executes on every iteration</li><li>D) Yes, but only if the loop throws an error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (The `else` block on a loop runs when the loop exhausts its iterable naturally)</p></details>
+                </div>
+
+                <div>
+                    <h4>16. Is the variable `i` from `for i in range(5):` accessible after the loop ends?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) No, it is strictly scoped to the loop</li><li>B) Yes, it will retain the last value (4)</li><li>C) Yes, but its value will be None</li><li>D) It deletes itself</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Python does not have block-level scoping for loop variables)</p></details>
+                </div>
+
+                <div>
+                    <h4>17. How do you print multiple stars `*` on the same line in a loop?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) print("*", end="")</li><li>B) print("*", no_newline=True)</li><li>C) printLine("*")</li><li>D) echo "*"</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (The `end=""` argument replaces the default newline character)</p></details>
+                </div>
+
+                <div>
+                    <h4>18. Can you iterate over a string using a `for` loop?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) No, only lists</li><li>B) Yes, `for char in "hello":` works</li><li>C) Only if you cast it to a list first</li><li>D) Yes, but it iterates by words, not characters</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Strings are iterables in Python)</p></details>
+                </div>
+
+                <div>
+                    <h4>19. What happens if you execute `if 0:`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) It evaluates to True</li><li>B) It evaluates to False</li><li>C) Syntax Error</li><li>D) Infinite loop</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`0` is a "Falsy" value in Python)</p></details>
+                </div>
+
+                <div>
+                    <h4>20. When would you use `while True:`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) To wait for a specific user input using `break` to exit</li><li>B) To freeze the program</li><li>C) To run a server indefinitely</li><li>D) Both A and C</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: D</b> (`while True` creates a deliberate infinite loop, often exited via `break` internally)</p></details>
+                </div>
+
+            </div>
+
+        <section class="glass-card">
+            <h2>50 Practice Problems & Solutions</h2>
+            <p>Master the daily topics with these 50 quick exercises!</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q1: Write an if-else statement that prints 'Even' if 15 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 15
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q2: Use a while loop to print 'Code' 2 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 2:
+    print('Code')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q3: Print numbers from 1 to 10 but `break` the loop if the number equals 7.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 7:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q4: Write a for loop that prints numbers from 0 to 10.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(11):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q5: Write an if-else statement that prints 'Even' if 13 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 13
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q6: Use a while loop to print 'Code' 2 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 2:
+    print('Code')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q7: Print numbers from 1 to 10 but `break` the loop if the number equals 6.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 6:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q8: Write a for loop that prints numbers from 0 to 12.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(13):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q9: Write an if-else statement that prints 'Even' if 12 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 12
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q10: Use a while loop to print 'Loop' 2 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 2:
+    print('Loop')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q11: Print numbers from 1 to 10 but `break` the loop if the number equals 3.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 3:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q12: Write a for loop that prints numbers from 0 to 9.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(10):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q13: Write an if-else statement that prints 'Even' if 14 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 14
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q14: Use a while loop to print 'Loop' 2 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 2:
+    print('Loop')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q15: Print numbers from 1 to 10 but `break` the loop if the number equals 3.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 3:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q16: Write a for loop that prints numbers from 0 to 11.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(12):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q17: Write an if-else statement that prints 'Even' if 10 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 10
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q18: Use a while loop to print 'Code' 3 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 3:
+    print('Code')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q19: Print numbers from 1 to 10 but `break` the loop if the number equals 4.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 4:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q20: Write a for loop that prints numbers from 0 to 12.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(13):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q21: Write an if-else statement that prints 'Even' if 15 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 15
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q22: Use a while loop to print 'Code' 4 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 4:
+    print('Code')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q23: Print numbers from 1 to 10 but `break` the loop if the number equals 7.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 7:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q24: Write a for loop that prints numbers from 0 to 9.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(10):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q25: Write an if-else statement that prints 'Even' if 15 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 15
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q26: Use a while loop to print 'Python' 3 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 3:
+    print('Python')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q27: Print numbers from 1 to 10 but `break` the loop if the number equals 3.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 3:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q28: Write a for loop that prints numbers from 0 to 13.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(14):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q29: Write an if-else statement that prints 'Even' if 5 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 5
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q30: Use a while loop to print 'Python' 5 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 5:
+    print('Python')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q31: Print numbers from 1 to 10 but `break` the loop if the number equals 5.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 5:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q32: Write a for loop that prints numbers from 0 to 8.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(9):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q33: Write an if-else statement that prints 'Even' if 5 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 5
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q34: Use a while loop to print 'Loop' 2 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 2:
+    print('Loop')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q35: Print numbers from 1 to 10 but `break` the loop if the number equals 3.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 3:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q36: Write a for loop that prints numbers from 0 to 4.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(5):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q37: Write an if-else statement that prints 'Even' if 7 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 7
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q38: Use a while loop to print 'Loop' 3 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 3:
+    print('Loop')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q39: Print numbers from 1 to 10 but `break` the loop if the number equals 5.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 5:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q40: Write a for loop that prints numbers from 0 to 11.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(12):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q41: Write an if-else statement that prints 'Even' if 8 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 8
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q42: Use a while loop to print 'Loop' 5 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 5:
+    print('Loop')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q43: Print numbers from 1 to 10 but `break` the loop if the number equals 3.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 3:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q44: Write a for loop that prints numbers from 0 to 9.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(10):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q45: Write an if-else statement that prints 'Even' if 13 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 13
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q46: Use a while loop to print 'Python' 4 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 4:
+    print('Python')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q47: Print numbers from 1 to 10 but `break` the loop if the number equals 7.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(1, 11):
+    if i == 7:
+        break
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q48: Write a for loop that prints numbers from 0 to 11.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">for i in range(12):
+    print(i)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q49: Write an if-else statement that prints 'Even' if 10 is even, else 'Odd'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">n = 10
+if n % 2 == 0:
+    print('Even')
+else:
+    print('Odd')</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q50: Use a while loop to print 'Code' 5 times.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">count = 0
+while count < 5:
+    print('Code')
+    count += 1</code></pre>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Resources & Practice</h2>
+
+            <p>Ready to test your knowledge? Jump into the practice files or take the daily quiz!</p>
+            <a href="Day2Examples.py" class="btn btn-primary">View Examples</a>
+            <a href="Day2_Quiz.md" class="btn">Take the Quiz</a>
+            <a href="Day2_Interview_Questions.txt" class="btn">Interview Prep</a>
+        </section>
+
+        <nav>
+            <a href="../Day1/blog.html" class="btn">← Previous Day</a>
+            <a href="../README.md" class="btn">Course Home</a>
+            <a href="../Day3/blog.html" class="btn">Next Day: Data Structures →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
+        </footer>
+    </div>
+</body>
+</html>

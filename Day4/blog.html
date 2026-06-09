@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4: Strings, Anagrams & Recursion | Python Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="day-badge">Day 4</div>
+            <h1>Strings, Anagrams & Recursion</h1>
+            <p class="subtitle">Deep dive into algorithm problem solving and mastering the Call Stack.</p>
+        </header>
+
+        <section class="glass-card">
+            <h2>Today's Topics</h2>
+            <ul>
+                <li>Built-in String Methods (`strip`, `split`, `replace`)</li>
+                <li>Solving Anagrams (Sorting vs Frequency Dictionary)</li>
+                <li>Advanced Recursion (Winding vs Unwinding)</li>
+                <li>Call Stack Visualization & Dry Runs</li>
+                <li>Time & Space Complexity Basics</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h2>Key Concepts</h2>
+            
+            <h3>1. String Methods</h3>
+            <p>Python provides powerful built-in methods to manipulate text.</p>
+            <pre><code>text = "  Hello World!  "
+clean = text.strip().lower()       # "hello world!"
+words = clean.split()              # ["hello", "world!"]</code></pre>
+
+            <h3>2. The Recursion Call Stack</h3>
+            <p>Understanding recursion means understanding the stack frames that build up in memory.</p>
+            <pre><code>def factorial(n):
+    if n <= 1: return 1            # Base Case
+    return n * factorial(n - 1)    # Recursive Step</code></pre>
+        </section>
+
+        <section class="glass-card">
+            <h2>Detailed Quiz (20 MCQs)</h2>
+            <p>Test your knowledge on Strings, Anagrams & Recursion!</p>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                
+                <div>
+                    <h4>1. What does the `.strip()` method remove?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) All spaces in the string</li><li>B) Leading and trailing whitespace</li><li>C) Punctuation</li><li>D) Vowels</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (It cleans up the ends of a string, useful for user input)</p></details>
+                </div>
+
+                <div>
+                    <h4>2. What does `.split(",")` return?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) A tuple of characters</li><li>B) A list of substrings separated by commas</li><li>C) A new string without commas</li><li>D) A dictionary</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`split()` breaks a string into a list based on the provided delimiter)</p></details>
+                </div>
+
+                <div>
+                    <h4>3. How does the `.join()` method work?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) `list.join("-")`</li><li>B) `join(list, "-")`</li><li>C) `"-".join(list)`</li><li>D) `list + "-"`</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (`join` is called on the separator string and passed the iterable)</p></details>
+                </div>
+
+                <div>
+                    <h4>4. What is the difference between `.find()` and `.index()`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) `.find()` is for lists, `.index()` is for strings</li><li>B) `.find()` returns -1 if not found; `.index()` raises a ValueError</li><li>C) `.find()` searches backwards</li><li>D) They are identical</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Use `.find()` if you aren't sure the substring exists to avoid crashes)</p></details>
+                </div>
+
+                <div>
+                    <h4>5. Does `"aaaa".count("aa")` return 2 or 3?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 3</li><li>B) 2</li><li>C) 4</li><li>D) 0</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (The `.count()` method only counts non-overlapping occurrences)</p></details>
+                </div>
+
+                <div>
+                    <h4>6. What defines an anagram?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Strings that read the same backwards (e.g., racecar)</li><li>B) Strings formed by rearranging the same letters (e.g., listen/silent)</li><li>C) Strings with the same length</li><li>D) Strings containing only unique characters</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (They must have the exact same character frequencies)</p></details>
+                </div>
+
+                <div>
+                    <h4>7. What is the time complexity of checking anagrams by sorting both strings?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) O(1)</li><li>B) O(N)</li><li>C) O(N log N)</li><li>D) O(N^2)</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (The sorting algorithm dominates the time taken)</p></details>
+                </div>
+
+                <div>
+                    <h4>8. What is the time complexity of checking anagrams using a frequency dictionary?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) O(1)</li><li>B) O(N)</li><li>C) O(N log N)</li><li>D) O(N^2)</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (You only need to iterate through the strings a constant number of times)</p></details>
+                </div>
+
+                <div>
+                    <h4>9. Which standard library module is excellent for checking character frequencies?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) math.Freq</li><li>B) collections.Counter</li><li>C) itertools.count</li><li>D) string.frequency</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`Counter(s1) == Counter(s2)` is a fast one-liner for anagram checks)</p></details>
+                </div>
+
+                <div>
+                    <h4>10. What is the Call Stack?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) A list of variable names</li><li>B) A memory structure that tracks active function calls</li><li>C) A database of errors</li><li>D) A queue for printing text</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (It pushes a frame when a function is called and pops it when it returns)</p></details>
+                </div>
+
+                <div>
+                    <h4>11. What causes a Stack Overflow (RecursionError)?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Too many variables</li><li>B) Infinite loop using `while`</li><li>C) Missing or incorrect base case in a recursive function</li><li>D) Using large numbers</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (The call stack exceeds its maximum depth limit)</p></details>
+                </div>
+
+                <div>
+                    <h4>12. What is a Base Case?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) The starting point of the function</li><li>B) The condition that stops the recursion</li><li>C) The deepest part of the call stack</li><li>D) The default argument value</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (It prevents infinite recursion)</p></details>
+                </div>
+
+                <div>
+                    <h4>13. What is the Recursive Step?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) When the function returns a value</li><li>B) When the function prints something</li><li>C) When the function calls itself with a modified argument</li><li>D) When the function hits the base case</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (e.g., `return n * factorial(n - 1)`)</p></details>
+                </div>
+
+                <div>
+                    <h4>14. What is the "winding phase" of recursion?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) When values are being returned up the stack</li><li>B) When frames are being pushed onto the stack before hitting the base case</li><li>C) When the loop is spinning</li><li>D) When memory is cleared</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (The top-down phase of calling)</p></details>
+                </div>
+
+                <div>
+                    <h4>15. What is the "unwinding phase" of recursion?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) When values are returned and frames are popped off the stack</li><li>B) When the base case is hit</li><li>C) When the program crashes</li><li>D) When arguments are modified</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (The bottom-up phase of returning values)</p></details>
+                </div>
+
+                <div>
+                    <h4>16. What shape is the recursion tree for standard Factorial `fact(n)`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) A binary tree (branching in two)</li><li>B) A linear line straight down</li><li>C) A circular graph</li><li>D) A grid</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (It only makes one recursive call per frame, so it does not branch)</p></details>
+                </div>
+
+                <div>
+                    <h4>17. What shape is the recursion tree for naive Fibonacci `fib(n)`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) A binary tree branching rapidly</li><li>B) A linear line straight down</li><li>C) A circular graph</li><li>D) A grid</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: A</b> (It makes two calls per frame, e.g., `fib(n-1) + fib(n-2)`)</p></details>
+                </div>
+
+                <div>
+                    <h4>18. What is an "overlapping subproblem" in a recursion tree?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) When two functions have the same name</li><li>B) When the exact same function call (e.g., `fib(2)`) is calculated multiple times independently</li><li>C) When the stack limit is reached</li><li>D) When variables are shadowed</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (This is what makes naive Fibonacci incredibly slow: O(2^N))</p></details>
+                </div>
+
+                <div>
+                    <h4>19. What is Memoization?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Storing variables in a list</li><li>B) Caching the results of expensive function calls to avoid recalculating overlapping subproblems</li><li>C) Using memory efficiently</li><li>D) Converting recursion to iteration</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Often implemented with a dictionary or `@functools.lru_cache`)</p></details>
+                </div>
+
+                <div>
+                    <h4>20. What is Tail Recursion?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) When the base case is at the bottom</li><li>B) When the recursive call is the very last operation performed, with no subsequent calculations pending</li><li>C) When recursion is used to loop backwards</li><li>D) When recursion returns a list</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Note: Python does not optimize tail recursion, unlike C++ or Scheme)</p></details>
+                </div>
+
+            </div>
+
+        <section class="glass-card">
+            <h2>50 Practice Problems & Solutions</h2>
+            <p>Master the daily topics with these 50 quick exercises!</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q1: Write a recursive function to print numbers from 3 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(3)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q2: Check if 'evil' and 'tar' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'tar'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q3: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q4: Convert the string 'recursion' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'recursion'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q5: Write a recursive function to print numbers from 5 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(5)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q6: Check if 'rat' and 'vile' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'rat', 'vile'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q7: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q8: Convert the string 'anagram' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'anagram'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q9: Write a recursive function to print numbers from 1 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(1)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q10: Check if 'evil' and 'silent' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'silent'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q11: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q12: Convert the string 'anagram' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'anagram'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q13: Write a recursive function to print numbers from 5 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(5)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q14: Check if 'listen' and 'silent' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'listen', 'silent'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q15: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q16: Convert the string 'recursion' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'recursion'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q17: Write a recursive function to print numbers from 5 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(5)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q18: Check if 'rat' and 'silent' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'rat', 'silent'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q19: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q20: Convert the string 'recursion' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'recursion'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q21: Write a recursive function to print numbers from 4 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(4)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q22: Check if 'evil' and 'silent' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'silent'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q23: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q24: Convert the string 'recursion' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'recursion'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q25: Write a recursive function to print numbers from 1 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(1)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q26: Check if 'evil' and 'tar' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'tar'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q27: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q28: Convert the string 'anagram' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'anagram'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q29: Write a recursive function to print numbers from 2 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(2)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q30: Check if 'listen' and 'vile' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'listen', 'vile'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q31: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q32: Convert the string 'anagram' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'anagram'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q33: Write a recursive function to print numbers from 3 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(3)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q34: Check if 'evil' and 'vile' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'vile'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q35: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q36: Convert the string 'code' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'code'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q37: Write a recursive function to print numbers from 2 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(2)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q38: Check if 'evil' and 'vile' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'vile'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q39: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q40: Convert the string 'anagram' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'anagram'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q41: Write a recursive function to print numbers from 1 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(1)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q42: Check if 'evil' and 'vile' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'evil', 'vile'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q43: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q44: Convert the string 'anagram' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'anagram'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q45: Write a recursive function to print numbers from 5 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(5)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q46: Check if 'listen' and 'silent' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'listen', 'silent'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q47: Count how many times the letter 'a' appears in 'banana'.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'banana'
+print(s.count('a'))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q48: Convert the string 'code' to uppercase and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">s = 'code'
+print(s.upper())</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q49: Write a recursive function to print numbers from 1 down to 1.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">def count_down(n):
+    if n <= 0:
+        return
+    print(n)
+    count_down(n - 1)
+
+count_down(1)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q50: Check if 'listen' and 'vile' are anagrams by sorting them.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">w1, w2 = 'listen', 'vile'
+print(sorted(w1) == sorted(w2))</code></pre>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Resources & Practice</h2>
+
+            <p>Ready to test your knowledge? Jump into the practice files or take the daily quiz!</p>
+            <a href="Day4_Recursion_Visuals.md" class="btn btn-primary">View Recursion Trees</a>
+            <a href="Day4_Test_Driven_Practice.py" class="btn">Test-Driven Practice</a>
+            <a href="Day4_Interview_Questions.txt" class="btn">Interview Prep</a>
+        </section>
+
+        <nav>
+            <a href="../Day3/blog.html" class="btn">← Previous Day</a>
+            <a href="../README.md" class="btn">Course Home</a>
+            <a href="../Capstone_1_Text_Analyzer/" class="btn">Capstone Project 🏆</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
+        </footer>
+    </div>
+</body>
+</html>

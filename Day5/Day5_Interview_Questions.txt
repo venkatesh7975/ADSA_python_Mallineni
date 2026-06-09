@@ -1,0 +1,21 @@
+Day 5 Interview Questions
+
+1. What is the difference between `.append()` and `.extend()` in Python lists?
+Answer: `.append()` adds a single element to the end of the list. If you append a list, the entire list is added as one element. `.extend()` iterates over its argument and adds each element to the list, effectively merging lists.
+
+2. Explain list slicing. How do you reverse a list using slicing?
+Answer: List slicing extracts a portion of a list using the syntax `list[start:stop:step]`. To reverse a list, we can use `list[::-1]`, which steps backward through the list from end to beginning.
+
+3. Are strings mutable in Python? What about lists?
+Answer: Strings are immutable, meaning they cannot be changed after creation. Any string operation that modifies a string actually returns a new string. Lists are mutable; they can be changed in place (e.g., changing an element by index, appending, or removing elements).
+
+4. Write code or explain how you would find the frequency of elements in a list.
+Answer: We can iterate through the list and use a dictionary to keep track of counts. 
+```python
+freq = {}
+for item in lst:
+    freq[item] = freq.get(item, 0) + 1
+```
+
+5. How do you generate all unique pairs from an array of numbers?
+Answer: Use two nested loops. The outer loop runs from `i = 0` to `len(arr)-1`, and the inner loop runs from `j = i + 1` to `len(arr)-1`. This ensures each pair `(arr[i], arr[j])` is generated exactly once.

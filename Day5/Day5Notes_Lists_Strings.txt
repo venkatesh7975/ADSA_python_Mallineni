@@ -1,0 +1,57 @@
+Day 5 Notes: String Operations, List Slicing, and Methods
+
+1. String Indexing, Slicing, and Operations
+-------------------------------------------
+Strings are sequences of characters. In Python, indexing starts from 0 (positive indexing) and also supports negative indexing (starts from -1 at the end).
+- Indexing: Accessing a single character, e.g., `s[0]`, `s[-1]`
+- Slicing: Accessing a substring, e.g., `s[start:stop:step]`
+
+Example:
+s = "Python Programming"
+s[0:6] -> "Python"
+s[::-1] -> Reverse the string
+
+Operations:
+- Concatenation (+): "Hello" + " World"
+- Repetition (*): "Hi" * 3
+- Membership (in / not in): "P" in s
+
+2. List Indexing and Slicing
+----------------------------
+Lists are ordered, mutable collections of items. Just like strings, lists support positive and negative indexing.
+Slicing in lists works exactly the same as in strings.
+`lst[start:stop:step]`
+
+Example:
+lst = [10, 20, 30, 40, 50]
+lst[1:4] -> [20, 30, 40]
+lst[:3] -> [10, 20, 30]
+lst[::2] -> [10, 30, 50] (every second element)
+
+3. List Methods
+---------------
+Python provides various built-in methods for lists:
+- `.append(item)`: Adds an item to the end.
+- `.insert(index, item)`: Inserts an item at the specified index.
+- `.remove(item)`: Removes the first occurrence of an item.
+- `.pop(index)`: Removes and returns the item at the index (default is the last item).
+- `.sort()`: Sorts the list in ascending order.
+- `.reverse()`: Reverses the list in place.
+- `.count(item)`: Returns the number of times an item appears.
+- `.index(item)`: Returns the index of the first occurrence.
+
+4. Reading Different Types of Inputs
+------------------------------------
+In competitive programming and general problem solving, reading inputs efficiently is crucial.
+- Read string: `s = input()`
+- Read integer: `n = int(input())`
+- Read multiple integers on a line: `x, y = map(int, input().split())`
+- Read list of numbers: `arr = list(map(int, input().split()))`
+
+5. Dry Run Practice & Problem Solving Approaches
+------------------------------------------------
+Always trace the execution of the loop and the state of variables. 
+When solving list problems:
+- Iterating: Use `for num in lst:` or `for i in range(len(lst)):`
+- Summing: Initialize `total = 0`, then add `total += num` in a loop.
+- Frequencies: Use a dictionary to store counts, e.g., `freq[num] = freq.get(num, 0) + 1`

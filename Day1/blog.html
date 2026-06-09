@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1: Variables & Data Types | Python Course</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="day-badge">Day 1</div>
+            <h1>Variables & Data Types</h1>
+            <p class="subtitle">The foundation of Python programming. Learn how to store, manipulate, and output data.</p>
+        </header>
+
+        <section class="glass-card">
+            <h2>Today's Topics</h2>
+            <ul>
+                <li>Introduction to Python Syntax & Print Statement</li>
+                <li>Variables & Dynamic Typing</li>
+                <li>Primitive Data Types (int, float, str, bool)</li>
+                <li>Basic Operators (Arithmetic, Relational, Logical)</li>
+                <li>Type Conversion (Casting)</li>
+            </ul>
+        </section>
+
+        <section class="glass-card">
+            <h2>Key Concepts</h2>
+            
+            <h3>1. Variables</h3>
+            <p>Variables act as containers for storing data values. In Python, you don't need to declare a variable's type explicitly.</p>
+            <pre><code>name = "Alice"
+age = 25
+is_student = True</code></pre>
+
+            <h3>2. Basic Operators</h3>
+            <p>Python supports standard mathematical operations, as well as string concatenation.</p>
+            <pre><code># Arithmetic
+total = 10 + 5    # 15
+power = 2 ** 3    # 8
+
+# String Operations
+greeting = "Hello " + name</code></pre>
+        </section>
+
+        <section class="glass-card">
+            <h2>Detailed Quiz (20 MCQs)</h2>
+            <p>Test your knowledge on Variables, Data Types, and Operators!</p>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                
+                <div>
+                    <h4>1. What is the correct way to assign the value 10 to a variable named `x` in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) int x = 10;</li><li>B) x = 10</li><li>C) x := 10</li><li>D) declare x = 10</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Python is dynamically typed and uses `=` for assignment)</p></details>
+                </div>
+
+                <div>
+                    <h4>2. What data type is the value `10.5`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) int</li><li>B) float</li><li>C) str</li><li>D) bool</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Decimal numbers are represented as floats in Python)</p></details>
+                </div>
+
+                <div>
+                    <h4>3. How do you print "Hello World" to the console?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) echo "Hello World"</li><li>B) p("Hello World")</li><li>C) print("Hello World")</li><li>D) console.log("Hello World")</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (The `print()` function is used for output)</p></details>
+                </div>
+
+                <div>
+                    <h4>4. Which operator is used for exponentiation (power)?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) ^</li><li>B) **</li><li>C) //</li><li>D) %</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`**` is the exponentiation operator)</p></details>
+                </div>
+
+                <div>
+                    <h4>5. What is the result of `10 % 3`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 3.33</li><li>B) 3</li><li>C) 1</li><li>D) 0</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (The modulo operator `%` returns the remainder. 10 divided by 3 leaves a remainder of 1)</p></details>
+                </div>
+
+                <div>
+                    <h4>6. What is the purpose of the `type()` function?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) To convert a variable to a different type</li><li>B) To check the data type of a variable</li><li>C) To type input into the console</li><li>D) To create a new class</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`type(x)` returns the data type of `x`)</p></details>
+                </div>
+
+                <div>
+                    <h4>7. Which of the following is a valid string definition?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) "Hello"</li><li>B) 'Hello'</li><li>C) """Hello"""</li><li>D) All of the above</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: D</b> (Python accepts single, double, and triple quotes for strings)</p></details>
+                </div>
+
+                <div>
+                    <h4>8. How are boolean values written in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) true / false</li><li>B) True / False</li><li>C) TRUE / FALSE</li><li>D) 1 / 0</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Booleans must be capitalized in Python)</p></details>
+                </div>
+
+                <div>
+                    <h4>9. Which of the following is an INVALID variable name?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) my_var</li><li>B) _myvar</li><li>C) 2nd_var</li><li>D) var2</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (Variable names cannot start with a number)</p></details>
+                </div>
+
+                <div>
+                    <h4>10. What does "dynamic typing" mean in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Types can only be changed manually</li><li>B) You don't have to declare the type, and a variable can change types later</li><li>C) All variables are strings dynamically</li><li>D) Types are checked at compile time</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Variables take the type of the value assigned to them and can be reassigned to different types)</p></details>
+                </div>
+
+                <div>
+                    <h4>11. What does the `//` operator do?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Adds comments</li><li>B) Performs floating-point division</li><li>C) Performs floor division (removes decimal)</li><li>D) Finds the remainder</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (Floor division rounds down to the nearest whole number)</p></details>
+                </div>
+
+                <div>
+                    <h4>12. What is the result of `True and False`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) True</li><li>B) False</li><li>C) None</li><li>D) Error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (The `and` operator requires both sides to be True)</p></details>
+                </div>
+
+                <div>
+                    <h4>13. What is the result of `not True`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) True</li><li>B) False</li><li>C) None</li><li>D) Error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (The `not` operator inverts the boolean value)</p></details>
+                </div>
+
+                <div>
+                    <h4>14. How do you concatenate two strings `a = "Hi"` and `b = "There"`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) a . b</li><li>B) a + b</li><li>C) a && b</li><li>D) concat(a, b)</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (The `+` operator joins strings together)</p></details>
+                </div>
+
+                <div>
+                    <h4>15. In Python 3, what is the data type of the result of `5 / 2`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) int</li><li>B) float</li><li>C) str</li><li>D) decimal</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Standard division `/` always returns a float in Python 3)</p></details>
+                </div>
+
+                <div>
+                    <h4>16. What is the result of `int("5") + 5`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) "55"</li><li>B) 10</li><li>C) Error</li><li>D) "10"</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`int("5")` casts the string to an integer, making it 5 + 5 = 10)</p></details>
+                </div>
+
+                <div>
+                    <h4>17. What is the difference between `=` and `==`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) `=` compares values, `==` assigns values</li><li>B) `=` assigns values, `==` compares values for equality</li><li>C) They do the exact same thing</li><li>D) `==` is used for strict type checking</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (`=` is assignment, `==` is a relational operator)</p></details>
+                </div>
+
+                <div>
+                    <h4>18. What is the result of `"5" + "5"`?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) 10</li><li>B) "10"</li><li>C) "55"</li><li>D) Error</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (Adding two strings performs concatenation)</p></details>
+                </div>
+
+                <div>
+                    <h4>19. How do you write a multi-line string in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) Using ///</li><li>B) Using ''' or """</li><li>C) Using ###</li><li>D) Using /* */</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: B</b> (Triple quotes allow strings to span multiple lines)</p></details>
+                </div>
+
+                <div>
+                    <h4>20. How do you write a single-line comment in Python?</h4>
+                    <ul style="list-style-type: none; padding-left: 0;"><li>A) // comment</li><li>B) <!-- comment --></li><li>C) # comment</li><li>D) /* comment */</li></ul>
+                    <details style="color: var(--accent-1); cursor: pointer;"><summary>View Answer</summary><p style="color: #fff; margin-top: 0.5rem;"><b>Answer: C</b> (The `#` symbol denotes a comment)</p></details>
+                </div>
+
+            </div>
+
+        <section class="glass-card">
+            <h2>50 Practice Problems & Solutions</h2>
+            <p>Master the daily topics with these 50 quick exercises!</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q1: Calculate the remainder of 94 divided by 4.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(94 % 6)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q2: Convert the float `51.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(51.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q3: Concatenate 'Data' and 'Base' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Data" + " " + "Base")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q4: Check if 44 is strictly greater than 98 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(44 > 98)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q5: Create a variable `x` with value 31 and `y` with value 42. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 31
+y = 42
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q6: Calculate the remainder of 85 divided by 8.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(85 % 8)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q7: Convert the float `34.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(34.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q8: Concatenate 'Hello' and 'Rocks' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Hello" + " " + "Rocks")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q9: Check if 14 is strictly greater than 91 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(14 > 91)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q10: Create a variable `x` with value 42 and `y` with value 56. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 42
+y = 56
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q11: Calculate the remainder of 99 divided by 4.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(99 % 7)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q12: Convert the float `56.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(56.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q13: Concatenate 'Python' and 'Rocks' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Python" + " " + "Rocks")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q14: Check if 91 is strictly greater than 26 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(91 > 26)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q15: Create a variable `x` with value 66 and `y` with value 25. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 66
+y = 25
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q16: Calculate the remainder of 90 divided by 10.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(90 % 4)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q17: Convert the float `78.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(78.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q18: Concatenate 'Python' and 'Rocks' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Python" + " " + "Rocks")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q19: Check if 78 is strictly greater than 14 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(78 > 14)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q20: Create a variable `x` with value 26 and `y` with value 24. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 26
+y = 24
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q21: Calculate the remainder of 35 divided by 3.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(35 % 10)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q22: Convert the float `91.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(91.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q23: Concatenate 'Code' and 'Science' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Code" + " " + "Science")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q24: Check if 9 is strictly greater than 14 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(9 > 14)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q25: Create a variable `x` with value 40 and `y` with value 69. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 40
+y = 69
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q26: Calculate the remainder of 12 divided by 10.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(12 % 5)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q27: Convert the float `21.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(21.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q28: Concatenate 'Code' and 'World' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Code" + " " + "World")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q29: Check if 67 is strictly greater than 61 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(67 > 61)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q30: Create a variable `x` with value 52 and `y` with value 43. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 52
+y = 43
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q31: Calculate the remainder of 83 divided by 5.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(83 % 3)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q32: Convert the float `22.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(22.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q33: Concatenate 'Data' and 'World' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Data" + " " + "World")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q34: Check if 86 is strictly greater than 91 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(86 > 91)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q35: Create a variable `x` with value 29 and `y` with value 13. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 29
+y = 13
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q36: Calculate the remainder of 61 divided by 8.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(61 % 9)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q37: Convert the float `100.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(100.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q38: Concatenate 'Python' and 'Base' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Python" + " " + "Base")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q39: Check if 84 is strictly greater than 41 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(84 > 41)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q40: Create a variable `x` with value 49 and `y` with value 93. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 49
+y = 93
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q41: Calculate the remainder of 90 divided by 8.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(90 % 7)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q42: Convert the float `80.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(80.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q43: Concatenate 'Python' and 'Science' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Python" + " " + "Science")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q44: Check if 88 is strictly greater than 94 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(88 > 94)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q45: Create a variable `x` with value 4 and `y` with value 3. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 4
+y = 3
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q46: Calculate the remainder of 88 divided by 4.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(88 % 3)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q47: Convert the float `59.5` to an integer and print it.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(int(59.5))</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q48: Concatenate 'Hello' and 'Science' with a space in between.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print("Hello" + " " + "Science")</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q49: Check if 47 is strictly greater than 43 and print the boolean result.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">print(47 > 43)</code></pre>
+                    </details>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px;">
+                    <strong>Q50: Create a variable `x` with value 70 and `y` with value 38. Print their sum.</strong>
+                    <details style="color: var(--accent-1); cursor: pointer; margin-top: 0.5rem;">
+                        <summary>View Solution</summary>
+                        <pre style="margin-top: 0.5rem;"><code style="color: #a6e22e;">x = 70
+y = 38
+print(x + y)</code></pre>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2>Resources & Practice</h2>
+
+            <p>Ready to test your knowledge? Jump into the practice files or take the daily quiz!</p>
+            <a href="datatypes.py" class="btn btn-primary">View Examples</a>
+            <a href="Day1_Quiz.md" class="btn">Take the Quiz</a>
+            <a href="InterviewQuestions.txt" class="btn">Interview Prep</a>
+        </section>
+
+        <nav>
+            <a href="../README.md" class="btn">← Back to Home</a>
+            <a href="../Day2/blog.html" class="btn">Next Day: Control Flow →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Python Mastery Course. Built with ❤️ and Glassmorphism.</p>
+        </footer>
+    </div>
+</body>
+</html>

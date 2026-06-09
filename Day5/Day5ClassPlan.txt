@@ -1,0 +1,33 @@
+Day 5 Class Plan
+
+Objective: Deep dive into string and list operations, slicing, methods, and practical problem solving involving list iterations and pairs.
+
+1. Review (10 mins)
+   - Quickly revisit strings and mutability.
+   
+2. Strings (20 mins)
+   - String indexing (positive and negative).
+   - String slicing (start:stop:step).
+   - Basic string operations (+, *, in).
+
+3. Lists Indexing & Slicing (25 mins)
+   - Demonstrate that list indexing/slicing is identical to strings.
+   - Show all possible cases (omitting start, omitting stop, negative steps).
+
+4. List Methods (25 mins)
+   - Add/Remove: append, insert, extend, pop, remove.
+   - Utility: count, index, sort, reverse.
+   - Mutating vs Returning new lists.
+
+5. Reading Inputs (15 mins)
+   - input() returns a string.
+   - int(input()) for single integers.
+   - map(int, input().split()) for multiple values.
+   - list(map(...)) for converting input to lists.
+
+6. Problem Solving & Dry Run (25 mins)
+   - Sum all numbers in a list.
+   - Product of all numbers.
+   - Sum of squares.
+   - Frequency counting using dictionaries.
+   - Printing all combination pairs (nested loops).
