@@ -1,5 +1,6 @@
 #Daily FeedBack Form Link: https://forms.gle/cg1ipBgTk3aHcaFm6
-#Student profiles form Link: https://forms.gle/vETWosRivXR6s2Ro6
+
+##Student profiles form Link: https://forms.gle/vETWosRivXR6s2Ro6
 # Python Mastery Course (7 Days to Algorithms)
 
 Welcome to the **Python Mastery Course**, a comprehensive curriculum designed to take you from absolute zero to writing optimized searching algorithms.
