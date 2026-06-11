@@ -34,6 +34,10 @@ Solve the following Binary Search problems on LeetCode:
 - [704. Binary Search](https://leetcode.com/problems/binary-search/)
 - [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+- [278. First Bad Version](https://leetcode.com/problems/first-bad-version/)
+- [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 ### 3. Sorting Practice (LeetCode Easy)
 Solve the following Sorting-based easy problems on LeetCode:
