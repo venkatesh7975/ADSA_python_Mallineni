@@ -1,3 +1,4 @@
+#visualization Link: https://sorting-visualizer-wine-theta.vercel.app/
 # Day 8: Advanced Sorting Algorithms
 
 Welcome to Day 8! Today we level up our algorithmic skills by diving into the Divide and Conquer paradigm, focusing on Merge Sort and Quick Sort, and comprehensively comparing all sorting algorithms learned so far.
