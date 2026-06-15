@@ -26,7 +26,7 @@ Welcome to Day 10! We are leaving behind contiguous arrays and stepping into the
 - **🛠️ Practice Problems:** [Day10_Practice_Problems.py](Day10_Practice_Problems.py) - 20 targeted, manual exercises to lock in the syntax of node references.
 - **🧠 Quiz:** [Day10_Quiz.md](Day10_Quiz.md) - A 35-question test on pointers, memory, and traversal mechanics.
 - **🏆 Capstone Task:** [Day10_Task.md](Day10_Task.md) - Build "The Playlist Manager" using a Singly Linked List!
-- **💻 Leetcode Integration:** [Day10_Leetcode.py](Day10_Leetcode.py) - Real Leetcode problems applying Traversal (with solutions!).
+- **💻 Leetcode Integration:** [Day10_Leetcode.py](Day10_Leetcode.py) - Real Leetcode problems applying Linked List Traversal, PLUS a bonus curated roadmap of 10 Easy-to-Medium **Stack** problems (Valid Parentheses, Daily Temperatures, etc.) with clean solutions!
 
 ## 📂 Code Examples
 
