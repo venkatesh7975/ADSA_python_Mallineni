@@ -6,7 +6,7 @@ today i have solved problem on quick sort,
 help me to publish one post on linked in 
 use approapriate tags,iam aiming for 1cr job,the post should reach 1million impressions,itshould be 1000/1000
 
-#Day11 quiz LInk: https://forms.gle/ctEF3cFUprcPMd2WA
+#Day12 quiz LInk: 
 
 #Daily FeedBack Form Link: https://forms.gle/cg1ipBgTk3aHcaFm6
 
