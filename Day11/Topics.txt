@@ -1,0 +1,26 @@
+# Day 11: Introduction to Queues
+
+## 1. Queue Fundamentals
+- FIFO (First In, First Out) principle.
+- Mental models: A line at a ticket counter, a printer queue.
+
+## 2. Basic Operations
+- `enqueue()`: Adding to the back/rear.
+- `dequeue()`: Removing from the front.
+- `peek()` / `front()`: Viewing the front without removing.
+- `isEmpty()`: Checking if the queue is empty.
+
+## 3. Implementation in Python
+- Using Python's built-in `list` as a queue (and why it's slow for `dequeue`).
+- Using `collections.deque` for O(1) appends and pops from both ends.
+- Time Complexities (O(1) operations).
+
+## 4. Advanced Queue Types
+- Circular Queues.
+- Deques (Double Ended Queues).
+- Priority Queues (Concept introduction).
+
+## 5. Powerful Applications
+- Operating System Task Scheduling.
+- Breadth-First Search (BFS) in Trees and Graphs.
+- Handling asynchronous data (like IO Buffers).

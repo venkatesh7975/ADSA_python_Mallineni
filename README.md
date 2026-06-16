@@ -21,6 +21,10 @@ This repository is structured by day. Each day acts as a progressive module comp
 
 ---
 
+## 📚 General References
+- **[Introduction to Data Structures](Data_Structures_Overview.md)**: A high-level overview of what Data Structures are, along with the different primitive, linear, and non-linear types.
+- **[Data Structures Interview Questions](Data_Structures_Interview_Questions.md)**: 15 essential interview questions and answers covering general Data Structures and Queues.
+
 ## 📚 Curriculum Flow
 
 ### Day 1: Python Basics & Variables
@@ -52,6 +56,18 @@ This repository is structured by day. Each day acts as a progressive module comp
 ### Day 9: Sorting Algorithms & Visualizer Academy
 - Deep dive into **Merge Sort** and **Quick Sort**.
 - Explore the **[God-Level Sorting Visualizer Academy](https://sorting-visualizer-academy.vercel.app)** built to perfectly trace recursive trees, call stacks, and array partitioning interactively.
+
+### Day 10: Introduction to Stacks
+- The LIFO Principle (Last In, First Out).
+- Core Operations: Push, Pop, Peek.
+- Using Python's built-in `list` to achieve O(1) time complexity.
+- Applications: Simulation, Validating Parentheses, and Monotonic Sequences.
+
+### Day 11: Introduction to Queues
+- The FIFO Principle (First In, First Out).
+- Core Operations: Enqueue, Dequeue, Peek.
+- Leveraging Python's `collections.deque` to achieve O(1) time complexity.
+- Applications: Task Scheduling, Print Spoolers, and Breadth-First Search (BFS).
 
 ---
 *Built with ❤️ for rapid Python proficiency.*

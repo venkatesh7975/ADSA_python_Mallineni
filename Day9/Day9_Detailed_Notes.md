@@ -4,6 +4,18 @@ Welcome to Day 9! Today we dig deeper into the mechanics of sorting algorithms, 
 
 ---
 
+## 0. Sorting Algorithms Comparison Chart
+
+| Algorithm          | Best Case  | Average Case | Worst Case | Space Complexity | Stable? | In-Place? |
+| ------------------ | ---------- | ------------ | ---------- | ---------------- | ------- | --------- |
+| **Bubble Sort**    | O(n)       | O(n²)        | O(n²)      | O(1)             | ✅ Yes   | ✅ Yes     |
+| **Selection Sort** | O(n²)      | O(n²)        | O(n²)      | O(1)             | ❌ No    | ✅ Yes     |
+| **Insertion Sort** | O(n)       | O(n²)        | O(n²)      | O(1)             | ✅ Yes   | ✅ Yes     |
+| **Merge Sort**     | O(n log n) | O(n log n)   | O(n log n) | O(n)             | ✅ Yes   | ❌ No      |
+| **Quick Sort**     | O(n log n) | O(n log n)   | O(n²)      | O(log n)         | ❌ No    | ✅ Yes     |
+
+---
+
 ## 1. QuickSelect (Finding the Kth Element)
 
 What if you need to find the $K$th largest element in an array, but you don't need the whole array sorted? 
