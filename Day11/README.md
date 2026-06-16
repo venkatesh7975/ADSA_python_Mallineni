@@ -3,6 +3,8 @@
 leetcode visualization link:  https://bracket-balancers-buddy.lovable.app
 Welcome to Day 11! Today is all about understanding the **Queue**, a fundamental data structure based on the First-In, First-Out (FIFO) principle.
 
+
+#resources: https://www.wscubetech.com/resources/dsa/data-structure-types
 ## 🎯 Today's Topics
 
 1. **The FIFO Principle**
