@@ -4,6 +4,7 @@
 - **Daily Feedback Form:** [Submit Feedback](https://forms.gle/cg1ipBgTk3aHcaFm6)
 - **Student Profiles Form:** [Update Profile](https://forms.gle/vETWosRivXR6s2Ro6)
 - **Practice Problems Reference:** [GeeksforGeeks](https://www.geeksforgeeks.org/c/c-programming-examples/)
+- **DSA sheet :** https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z
 
 
 ## 📝 Daily LinkedIn Post AI Prompt Template
