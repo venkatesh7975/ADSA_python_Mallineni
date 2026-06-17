@@ -1,3 +1,11 @@
+
+## 🔗 Important Program Links
+- **Daily Quiz Link:** : https://forms.gle/PCeKabMDtd8oYPoCA
+- **Daily Feedback Form:** [Submit Feedback](https://forms.gle/cg1ipBgTk3aHcaFm6)
+- **Student Profiles Form:** [Update Profile](https://forms.gle/vETWosRivXR6s2Ro6)
+- **Practice Problems Reference:** [GeeksforGeeks](https://www.geeksforgeeks.org/c/c-programming-examples/)
+
+
 ## 📝 Daily LinkedIn Post AI Prompt Template
 *Copy and paste the prompt below into ChatGPT/Gemini to generate a viral-worthy LinkedIn post for your daily updates.*
 
@@ -15,11 +23,6 @@
 
 ---
 
-## 🔗 Important Program Links
-- **Daily Quiz Link:** [Take the Quiz](https://forms.gle/ctEF3cFUprcPMd2WA)
-- **Daily Feedback Form:** [Submit Feedback](https://forms.gle/cg1ipBgTk3aHcaFm6)
-- **Student Profiles Form:** [Update Profile](https://forms.gle/vETWosRivXR6s2Ro6)
-- **Practice Problems Reference:** [GeeksforGeeks](https://www.geeksforgeeks.org/c/c-programming-examples/)
 
 ---
 
