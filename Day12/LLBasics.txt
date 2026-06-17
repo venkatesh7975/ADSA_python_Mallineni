@@ -1,0 +1,7 @@
+1)how to create nodes
+2)how to insert data into nodes
+3)how to access node data and node address
+4)how to update node data and node address
+5)how to link one node to other
+6)how to unlink nodes 
+7)how to search element in linked list 
