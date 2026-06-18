@@ -1,6 +1,6 @@
 
 ## 🔗 Important Program Links
-- **Daily Quiz Link:** Day12: https://forms.gle/PCeKabMDtd8oYPoCA
+- **Daily Quiz Link:** Day13: https://forms.gle/eqS9nVHZCpRuRHXA8
 - **Daily Feedback Form:** [Submit Feedback](https://forms.gle/cg1ipBgTk3aHcaFm6)
 - **Student Profiles Form:** [Update Profile](https://forms.gle/vETWosRivXR6s2Ro6)
 - **Practice Problems Reference:** [GeeksforGeeks](https://www.geeksforgeeks.org/c/c-programming-examples/)
