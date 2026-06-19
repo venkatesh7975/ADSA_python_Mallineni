@@ -94,5 +94,11 @@ This repository is structured by day. Each day acts as a progressive module comp
 - Algorithms implemented: Two-pointer technique (Fast & Slow pointers), Floyd's Tortoise and Hare.
 - Classic LeetCode solutions: Reverse Linked List, Merge Sorted Lists, Cycle Detection, and Nth Node Removal.
 
+### Day 14: Introduction to Trees & BSTs
+- Hierarchical data structures and recursive thinking.
+- Binary Trees vs. Binary Search Trees.
+- DFS Traversals (Inorder, Preorder, Postorder) and BFS Traversals (Level-order).
+- 50 optimal Python solutions to core LeetCode Tree problems (LCA, Validation, Subtrees, Path Sums).
+
 ---
 *Built with ❤️ for rapid Python proficiency.*
