@@ -1,0 +1,6 @@
+{
+    "editor.hover.enabled": "off",
+    "editor.hover.showLongLineWarning": false,
+    "less.hover.documentation": false,
+    "scss.hover.references": false
+}
