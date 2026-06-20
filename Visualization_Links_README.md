@@ -2,6 +2,16 @@
 
 This document contains interactive visualization links for the topics covered in this repository.
 
+## Featured Core Visualizations
+- **Recursive Tree Explorer (Build BST)**: [https://recursive-tree-explorer.lovable.app](https://recursive-tree-explorer.lovable.app)
+- **Learn Stack Trace**: [https://learn-stack-trace.lovable.app](https://learn-stack-trace.lovable.app)
+- **Recursive Rhapsody (Tree Traversals)**: [https://recursive-rhapsody.lovable.app](https://recursive-rhapsody.lovable.app)
+- **Max Depth of BST**: [https://maxdepth.lovable.app](https://maxdepth.lovable.app)
+- **Synapse Recursion (Validate Mirror Trees)**: [https://synapse-recurs.lovable.app](https://synapse-recurs.lovable.app)
+
+---
+
+
 ### ValidBST
 - [https://bounds-of-order.lovable.app](https://bounds-of-order.lovable.app)
 
