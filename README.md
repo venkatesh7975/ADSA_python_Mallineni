@@ -268,5 +268,11 @@ This repository is structured by day. Each day acts as a progressive module comp
 - DFS Traversals (Inorder, Preorder, Postorder) and BFS Traversals (Level-order).
 - 50 optimal Python solutions to core LeetCode Tree problems (LCA, Validation, Subtrees, Path Sums).
 
+### Day 15: Hashing, Sets & BST Advanced Problem Solving
+- Deep dive into $O(1)$ Hash Map implementations, Load Factors, and Collisions.
+- Mastering Frequency Maps (`Counter`) and Sets for uniqueness and $O(N)$ speedups.
+- Integrating Sets with Prefix Sums and BST traversals.
+- 50 elite LeetCode problems solved (Two Sum variations, Group Anagrams, Subarray Sums).
+
 ---
 *Built with ❤️ for rapid Python proficiency.*
