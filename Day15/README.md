@@ -1,3 +1,6 @@
+Build Tree Visualization link: https://recursive-tree-explorer.lovable.app
+
+
 # Day 15: Hashing, Sets, Frequency Maps & BST Mastery
 
 Welcome to Day 15! We are focusing on optimizing code from $O(N^2)$ brute-force solutions down to lightning-fast $O(N)$ or $O(\log N)$ algorithms by using Hash Maps, Sets, and leveraging Binary Search Trees.
