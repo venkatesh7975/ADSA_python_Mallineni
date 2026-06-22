@@ -21,10 +21,10 @@ def reverseList(head: ListNode) -> ListNode:
     curr = head
     
     while curr:
-        next_temp = curr.next  # Store next node
+        next = curr.next  # Store next node
         curr.next = prev       # Reverse the pointer
         prev = curr            # Move prev forward
-        curr = next_temp       # Move curr forward
+        curr = next     # Move curr forward
         
     return prev
 

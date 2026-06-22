@@ -1,0 +1,5 @@
+Binary Search Tree (Insertion, Searching, Deletion)
+Priority Queues
+Heaps (Min Heap, Max Heap)
+Dictionaries and Sets
+Frequency Maps
