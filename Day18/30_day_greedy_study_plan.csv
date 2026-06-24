@@ -1,0 +1,31 @@
+Day,Question ID,Problem Name,Difficulty,Companies,LeetCode URL
+Day 1,455,Assign Cookies,Easy,"Amazon, Google, Microsoft",https://leetcode.com/problems/assign-cookies/
+Day 2,860,Lemonade Change,Easy,"Amazon, Microsoft",https://leetcode.com/problems/lemonade-change/
+Day 3,1323,Maximum 69 Number,Easy,"Amazon, Apple",https://leetcode.com/problems/maximum-69-number/
+Day 4,1710,Maximum Units on a Truck,Easy,"Amazon, Apple",https://leetcode.com/problems/maximum-units-on-a-truck/
+Day 5,605,Can Place Flowers,Easy,"Meta, Amazon, LinkedIn",https://leetcode.com/problems/can-place-flowers/
+Day 6,1005,Maximize Sum Of Array After K Negations,Easy,"Amazon",https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/
+Day 7,1221,Split a String in Balanced Strings,Easy,"Google, Microsoft",https://leetcode.com/problems/split-a-string-in-balanced-strings/
+Day 8,881,Boats to Save People,Medium,"Amazon, Microsoft, Apple",https://leetcode.com/problems/boats-to-save-people/
+Day 9,1029,Two City Scheduling,Medium,"Bloomberg, Amazon",https://leetcode.com/problems/two-city-scheduling/
+Day 10,921,Minimum Add to Make Parentheses Valid,Medium,"Meta, Amazon",https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
+Day 11,435,Non-overlapping Intervals,Medium,"Meta, Amazon, Microsoft",https://leetcode.com/problems/non-overlapping-intervals/
+Day 12,452,Minimum Number of Arrows to Burst Balloons,Medium,"Meta, Amazon, Google",https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+Day 13,56,Merge Intervals,Medium,"Google, Meta, Amazon",https://leetcode.com/problems/merge-intervals/
+Day 14,57,Insert Interval,Medium,"Google, Meta, Microsoft",https://leetcode.com/problems/insert-interval/
+Day 15,392,Is Subsequence,Easy,"Meta, Amazon, Google",https://leetcode.com/problems/is-subsequence/
+Day 16,334,Increasing Triplet Subsequence,Medium,"Google, Meta, Amazon",https://leetcode.com/problems/increasing-triplet-subsequence/
+Day 17,55,Jump Game,Medium,"Amazon, Microsoft, Apple, Meta, Google",https://leetcode.com/problems/jump-game/
+Day 18,45,Jump Game II,Medium,"Amazon, Microsoft, Apple, Google",https://leetcode.com/problems/jump-game-ii/
+Day 19,763,Partition Labels,Medium,"Amazon, Meta, Bloomberg",https://leetcode.com/problems/partition-labels/
+Day 20,769,Max Chunks To Make Sorted,Medium,"Google, Microsoft",https://leetcode.com/problems/max-chunks-to-make-sorted/
+Day 21,406,Queue Reconstruction by Height,Medium,"Google, Amazon, Microsoft",https://leetcode.com/problems/queue-reconstruction-by-height/
+Day 22,646,Maximum Length of Pair Chain,Medium,"Amazon, Microsoft",https://leetcode.com/problems/maximum-length-of-pair-chain/
+Day 23,122,Best Time to Buy and Sell Stock II,Medium,"Amazon, Bloomberg, Microsoft",https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+Day 24,376,Wiggle Subsequence,Medium,"Amazon, Google",https://leetcode.com/problems/wiggle-subsequence/
+Day 25,678,Valid Parenthesis String,Medium,"Amazon, Meta, LinkedIn",https://leetcode.com/problems/valid-parenthesis-string/
+Day 26,1405,Longest Happy String,Medium,"Microsoft, Amazon",https://leetcode.com/problems/longest-happy-string/
+Day 27,134,Gas Station,Medium,"Amazon, Google, Microsoft, Apple",https://leetcode.com/problems/gas-station/
+Day 28,135,Candy,Hard,"Amazon, Google, Microsoft, Meta",https://leetcode.com/problems/candy/
+Day 29,621,Task Scheduler,Medium,"Meta, Amazon, Microsoft, Google",https://leetcode.com/problems/task-scheduler/
+Day 30,630,Course Schedule III,Hard,"Google, Amazon",https://leetcode.com/problems/course-schedule-iii/

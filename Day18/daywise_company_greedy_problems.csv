@@ -1,0 +1,16 @@
+Day,Question ID,Problem Name,Difficulty,Companies,LeetCode URL
+Day 1,455,Assign Cookies,Easy,"Amazon, Google, Microsoft",https://leetcode.com/problems/assign-cookies/
+Day 1,860,Lemonade Change,Easy,"Amazon, Microsoft",https://leetcode.com/problems/lemonade-change/
+Day 1,1323,Maximum 69 Number,Easy,"Amazon, Apple",https://leetcode.com/problems/maximum-69-number/
+Day 2,435,Non-overlapping Intervals,Medium,"Meta, Amazon, Microsoft",https://leetcode.com/problems/non-overlapping-intervals/
+Day 2,55,Jump Game,Medium,"Amazon, Microsoft, Apple, Meta, Google",https://leetcode.com/problems/jump-game/
+Day 2,45,Jump Game II,Medium,"Amazon, Microsoft, Apple, Google",https://leetcode.com/problems/jump-game-ii/
+Day 3,406,Queue Reconstruction by Height,Medium,"Google, Amazon, Microsoft",https://leetcode.com/problems/queue-reconstruction-by-height/
+Day 3,763,Partition Labels,Medium,"Amazon, Meta, Bloomberg",https://leetcode.com/problems/partition-labels/
+Day 3,452,Minimum Number of Arrows to Burst Balloons,Medium,"Meta, Amazon, Google",https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+Day 4,122,Best Time to Buy and Sell Stock II,Medium,"Amazon, Bloomberg, Microsoft",https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+Day 4,1029,Two City Scheduling,Medium,"Bloomberg, Amazon",https://leetcode.com/problems/two-city-scheduling/
+Day 4,881,Boats to Save People,Medium,"Amazon, Microsoft, Apple",https://leetcode.com/problems/boats-to-save-people/
+Day 5,134,Gas Station,Medium,"Amazon, Google, Microsoft, Apple",https://leetcode.com/problems/gas-station/
+Day 5,621,Task Scheduler,Medium,"Meta, Amazon, Microsoft, Google",https://leetcode.com/problems/task-scheduler/
+Day 5,135,Candy,Hard,"Amazon, Google, Microsoft, Meta",https://leetcode.com/problems/candy/
