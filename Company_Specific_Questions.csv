@@ -1,0 +1,31 @@
+Company,Question Title,Topic,Difficulty,Frequency,Link
+Google,Two Sum,Arrays/Hashing,Easy,High,https://leetcode.com/problems/two-sum/
+Google,Number of Islands,Graphs/DFS,Medium,High,https://leetcode.com/problems/number-of-islands/
+Google,Longest Substring Without Repeating Characters,Sliding Window,Medium,High,https://leetcode.com/problems/longest-substring-without-repeating-characters/
+Google,LRU Cache,Design/Linked List,Medium,Very High,https://leetcode.com/problems/lru-cache/
+Google,Merge Intervals,Arrays/Sorting,Medium,High,https://leetcode.com/problems/merge-intervals/
+Amazon,Two Sum,Arrays/Hashing,Easy,Very High,https://leetcode.com/problems/two-sum/
+Amazon,Number of Islands,Graphs/DFS,Medium,High,https://leetcode.com/problems/number-of-islands/
+Amazon,Best Time to Buy and Sell Stock,Arrays/Math,Easy,High,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+Amazon,Group Anagrams,Strings/Hashing,Medium,High,https://leetcode.com/problems/group-anagrams/
+Amazon,Word Ladder,Graphs/BFS,Hard,Medium,https://leetcode.com/problems/word-ladder/
+Microsoft,Reverse Linked List,Linked List,Easy,High,https://leetcode.com/problems/reverse-linked-list/
+Microsoft,Valid Palindrome,Two Pointers,Easy,High,https://leetcode.com/problems/valid-palindrome/
+Microsoft,Spiral Matrix,Arrays/Matrix,Medium,High,https://leetcode.com/problems/spiral-matrix/
+Microsoft,Merge k Sorted Lists,Heaps/Linked List,Hard,Medium,https://leetcode.com/problems/merge-k-sorted-lists/
+Microsoft,Lowest Common Ancestor of a Binary Tree,Trees/DFS,Medium,High,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+Meta (Facebook),Product of Array Except Self,Arrays/Prefix Sum,Medium,Very High,https://leetcode.com/problems/product-of-array-except-self/
+Meta (Facebook),Valid Parentheses,Stack,Easy,High,https://leetcode.com/problems/valid-parentheses/
+Meta (Facebook),Minimum Remove to Make Valid Parentheses,String/Stack,Medium,High,https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
+Meta (Facebook),Binary Tree Right Side View,Trees/BFS,Medium,High,https://leetcode.com/problems/binary-tree-right-side-view/
+Meta (Facebook),K Closest Points to Origin,Heaps/Math,Medium,High,https://leetcode.com/problems/k-closest-points-to-origin/
+Apple,Merge Two Sorted Lists,Linked List,Easy,High,https://leetcode.com/problems/merge-two-sorted-lists/
+Apple,Container With Most Water,Two Pointers,Medium,High,https://leetcode.com/problems/container-with-most-water/
+Apple,Maximum Subarray,Arrays/Kadane,Medium,High,https://leetcode.com/problems/maximum-subarray/
+Apple,Word Break,Dynamic Programming,Medium,Medium,https://leetcode.com/problems/word-break/
+Apple,Median of Two Sorted Arrays,Binary Search,Hard,Medium,https://leetcode.com/problems/median-of-two-sorted-arrays/
+Netflix,Trapping Rain Water,Two Pointers/Stack,Hard,Medium,https://leetcode.com/problems/trapping-rain-water/
+Netflix,Find Median from Data Stream,Heaps/Design,Hard,Medium,https://leetcode.com/problems/find-median-from-data-stream/
+Netflix,Course Schedule,Graphs/Topological Sort,Medium,High,https://leetcode.com/problems/course-schedule/
+Netflix,Climbing Stairs,Dynamic Programming,Easy,High,https://leetcode.com/problems/climbing-stairs/
+Netflix,Serialize and Deserialize Binary Tree,Trees/Design,Hard,Medium,https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
