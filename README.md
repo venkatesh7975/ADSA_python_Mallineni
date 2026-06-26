@@ -1,12 +1,12 @@
 ##Test Feedback for Bytexl: https://forms.gle/Z5sg5JPb1q6DBjhj9
 
 # Git Setup & Push Commands
-
 ## Configure Git Username
 
 ```bash
 git config --global user.name "githubusername"
 ```
+Use the same email address that is connected to your GitHub account.
 
 Example:
 
