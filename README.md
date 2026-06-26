@@ -207,6 +207,35 @@ This repository is structured by day. Each day acts as a progressive module comp
 - **[Introduction to Data Structures](Data_Structures_Overview.md)**: A high-level overview of what Data Structures are, along with the different primitive, linear, and non-linear types.
 - **[Data Structures Interview Questions](Data_Structures_Interview_Questions.md)**: 15 essential interview questions and answers covering general Data Structures and Queues.
 
+## 📚 Interview Question Banks
+- **[Python Core Concepts](./python_core_concepts.md)**: Basics, Syntax, Data Types, Control Flow, Scope, Error Handling.
+- **[Python Advanced Concepts](./python_advanced_concepts.md)**: OOP, Iterators, Generators, Decorators, Memory Management, Concurrency.
+- **[DSA - Data Structures](./dsa_data_structures.md)**: Arrays, Strings, Linked Lists, Stacks, Queues, Hash Tables, Trees, Graphs, Heaps.
+- **[DSA - Algorithms](./dsa_algorithms.md)**: Sorting, Searching, Dynamic Programming, Greedy Algorithms, Graph Traversals, Backtracking.
+- **[System Design & Ecosystem](./system_design_and_best_practices.md)**: Design Patterns, REST APIs, CAP Theorem, Scaling, Caching, Python Ecosystem.
+
+## 🚀 Best Free Public Resources
+
+### 🐍 Learn Python (Beginner to Advanced)
+- **[Official Python Tutorial](https://docs.python.org/3/tutorial/index.html)**
+- **[Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)**
+- **[Corey Schafer's Python Tutorials (YouTube)](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)**
+- **[Real Python](https://realpython.com/)**
+
+### 🧠 Learn Data Structures & Algorithms (Language Agnostic)
+- **[MIT OpenCourseWare - 6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/)**
+- **[BaseCS](https://medium.com/basecs)**
+- **[Coursera - Algorithms Specialization (Stanford)](https://www.coursera.org/specializations/algorithms)**
+
+### 🛠️ Learn DSA Specifically in Python
+- **[Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/ns/books/published/pythonds/index.html)**
+- **[NeetCode (YouTube & Website)](https://neetcode.io/)**
+- **[The Algorithms - Python (GitHub)](https://github.com/TheAlgorithms/Python)**
+
+### 💻 Practice Platforms
+- **[LeetCode](https://leetcode.com/)**
+- **[HackerRank](https://www.hackerrank.com/domains/python)**
+
 ## 📚 Curriculum Flow
 
 ### Day 1: Python Basics & Variables
